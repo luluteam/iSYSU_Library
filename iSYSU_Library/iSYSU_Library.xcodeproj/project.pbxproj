@@ -21,6 +21,11 @@
 		B086314F164BA58B00451893 /* LIBClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B086314E164BA58B00451893 /* LIBClient.m */; };
 		B0863153164BC2D400451893 /* LIBSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0863151164BC2D300451893 /* LIBSearchResultViewController.m */; };
 		B0863154164BC2D400451893 /* LIBSearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0863152164BC2D400451893 /* LIBSearchResultViewController.xib */; };
+		B0E82F46164DFEB2005E31AD /* LIBMyinfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E82F45164DFEB2005E31AD /* LIBMyinfoViewController.m */; };
+		B0E82F4C164DFF21005E31AD /* LIBConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E82F4B164DFF21005E31AD /* LIBConfigureViewController.m */; };
+		B0E82F4F164DFF40005E31AD /* LIBEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E82F4E164DFF40005E31AD /* LIBEmailViewController.m */; };
+		B0E82F52164DFF64005E31AD /* LIBPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E82F51164DFF64005E31AD /* LIBPhoneViewController.m */; };
+		B0E82F55164E006F005E31AD /* LIBRemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E82F54164E006F005E31AD /* LIBRemindViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +52,17 @@
 		B0863150164BC2D300451893 /* LIBSearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBSearchResultViewController.h; sourceTree = "<group>"; };
 		B0863151164BC2D300451893 /* LIBSearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBSearchResultViewController.m; sourceTree = "<group>"; };
 		B0863152164BC2D400451893 /* LIBSearchResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIBSearchResultViewController.xib; sourceTree = "<group>"; };
+		B0E82F43164DFB86005E31AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/MainStoryboard.storyboard"; sourceTree = "<group>"; };
+		B0E82F44164DFEB2005E31AD /* LIBMyinfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LIBMyinfoViewController.h; path = ../LIBMyinfoViewController.h; sourceTree = "<group>"; };
+		B0E82F45164DFEB2005E31AD /* LIBMyinfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LIBMyinfoViewController.m; path = ../LIBMyinfoViewController.m; sourceTree = "<group>"; };
+		B0E82F4A164DFF21005E31AD /* LIBConfigureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBConfigureViewController.h; sourceTree = "<group>"; };
+		B0E82F4B164DFF21005E31AD /* LIBConfigureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBConfigureViewController.m; sourceTree = "<group>"; };
+		B0E82F4D164DFF40005E31AD /* LIBEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LIBEmailViewController.h; path = ../LIBEmailViewController.h; sourceTree = "<group>"; };
+		B0E82F4E164DFF40005E31AD /* LIBEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LIBEmailViewController.m; path = ../LIBEmailViewController.m; sourceTree = "<group>"; };
+		B0E82F50164DFF64005E31AD /* LIBPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBPhoneViewController.h; sourceTree = "<group>"; };
+		B0E82F51164DFF64005E31AD /* LIBPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBPhoneViewController.m; sourceTree = "<group>"; };
+		B0E82F53164E006F005E31AD /* LIBRemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBRemindViewController.h; sourceTree = "<group>"; };
+		B0E82F54164E006F005E31AD /* LIBRemindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBRemindViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +109,10 @@
 		B086312A164B848C00451893 /* iSYSU_Library */ = {
 			isa = PBXGroup;
 			children = (
+				B0E82F4D164DFF40005E31AD /* LIBEmailViewController.h */,
+				B0E82F4E164DFF40005E31AD /* LIBEmailViewController.m */,
+				B0E82F44164DFEB2005E31AD /* LIBMyinfoViewController.h */,
+				B0E82F45164DFEB2005E31AD /* LIBMyinfoViewController.m */,
 				B0863133164B848C00451893 /* LIBAppDelegate.h */,
 				B0863134164B848C00451893 /* LIBAppDelegate.m */,
 				B0863136164B848C00451893 /* MainStoryboard.storyboard */,
@@ -109,6 +129,12 @@
 				B0863151164BC2D300451893 /* LIBSearchResultViewController.m */,
 				B0863152164BC2D400451893 /* LIBSearchResultViewController.xib */,
 				B086312B164B848C00451893 /* Supporting Files */,
+				B0E82F4A164DFF21005E31AD /* LIBConfigureViewController.h */,
+				B0E82F4B164DFF21005E31AD /* LIBConfigureViewController.m */,
+				B0E82F50164DFF64005E31AD /* LIBPhoneViewController.h */,
+				B0E82F51164DFF64005E31AD /* LIBPhoneViewController.m */,
+				B0E82F53164E006F005E31AD /* LIBRemindViewController.h */,
+				B0E82F54164E006F005E31AD /* LIBRemindViewController.m */,
 			);
 			path = iSYSU_Library;
 			sourceTree = "<group>";
@@ -159,6 +185,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = B0863115164B848C00451893;
 			productRefGroup = B0863121164B848C00451893 /* Products */;
@@ -196,6 +223,11 @@
 				B086314B164B9BD200451893 /* LIBLogInViewController.m in Sources */,
 				B086314F164BA58B00451893 /* LIBClient.m in Sources */,
 				B0863153164BC2D400451893 /* LIBSearchResultViewController.m in Sources */,
+				B0E82F46164DFEB2005E31AD /* LIBMyinfoViewController.m in Sources */,
+				B0E82F4C164DFF21005E31AD /* LIBConfigureViewController.m in Sources */,
+				B0E82F4F164DFF40005E31AD /* LIBEmailViewController.m in Sources */,
+				B0E82F52164DFF64005E31AD /* LIBPhoneViewController.m in Sources */,
+				B0E82F55164E006F005E31AD /* LIBRemindViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +246,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B0863137164B848C00451893 /* en */,
+				B0E82F43164DFB86005E31AD /* zh-Hans */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -307,6 +340,7 @@
 				B0863140164B848C00451893 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
