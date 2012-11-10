@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LIBDataManager.h"
 @interface LIBConfigureViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextView *myinfolist;
-
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *school;
+@property (weak, nonatomic) IBOutlet UILabel *college;
+@property (weak,nonatomic) NSArray* personalinfo;
 @end

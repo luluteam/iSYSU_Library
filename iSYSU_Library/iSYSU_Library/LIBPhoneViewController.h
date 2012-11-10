@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LIBDataManager.h"
 @interface LIBPhoneViewController : UIViewController
 
 @end

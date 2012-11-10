@@ -11,18 +11,18 @@
 @implementation LIBClient
 -(BOOL)login:(NSString *)name password:(NSString *)psw
 {
-//    NSLog(@"%@,%@",name,psw);
-//    if (name == @"lulu" ) {
-//        return true;
-//    } else {
-//        return false;
-//    }
+    NSLog(@"%@,%@",name,psw);
+    if ([name isEqualToString:@"lulu"]) {
+        return true;
+    } else {
+        return false;
+    }
     return true;
 }
 
 -(NSArray *)getInfo
 {
-    NSArray *arr = [NSArray arrayWithObjects:@"e",@"f",@"g",@"h",nil];
+    NSArray *arr = [NSArray arrayWithObjects:@"lulu",@"SS",@"SE",@"123@123.com",@"123456",@"yes",@"psw",nil];
     return arr;
 }
 

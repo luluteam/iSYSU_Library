@@ -10,6 +10,7 @@
 
 @implementation LIBMyinfoViewController
 @synthesize mybooklist;
+@synthesize mybookinfo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,13 +38,16 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    [super viewDidLoad]; 
+    //拿到借书的信息
+    self.mybookinfo = [[LIBDataManager shareManager] mybookInfo];
+    NSLog(@"mybook info：%@",mybookinfo);
 }
-*/
+
 
 - (void)viewDidUnload
 {

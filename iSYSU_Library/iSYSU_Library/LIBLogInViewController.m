@@ -10,8 +10,8 @@
 
 
 @implementation LIBLogInViewController
-//@synthesize username;
-//@synthesize password;
+@synthesize username;
+@synthesize password;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -63,8 +63,8 @@
 
 - (void)viewDidUnload
 {
-//    [self setUsername:nil];
-//    [self setPassword:nil];
+    [self setUsername:nil];
+    [self setPassword:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -76,9 +76,15 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-//- (IBAction)login:(id)sender {
-//    NSString *name = [self.username text];
-//    NSString *psw = [self.password text];
-//    [self LogInWithParrtern:name password:psw];
-//}
+- (IBAction)login:(id)sender {
+    NSString *name = [self.username text];
+    NSString *psw = [self.password text];
+    [self LogInWithParrtern:name password:psw];
+    if (self->flag) {
+        NSLog(@"success log in");
+        [self performSegueWithIdentifier:@"login" sender:self];
+    } else {
+        NSLog(@"Invalid Login!");
+    }
+}
 @end

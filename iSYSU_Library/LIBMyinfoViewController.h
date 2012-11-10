@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LIBDataManager.h"
 @interface LIBMyinfoViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *mybooklist;
-
+@property (weak,nonatomic)NSArray* mybookinfo;
 @end

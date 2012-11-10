@@ -10,7 +10,10 @@
 
 @implementation LIBConfigureViewController
 @synthesize myinfolist;
-
+@synthesize name;
+@synthesize school;
+@synthesize college;
+@synthesize personalinfo;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -37,17 +40,23 @@
 }
 */
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //取出个人信息，并显示
+    self.personalinfo = [[LIBDataManager shareManager] personalInfo];
+    NSLog(@"个人信息：%@",personalinfo);
+    
 }
-*/
+
 
 - (void)viewDidUnload
 {
     [self setMyinfolist:nil];
+    [self setName:nil];
+    [self setSchool:nil];
+    [self setCollege:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
