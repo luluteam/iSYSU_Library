@@ -11,6 +11,7 @@
 @implementation LIBMyinfoViewController
 @synthesize mybooklist;
 @synthesize mybookinfo;
+//点击续借的书的index
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,10 +46,31 @@
     [super viewDidLoad]; 
     //拿到借书的信息
     self.mybookinfo = [[LIBDataManager shareManager] mybookInfo];
-    NSLog(@"mybook info：%@",mybookinfo);
+    NSLog(@"mybook info：%@",mybookinfo); 
 }
 
+//请求续借
+-(NSString *)RenewWithIndex:(NSInteger)bookindex
+{
+    //添加observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getRewMsg) name:@"did renew" object:nil];
+    [[LIBDataManager shareManager] requestRenew:bookindex];
+    return [[LIBDataManager shareManager] renewMsg];
+}
+-(NSString *)getRewMsg
+{
+    return [[LIBDataManager shareManager] renewMsg];
+}
 
+- (IBAction)DidRenew:(id)sender {
+    self->currentBookIndex = 0;
+    [self RenewWithIndex:self->currentBookIndex];
+    NSString * msg = [self getRewMsg];
+    NSLog(@"%@",msg);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"续借结果" message:msg delegate:nil cancelButtonTitle:@"我知道了" otherButtonTitles:nil, nil];
+    [alert show];
+    
+}
 - (void)viewDidUnload
 {
     [self setMybooklist:nil];

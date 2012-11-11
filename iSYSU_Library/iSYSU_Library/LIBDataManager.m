@@ -12,7 +12,7 @@
 @synthesize personalInfo;
 @synthesize mybookInfo;
 @synthesize searchResult;
-
+@synthesize renewMsg;
 +(LIBDataManager *)shareManager{
     static LIBDataManager* shareManager;
     if (!shareManager) {
@@ -26,7 +26,7 @@
     if ([lib login:name password:psw]) {
         //发送登陆成功的广播，并获取个人信息
         self.personalInfo = [lib getInfo];
-        self.mybookInfo = [[NSArray alloc] initWithArray:[lib getMyBookInfo]];
+        self.mybookInfo = [lib getMyBookInfo];
         NSLog(@"post login");
         [[NSNotificationCenter defaultCenter] postNotificationName:@"DidLogIn" object:self];
     } else {
@@ -63,5 +63,14 @@
         //搜索失败，发送广播
         [[NSNotificationCenter defaultCenter] postNotificationName:@"cannotSearch" object:self];
     }
+}
+-(void)requestRenew:(NSInteger)bookindex
+{
+    LIBClient *lib = [LIBClient new];
+    self.renewMsg =[lib renew:bookindex];
+    NSLog(@"%@",self.renewMsg);
+    //发送广播
+    NSLog(@"post renew");
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"did renew" object:self];
 }
 @end

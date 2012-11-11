@@ -13,6 +13,7 @@
    @property(strong,nonatomic) NSArray* personalInfo;
    @property(strong,nonatomic) NSArray* mybookInfo;
    @property(strong,nonatomic) NSArray* searchResult;
+@property(strong,nonatomic)NSString* renewMsg;
 +(LIBDataManager *)shareManager;
 -(void)setMybookInfo:(NSArray *)mybookInfo;
 -(void)setPersonalInfo:(NSArray *)personalInfo;
@@ -20,4 +21,5 @@
 -(void)requestUpdate;
 -(void)requestLonIn:(NSString *)name password:(NSString *)psw;
 -(void)requestSearchWithParrtern:(NSString *)parrtern;
+-(void)requestRenew:(NSInteger)bookindex;
 @end

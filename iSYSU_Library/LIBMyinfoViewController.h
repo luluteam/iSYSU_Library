@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "LIBDataManager.h"
 @interface LIBMyinfoViewController : UIViewController
+{
+    @private NSInteger currentBookIndex;
+}
 @property (strong, nonatomic) IBOutlet UITableView *mybooklist;
 @property (weak,nonatomic)NSArray* mybookinfo;
+-(NSString *)RenewWithIndex:(NSInteger *)bookindex;
+-(NSString *)getRewMsg;
+- (IBAction)DidRenew:(id)sender;
 @end

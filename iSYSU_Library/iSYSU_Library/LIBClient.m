@@ -7,28 +7,29 @@
 //
 
 #import "LIBClient.h"
+#import "BorrowBooks.h"
 
 @implementation LIBClient
 -(BOOL)login:(NSString *)name password:(NSString *)psw
 {
     NSLog(@"%@,%@",name,psw);
-    if ([name isEqualToString:@"lulu"]) {
-        return true;
-    } else {
-        return false;
-    }
-    return true;
+    
+    User *user = [User new];
+    BOOL flag = [user isLoginSuccess:name andPassword:psw];
+    return flag;
 }
 
 -(NSArray *)getInfo
 {
-    NSArray *arr = [NSArray arrayWithObjects:@"lulu",@"SS",@"SE",@"123@123.com",@"123456",@"yes",@"psw",nil];
+    User *user = [User getAnUserInfo];
+    NSArray *arr = [NSArray arrayWithObjects:[user username], [user academy], [user profession], [user email], [user telephone], [user isMessage], nil];
     return arr;
 }
 
 -(NSArray *)getMyBookInfo
 {
-    NSArray *arr = [NSArray arrayWithObjects: @"a",@"b",@"c",@"d",nil];
+    NSArray *arr = [BorrowBooks getMyBorrowedBooks];
+    
     return arr;
 }
 
@@ -50,6 +51,17 @@
 
 -(BOOL)update
 {
-    return true;
+    if([User hasUser]){
+        NSLog(@"update!");
+        return true;
+    }
+    NSLog(@"can not update!");
+    return false;
+        
+}
+-(NSString *)renew:(NSInteger)bookindex
+{
+    NSString * msg = @"renew success";
+    return msg;
 }
 @end

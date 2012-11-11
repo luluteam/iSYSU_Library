@@ -15,4 +15,5 @@
 -(BOOL)search:(NSString *)bookname;
 -(NSArray *)getSearchResult;
 -(BOOL)update;
+-(NSString *)renew:(NSInteger)bookindex;
 @end

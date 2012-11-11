@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *school;
 @property (weak, nonatomic) IBOutlet UILabel *college;
 @property (weak,nonatomic) NSArray* personalinfo;
+@property (weak, nonatomic) IBOutlet UITableView *configTable;
+-(void)showInfo;
 @end

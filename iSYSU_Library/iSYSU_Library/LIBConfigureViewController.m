@@ -14,6 +14,7 @@
 @synthesize school;
 @synthesize college;
 @synthesize personalinfo;
+@synthesize configTable;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -47,9 +48,18 @@
     //取出个人信息，并显示
     self.personalinfo = [[LIBDataManager shareManager] personalInfo];
     NSLog(@"个人信息：%@",personalinfo);
+    //显示信息
+    [self showInfo];
     
 }
 
+//显示信息
+-(void)showInfo
+{
+    self.name.text = [[self personalinfo] objectAtIndex:0];
+    self.school.text = [[self personalinfo] objectAtIndex:1];
+    self.college.text = [[self personalinfo] objectAtIndex:2];
+}
 
 - (void)viewDidUnload
 {
@@ -57,6 +67,7 @@
     [self setName:nil];
     [self setSchool:nil];
     [self setCollege:nil];
+    [self setConfigTable:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
