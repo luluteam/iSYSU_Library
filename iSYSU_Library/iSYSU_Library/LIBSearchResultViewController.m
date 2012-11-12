@@ -9,7 +9,7 @@
 #import "LIBSearchResultViewController.h"
 
 @implementation LIBSearchResultViewController
-
+@synthesize bookList;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -33,8 +33,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    //获取搜索结果
+    self.bookList = [[LIBDataManager shareManager] searchResult];
+    NSLog(@"%@",self.bookList);
 }
 
+//获取单本书的信息
+-(void)getBook:(NSInteger *)index
+{
+    
+}
 - (void)viewDidUnload
 {
     [super viewDidUnload];

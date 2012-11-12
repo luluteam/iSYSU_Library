@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "LIBDataManager.h"
 @interface LIBPhoneViewController : UIViewController
-@property(weak,nonatomic) NSString * phone;
+{
+@private BOOL didMsg;
+}
+@property (weak, nonatomic) IBOutlet UITextField *phoneText;
+- (IBAction)changPhone:(id)sender;
+@property(weak,nonatomic)NSString* phone;
+-(void)feedBack;
 @end

@@ -10,6 +10,7 @@
 #import "BorrowBooks.h"
 
 @implementation LIBClient
+@synthesize bookList;
 -(BOOL)login:(NSString *)name password:(NSString *)psw
 {
     NSLog(@"%@,%@",name,psw);
@@ -46,7 +47,8 @@
 -(NSArray *)getSearchResult
 {
     NSArray *arr = [NSArray arrayWithObjects:@"e",@"f",@"g",@"h",nil];
-    return arr;
+    self.bookList = arr;
+    return self.bookList;
 }
 
 -(BOOL)update
@@ -63,5 +65,17 @@
 {
     NSString * msg = @"renew success";
     return msg;
+}
+-(NSString *)changeEmail:(NSString *)email
+{
+    return @"change email success";
+}
+-(NSString *)changePhone:(NSString *)phone 
+{
+    return @"change phone success";
+}
+-(Book*)getBookByIndex:(NSInteger)index
+{
+    return [bookList objectAtIndex:index];
 }
 @end

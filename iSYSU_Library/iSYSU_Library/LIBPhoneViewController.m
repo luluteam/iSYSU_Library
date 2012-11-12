@@ -9,6 +9,7 @@
 #import "LIBPhoneViewController.h"
 
 @implementation LIBPhoneViewController
+@synthesize phoneText;
 @synthesize phone;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,14 +42,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //获得原本的电话
-    phone = [[[LIBDataManager shareManager] personalInfo] objectAtIndex:4];
-    NSLog(@"phone:%@",phone);
+    //获得原来的电话号码
+    self.phone = [[[LIBDataManager shareManager] personalInfo] objectAtIndex:4];
+    NSLog(@"phone : %@",phone);
+    //显示在text上
+    self.phoneText.text = self.phone;
 }
 
 
 - (void)viewDidUnload
 {
+    [self setPhoneText:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -59,5 +63,18 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+//更改电话号码
+- (IBAction)changPhone:(id)sender {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(feedBack) name:@"Did change phonenumber" object:nil];
+    [[LIBDataManager shareManager] requestChangePhonewithParrtern:self.phoneText.text];
+}
 
+//更改是否成功
+-(void)feedBack
+{
+    NSLog(@"phone feedback");
+    NSString *feedback = [[LIBDataManager shareManager]changPhoneMsg];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"更改结果结果" message:feedback delegate:nil cancelButtonTitle:@"我知道了" otherButtonTitles:nil, nil];
+    [alert show];
+}
 @end

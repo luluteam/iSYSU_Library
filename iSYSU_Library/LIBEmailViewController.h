@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "LIBDataManager.h"
 @interface LIBEmailViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UITextField *emailText;
+@property(weak,nonatomic)NSString* email;
+- (IBAction)changEmail:(id)sender;
+-(void)feedBack;
 @end

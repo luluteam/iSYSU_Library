@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Book.h"
 @interface LIBClient : NSObject
 -(BOOL)login:(NSString *)name password:(NSString *)psw;
 -(NSArray *)getInfo;
@@ -16,4 +16,8 @@
 -(NSArray *)getSearchResult;
 -(BOOL)update;
 -(NSString *)renew:(NSInteger)bookindex;
+-(NSString *)changeEmail:(NSString*)email;
+-(NSString *)changePhone:(NSString *)phone;
+-(Book *)getBookByIndex:(NSInteger)index;
+@property(strong,nonatomic)NSArray* bookList;
 @end

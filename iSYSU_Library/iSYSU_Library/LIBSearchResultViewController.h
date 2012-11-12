@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LIBDataManager.h"
 @interface LIBSearchResultViewController : UIViewController
-
+@property(weak,nonatomic)NSArray* bookList;
+-(void)getBook:(NSInteger *)index;
 @end

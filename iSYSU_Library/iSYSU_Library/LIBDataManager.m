@@ -13,6 +13,16 @@
 @synthesize mybookInfo;
 @synthesize searchResult;
 @synthesize renewMsg;
+@synthesize changPhoneMsg;
+@synthesize changeEmailMsg;
+@synthesize bookname;
+@synthesize isbn;
+@synthesize number;
+@synthesize borrownumber;
+@synthesize star;
+@synthesize searchnumber;
+@synthesize commint;
+@synthesize author;
 +(LIBDataManager *)shareManager{
     static LIBDataManager* shareManager;
     if (!shareManager) {
@@ -72,5 +82,35 @@
     //发送广播
     NSLog(@"post renew");
     [[NSNotificationCenter defaultCenter]postNotificationName:@"did renew" object:self];
+}
+-(void)requestChangeEmailwithParrtern:(NSString *)email
+{
+    NSLog(@"new email:%@",email);
+    LIBClient *lib = [LIBClient new];
+    self.changeEmailMsg = [lib changeEmail:email];
+    //发送广播
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"Did change email" object:nil];
+}
+-(void)requestChangePhonewithParrtern:(NSString *)phone
+{
+    NSLog(@"new phone:%@",phone);
+    LIBClient *lib = [LIBClient new];
+    self.changPhoneMsg = [lib changePhone:phone ];
+    //发送广播
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"Did change phonenumber" object:nil];
+}
+-(void)requestBookWithIndex:(NSInteger)index
+{
+    Book* book = [self.searchResult objectAtIndex:index];
+    bookname = [book bookName];
+    isbn = [book isbn];
+    number = @"2";
+    borrownumber = @"1";
+    star = @"5";
+    searchnumber = @"TP-234";
+    commint = nil;
+    author = [book author];
+    //发送广播
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"get book info" object:nil];
 }
 @end

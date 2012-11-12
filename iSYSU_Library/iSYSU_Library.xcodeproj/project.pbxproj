@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A802666B16509DB800EEF483 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = A802666816509DB800EEF483 /* Book.m */; };
-		A802666C16509DB800EEF483 /* BorrowBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = A802666A16509DB800EEF483 /* BorrowBooks.m */; };
 		A884FC6B164F584D0035E296 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC4C164F584D0035E296 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A884FC6C164F584D0035E296 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC4F164F584D0035E296 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A884FC6D164F584D0035E296 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC51164F584D0035E296 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -28,6 +26,9 @@
 		A884FC85164F5A5A0035E296 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC84164F5A5A0035E296 /* SystemConfiguration.framework */; };
 		A884FC87164F5A640035E296 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC86164F5A640035E296 /* libz.1.2.5.dylib */; };
 		A884FC89164F5A6E0035E296 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC88164F5A6E0035E296 /* MobileCoreServices.framework */; };
+		A8C168141650C47D0037C497 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168111650C47D0037C497 /* Book.m */; };
+		A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168131650C47D0037C497 /* BorrowBooks.m */; };
+		A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168171650F8B20037C497 /* LIBBookViewController.m */; };
 		B0863125164B848C00451893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863124164B848C00451893 /* UIKit.framework */; };
 		B0863127164B848C00451893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863126164B848C00451893 /* Foundation.framework */; };
 		B0863129164B848C00451893 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863128164B848C00451893 /* CoreGraphics.framework */; };
@@ -48,10 +49,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A802666716509DB800EEF483 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
-		A802666816509DB800EEF483 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
-		A802666916509DB800EEF483 /* BorrowBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowBooks.h; sourceTree = "<group>"; };
-		A802666A16509DB800EEF483 /* BorrowBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowBooks.m; sourceTree = "<group>"; };
 		A884FC4B164F584D0035E296 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		A884FC4C164F584D0035E296 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		A884FC4D164F584D0035E296 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +85,12 @@
 		A884FC84164F5A5A0035E296 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A884FC86164F5A640035E296 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		A884FC88164F5A6E0035E296 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A8C168101650C47D0037C497 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		A8C168111650C47D0037C497 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		A8C168121650C47D0037C497 /* BorrowBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowBooks.h; sourceTree = "<group>"; };
+		A8C168131650C47D0037C497 /* BorrowBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowBooks.m; sourceTree = "<group>"; };
+		A8C168161650F8B20037C497 /* LIBBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBBookViewController.h; sourceTree = "<group>"; };
+		A8C168171650F8B20037C497 /* LIBBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBBookViewController.m; sourceTree = "<group>"; };
 		B0863120164B848C00451893 /* iSYSU_Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSYSU_Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0863124164B848C00451893 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B0863126164B848C00451893 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,10 +148,10 @@
 		A884FC48164F57850035E296 /* LIBClient */ = {
 			isa = PBXGroup;
 			children = (
-				A802666716509DB800EEF483 /* Book.h */,
-				A802666816509DB800EEF483 /* Book.m */,
-				A802666916509DB800EEF483 /* BorrowBooks.h */,
-				A802666A16509DB800EEF483 /* BorrowBooks.m */,
+				A8C168101650C47D0037C497 /* Book.h */,
+				A8C168111650C47D0037C497 /* Book.m */,
+				A8C168121650C47D0037C497 /* BorrowBooks.h */,
+				A8C168131650C47D0037C497 /* BorrowBooks.m */,
 				A884FC77164F58DE0035E296 /* User.h */,
 				A884FC78164F58DE0035E296 /* User.m */,
 				A884FC4A164F584D0035E296 /* ASIHttpRequest */,
@@ -284,6 +287,8 @@
 				B0E82F51164DFF64005E31AD /* LIBPhoneViewController.m */,
 				B0E82F53164E006F005E31AD /* LIBRemindViewController.h */,
 				B0E82F54164E006F005E31AD /* LIBRemindViewController.m */,
+				A8C168161650F8B20037C497 /* LIBBookViewController.h */,
+				A8C168171650F8B20037C497 /* LIBBookViewController.m */,
 			);
 			path = iSYSU_Library;
 			sourceTree = "<group>";
@@ -388,8 +393,9 @@
 				A884FC75164F584D0035E296 /* TFHppleElement.m in Sources */,
 				A884FC76164F584D0035E296 /* XPathQuery.m in Sources */,
 				A884FC79164F58DE0035E296 /* User.m in Sources */,
-				A802666B16509DB800EEF483 /* Book.m in Sources */,
-				A802666C16509DB800EEF483 /* BorrowBooks.m in Sources */,
+				A8C168141650C47D0037C497 /* Book.m in Sources */,
+				A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */,
+				A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

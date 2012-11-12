@@ -9,7 +9,8 @@
 #import "LIBEmailViewController.h"
 
 @implementation LIBEmailViewController
-
+@synthesize emailText;
+@synthesize email;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -36,16 +37,21 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //获得原来的email，并显示
+    self.email = [[[LIBDataManager shareManager]personalInfo]objectAtIndex:3];
+    NSLog(@"email : %@",self.email);
+    self.emailText.text = self.email;
 }
-*/
+
 
 - (void)viewDidUnload
 {
+    [self setEmailText:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -56,5 +62,17 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
+//提交email的更改
+- (IBAction)changEmail:(id)sender {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(feedBack) name:@"Did change email" object:nil];
+    [[LIBDataManager shareManager] requestChangeEmailwithParrtern:self.emailText.text];
+}
+//显示更改是否成功
+-(void)feedBack
+{
+    NSLog(@"email feedback");
+    NSString *feedback = [[LIBDataManager shareManager]changeEmailMsg];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"更改结果结果" message:feedback delegate:nil cancelButtonTitle:@"我知道了" otherButtonTitles:nil, nil];
+    [alert show];
+}
 @end
