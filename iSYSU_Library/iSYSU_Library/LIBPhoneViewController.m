@@ -9,7 +9,7 @@
 #import "LIBPhoneViewController.h"
 
 @implementation LIBPhoneViewController
-
+@synthesize phone;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -36,13 +36,16 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //获得原本的电话
+    phone = [[[LIBDataManager shareManager] personalInfo] objectAtIndex:4];
+    NSLog(@"phone:%@",phone);
 }
-*/
+
 
 - (void)viewDidUnload
 {

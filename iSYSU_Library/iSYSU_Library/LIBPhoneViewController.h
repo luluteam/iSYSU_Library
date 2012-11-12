@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "LIBDataManager.h"
 @interface LIBPhoneViewController : UIViewController
-
+@property(weak,nonatomic) NSString * phone;
 @end
