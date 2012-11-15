@@ -43,12 +43,26 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [super viewDidLoad]; 
+    [super viewDidLoad];
+    //添加observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(Login) name:@"DidUpdate" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getInfo) name:@"DidNotUpdate" object:nil];
+    [[LIBDataManager shareManager] requestUpdate];
+    
+}
+
+//登陆
+-(void)Login
+{
+    
+}
+//获取信息
+-(void)getInfo
+{
     //拿到借书的信息
     self.mybookinfo = [[LIBDataManager shareManager] mybookInfo];
     NSLog(@"mybook info：%@",mybookinfo); 
 }
-
 //请求续借
 -(NSString *)RenewWithIndex:(NSInteger)bookindex
 {
