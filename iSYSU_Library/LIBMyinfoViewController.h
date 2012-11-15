@@ -17,4 +17,6 @@
 -(NSString *)RenewWithIndex:(NSInteger *)bookindex;
 -(NSString *)getRewMsg;
 - (IBAction)DidRenew:(id)sender;
+-(void)Login;
+-(void)getInfo;
 @end

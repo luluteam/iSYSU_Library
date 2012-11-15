@@ -31,12 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //自动登录
-    NSLog(@"update");
-    //添加observer
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdate) name:@"DidUpdate" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didnotUpdate) name:@"DidNotUpdate" object:nil];
-    [[LIBDataManager shareManager] requestUpdate];
+    
 }
 
 
