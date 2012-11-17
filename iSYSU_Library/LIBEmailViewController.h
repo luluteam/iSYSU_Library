@@ -13,4 +13,5 @@
 @property(weak,nonatomic)NSString* email;
 - (IBAction)changEmail:(id)sender;
 -(void)feedBack;
+-(void)setStyle;
 @end

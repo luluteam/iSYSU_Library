@@ -42,6 +42,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setSytle];
     //获得原来的电话号码
     self.phone = [[[LIBDataManager shareManager] personalInfo] objectAtIndex:4];
     NSLog(@"phone : %@",phone);
@@ -67,6 +68,15 @@
 - (IBAction)changPhone:(id)sender {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(feedBack) name:@"Did change phonenumber" object:nil];
     [[LIBDataManager shareManager] requestChangePhonewithParrtern:self.phoneText.text];
+}
+-(void)setSytle
+{
+    CGRect rect = CGRectMake(0, 0, 100, 74);
+    UILabel *title= [[UILabel alloc] initWithFrame:rect];
+    title.backgroundColor = [UIColor clearColor];
+    title.text = @" 手机号码";
+    title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
+    self.navigationItem.titleView = title;
 }
 
 //更改是否成功

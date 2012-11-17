@@ -16,4 +16,5 @@
 @property (weak,nonatomic) NSArray* personalinfo;
 @property (weak, nonatomic) IBOutlet UITableView *configTable;
 -(void)showInfo;
+-(void)setSytle;
 @end

@@ -11,4 +11,5 @@
 @interface LIBSearchResultViewController : UIViewController
 @property(weak,nonatomic)NSArray* bookList;
 -(void)getBook:(NSInteger *)index;
+-(void)setStyle;
 @end

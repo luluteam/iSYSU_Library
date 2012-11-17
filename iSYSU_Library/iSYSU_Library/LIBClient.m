@@ -78,4 +78,8 @@
 {
     return [bookList objectAtIndex:index];
 }
+-(BOOL)changePSW:(NSString *)opsw npsw:(NSString *)npsw
+{
+    return true;
+}
 @end

@@ -42,6 +42,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setStyle];
     //获得原来的email，并显示
     self.email = [[[LIBDataManager shareManager]personalInfo]objectAtIndex:3];
     NSLog(@"email : %@",self.email);
@@ -74,5 +75,15 @@
     NSString *feedback = [[LIBDataManager shareManager]changeEmailMsg];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"更改结果结果" message:feedback delegate:nil cancelButtonTitle:@"我知道了" otherButtonTitles:nil, nil];
     [alert show];
+}
+
+-(void)setStyle
+{
+    CGRect rect = CGRectMake(0, 0, 100, 74);
+    UILabel *title= [[UILabel alloc] initWithFrame:rect];
+    title.backgroundColor = [UIColor clearColor];
+    title.text = @" 电子邮箱";
+    title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
+    self.navigationItem.titleView = title;
 }
 @end

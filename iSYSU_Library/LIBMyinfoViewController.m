@@ -61,11 +61,12 @@
         }
         
     } 
-    CGRect rect = CGRectMake(0, 0, 100, 44);
-    UILabel *aa = [[UILabel alloc] initWithFrame:rect];
-    aa.backgroundColor = [UIColor clearColor];
-    aa.text = @"我借的书";
-    self.navigationItem.titleView = aa;
+    CGRect rect = CGRectMake(0, 0, 100, 74);
+    UILabel *title= [[UILabel alloc] initWithFrame:rect];
+    title.backgroundColor = [UIColor clearColor];
+    title.text = @" 我的图书馆";
+    title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
+    self.navigationItem.titleView = title;
 //    //自动登录
 //    NSLog(@"update");
     //添加observer

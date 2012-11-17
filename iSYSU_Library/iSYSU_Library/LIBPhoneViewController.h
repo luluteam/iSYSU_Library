@@ -16,4 +16,5 @@
 - (IBAction)changPhone:(id)sender;
 @property(weak,nonatomic)NSString* phone;
 -(void)feedBack;
+-(void)setSytle;
 @end

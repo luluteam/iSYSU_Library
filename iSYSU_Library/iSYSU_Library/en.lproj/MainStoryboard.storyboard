@@ -134,7 +134,7 @@
                         <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="rnf-br-lE4">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="书名" lineBreakMode="tailTruncation" minimumFontSize="10" id="rnf-br-lE4">
                                 <rect key="frame" x="139" y="7" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -243,7 +243,7 @@
                                                     <rect key="frame" x="26" y="11" width="42" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.56862747669219971" green="0.89803928136825562" blue="0.56862747669219971" alpha="1" colorSpace="deviceRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="剩余天数" lineBreakMode="tailTruncation" minimumFontSize="10" id="jId-Ab-mFy">
@@ -284,11 +284,26 @@
                                     <action selector="DidRenew:" destination="JJq-nq-HcW" eventType="touchUpInside" id="cKU-KV-mOY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="78d-dx-lIa">
+                                <rect key="frame" x="135" y="-33" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="iSi-mz-cyH">
+                                <rect key="frame" x="129" y="-35" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="我借的书" id="elU-9L-c3f" colorLabel="IBBuiltInLabel-Green" propertyAccessControl="all">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="gwQ-c3-Cqu">
+                    <navigationItem key="navigationItem" id="elU-9L-c3f" colorLabel="IBBuiltInLabel-Green">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="logOutBtn.png" id="gwQ-c3-Cqu">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="logout:" destination="JJq-nq-HcW" id="Dyy-c0-o9o"/>
                             </connections>
@@ -572,7 +587,7 @@
         <scene sceneID="qo6-ld-9OZ">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9a-Wh-ciB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="4JC-qM-jhK" sceneMemberID="viewController">
+                <viewController id="4JC-qM-jhK" customClass="LIBSetPSWViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lGF-H6-REO">
                         <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -620,8 +635,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="更改密码" id="xS9-Uo-XIC">
-                        <barButtonItem key="rightBarButtonItem" title="保存" id="cFs-8E-k2K"/>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="cFs-8E-k2K">
+                            <connections>
+                                <action selector="savePSW:" destination="4JC-qM-jhK" id="1jc-7i-3vb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="confPSW" destination="wiH-eI-WWj" id="ACR-HF-arG"/>
+                        <outlet property="nPSW" destination="tFe-5Z-Zzx" id="jKt-kM-maQ"/>
+                        <outlet property="ordPSW" destination="fwj-7Z-7cI" id="GfT-K4-biX"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="270" y="2061"/>
@@ -691,8 +715,8 @@
         <scene sceneID="dc2-SJ-fMS">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8g-2N-YY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController id="AxV-NM-ogW" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                <tabBarController definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" id="AxV-NM-ogW" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gh4-wI-Yw2">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -751,6 +775,7 @@
     <resources>
         <image name="Library1.png" width="219" height="104"/>
         <image name="homeBtn_Off.png" width="36" height="32"/>
+        <image name="logOutBtn.png" width="20" height="19"/>
         <image name="searchBtn_Off.png" width="36" height="32"/>
     </resources>
     <classes>
@@ -811,6 +836,15 @@
             <relationships>
                 <relationship kind="action" name="stb:"/>
                 <relationship kind="outlet" name="BookName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LIBSetPSWViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBSetPSWViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="savePSW:"/>
+                <relationship kind="outlet" name="confPSW" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nPSW" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="ordPSW" candidateClass="UITextField"/>
             </relationships>
         </class>
     </classes>

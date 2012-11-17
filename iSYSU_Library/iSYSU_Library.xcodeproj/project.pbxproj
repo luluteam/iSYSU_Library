@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A871699416578EC800782778 /* LIBSetPSWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A871699316578EC800782778 /* LIBSetPSWViewController.m */; };
 		A884FC6B164F584D0035E296 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC4C164F584D0035E296 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A884FC6C164F584D0035E296 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC4F164F584D0035E296 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A884FC6D164F584D0035E296 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC51164F584D0035E296 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -83,6 +84,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A871699216578EC800782778 /* LIBSetPSWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBSetPSWViewController.h; sourceTree = "<group>"; };
+		A871699316578EC800782778 /* LIBSetPSWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBSetPSWViewController.m; sourceTree = "<group>"; };
 		A884FC4B164F584D0035E296 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		A884FC4C164F584D0035E296 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		A884FC4D164F584D0035E296 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -431,6 +434,8 @@
 				B0E82F54164E006F005E31AD /* LIBRemindViewController.m */,
 				A8C168161650F8B20037C497 /* LIBBookViewController.h */,
 				A8C168171650F8B20037C497 /* LIBBookViewController.m */,
+				A871699216578EC800782778 /* LIBSetPSWViewController.h */,
+				A871699316578EC800782778 /* LIBSetPSWViewController.m */,
 			);
 			path = iSYSU_Library;
 			sourceTree = "<group>";
@@ -572,6 +577,7 @@
 				A8C168141650C47D0037C497 /* Book.m in Sources */,
 				A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */,
 				A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */,
+				A871699416578EC800782778 /* LIBSetPSWViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
