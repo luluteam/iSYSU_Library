@@ -31,6 +31,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if ([self.tabBarController.tabBar respondsToSelector:@selector(setTintColor:)])
+    self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"tabBar.png"];
+    self.tabBarController.tabBar.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    [[UIDevice currentDevice] systemVersion];
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] > 4.9) {
+        
+        //iOS 5
+        UIImage *toolBarIMG = [UIImage imageNamed: @"nav.png"];  
+        
+        if ([self.navigationController.toolbar respondsToSelector:@selector(setBackgroundImage:forToolbarPosition:barMetrics:)]) { 
+            [self.navigationController.toolbar  setBackgroundImage:toolBarIMG forToolbarPosition:0 barMetrics:0]; 
+        }
+        
+    } 
+    //[[self.navigationController.navigationBar] setBackgroundImage:[UIImage imageNamed:@"navbar.png"]];
+//    [self.tabBarController.tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"searchBtn_On"]];
     
 }
 

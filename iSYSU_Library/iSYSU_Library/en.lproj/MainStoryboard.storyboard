@@ -10,17 +10,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HrO-Wo-oMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="MAN-ap-AUo" customClass="LIBSearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9cR-JI-uKf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="qlD-aW-xdF">
-                                <rect key="frame" x="20" y="163" width="185" height="31"/>
+                                <rect key="frame" x="48" y="192" width="157" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d01-Dk-Jf7">
-                                <rect key="frame" x="228" y="160" width="72" height="37"/>
+                                <rect key="frame" x="225" y="189" width="55" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
@@ -42,6 +42,10 @@
                                     <navigationItem title="Title" id="3e0-Yt-cQW"/>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Library1.png" id="fsh-zo-bgP">
+                                <rect key="frame" x="48" y="41" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -50,7 +54,6 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="IBY-zo-ulI"/>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="BookName" destination="qlD-aW-xdF" id="dRJ-VI-O3R"/>
                     </connections>
@@ -91,21 +94,44 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="Npe-lL-3sI">
+                                <rect key="frame" x="140" y="-34" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="gzs-3J-zkh">
+                                <rect key="frame" x="141" y="-31" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="av5-JJ-3Ps">
+                                <rect key="frame" x="146" y="-34" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="搜索结果" id="R9g-a8-Nqp"/>
+                    <navigationItem key="navigationItem" id="R9g-a8-Nqp">
+                        <nil key="title"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-752" y="-588"/>
+            <point key="canvasLocation" x="-756" y="-504"/>
         </scene>
         <scene sceneID="D7J-HJ-ToL">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dr-uF-Ya8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="YaF-K8-Eqs" customClass="LIBBookViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lWE-c4-ilH">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="rnf-br-lE4">
@@ -148,7 +174,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-292" y="-588"/>
+            <point key="canvasLocation" x="-204" y="-548"/>
         </scene>
         <scene sceneID="xTB-8v-0Pc">
             <objects>
@@ -168,7 +194,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOr-gF-6nd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="JJq-nq-HcW" customClass="LIBMyinfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FVa-r8-bmL">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IYA-lJ-bju">
@@ -202,7 +228,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ScD-BE-x8Y">
-                                <rect key="frame" x="6" y="72" width="307" height="245"/>
+                                <rect key="frame" x="6" y="72" width="307" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -261,13 +287,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="我借的书" id="elU-9L-c3f">
+                    <navigationItem key="navigationItem" title="我借的书" id="elU-9L-c3f" colorLabel="IBBuiltInLabel-Green" propertyAccessControl="all">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="gwQ-c3-Cqu">
                             <connections>
                                 <action selector="logout:" destination="JJq-nq-HcW" id="Dyy-c0-o9o"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-1639" y="249"/>
@@ -277,7 +304,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yo-Vk-xP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="9fj-CE-ClO" customClass="LIBRemindViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5oc-5h-KxZ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="5Tn-4T-hiu">
@@ -306,18 +333,18 @@
                     </navigationItem>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-253" y="112"/>
+            <point key="canvasLocation" x="-831" y="460"/>
         </scene>
         <scene sceneID="yAp-rb-VQ7">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKj-OS-Zlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="mJj-JN-260" customClass="LIBConfigureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OlZ-dq-Fbj">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" rowHeight="31" sectionHeaderHeight="22" sectionFooterHeight="22" id="x2J-sX-L5z">
-                                <rect key="frame" x="11" y="183" width="299" height="138"/>
+                                <rect key="frame" x="11" y="183" width="299" height="109"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -464,14 +491,14 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-253" y="895"/>
+            <point key="canvasLocation" x="-821" y="1099"/>
         </scene>
         <scene sceneID="7D6-ve-6oI">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16U-eA-AId" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="f1F-2O-Mqx" customClass="LIBEmailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y2m-Vv-aRX">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="uHz-Bh-yCV">
@@ -509,7 +536,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEb-AF-whY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ilG-8k-Zhz" customClass="LIBPhoneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W35-d7-xTs">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="手机号码" lineBreakMode="tailTruncation" minimumFontSize="10" id="dDH-ff-8rd">
@@ -547,7 +574,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9a-Wh-ciB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="4JC-qM-jhK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lGF-H6-REO">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="387"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="原密码" lineBreakMode="tailTruncation" minimumFontSize="10" id="MBd-9k-ymR">
@@ -664,8 +691,8 @@
         <scene sceneID="dc2-SJ-fMS">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8g-2N-YY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController definesPresentationContext="YES" id="AxV-NM-ogW" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
+                <tabBarController id="AxV-NM-ogW" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="gh4-wI-Yw2">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -683,7 +710,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ajv-Iz-bYY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="vZj-Ua-6Z1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="检索首页" id="MoU-ug-4ed"/>
+                    <tabBarItem key="tabBarItem" title="检索首页" image="searchBtn_Off.png" id="MoU-ug-4ed"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="mYg-gv-2mx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -701,10 +728,9 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byM-ib-cua" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="dUx-Lr-KwX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="A9C-gs-pVr"/>
+                    <tabBarItem key="tabBarItem" title="我的图书馆" image="homeBtn_Off.png" id="A9C-gs-pVr"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="fOg-Oe-gTF"/>
-                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="LLE-bF-u2t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -722,6 +748,72 @@
             <point key="canvasLocation" x="-2232" y="237"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Library1.png" width="219" height="104"/>
+        <image name="homeBtn_Off.png" width="36" height="32"/>
+        <image name="searchBtn_Off.png" width="36" height="32"/>
+    </resources>
+    <classes>
+        <class className="LIBBookViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBBookViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="bookImg" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="LIBConfigureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBConfigureViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="college" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="configTable" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="myinfolist" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="school" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LIBEmailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBEmailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changEmail:"/>
+                <relationship kind="outlet" name="emailText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LIBLogInViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBLogInViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="login:"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="username" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LIBMyinfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBMyinfoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="DidRenew:"/>
+                <relationship kind="action" name="logout:"/>
+                <relationship kind="outlet" name="mybooklist" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="LIBPhoneViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBPhoneViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changPhone:"/>
+                <relationship kind="outlet" name="phoneText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LIBRemindViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBRemindViewController.h"/>
+        </class>
+        <class className="LIBSearchResultViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBSearchResultViewController.h"/>
+        </class>
+        <class className="LIBSearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBSearchViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="stb:"/>
+                <relationship kind="outlet" name="BookName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

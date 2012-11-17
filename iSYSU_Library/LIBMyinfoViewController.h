@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "LIBDataManager.h"
-#import "DDAlertPrompt.h"
 #import "LIBLogInViewController.h"
 @interface LIBMyinfoViewController : UIViewController
 {
