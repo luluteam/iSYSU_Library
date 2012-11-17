@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "LIBDataManager.h"
+#import "DDAlertPrompt.h"
+#import "LIBLogInViewController.h"
 @interface LIBMyinfoViewController : UIViewController
 {
     @private NSInteger currentBookIndex;
@@ -17,6 +19,7 @@
 -(NSString *)RenewWithIndex:(NSInteger *)bookindex;
 -(NSString *)getRewMsg;
 - (IBAction)DidRenew:(id)sender;
+- (IBAction)logout:(id)sender;
 -(void)Login;
 -(void)getInfo;
 @end

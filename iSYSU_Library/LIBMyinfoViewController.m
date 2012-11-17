@@ -43,22 +43,20 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [super viewDidLoad]; 
-    //自动登录
-    NSLog(@"update");
+    [super viewDidLoad];
+//    //自动登录
+//    NSLog(@"update");
     //添加observer
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(Login) name:@"DidUpdate" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getInfo) name:@"DidUpdate" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(Login) name:@"DidNotUpdate" object:nil];
     [[LIBDataManager shareManager] requestUpdate];
     
 }
 -(void)Login
 {
-    CGRect frame = CGRectMake(50, 50, 250, 200); 
-    UIView *view = [[UIView alloc] initWithFrame:frame];
-    view.backgroundColor = [UIColor grayColor];  
-    [self.view addSubview:view]; 
+     [self presentViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"login"] animated:YES completion:nil];  
 }
+
 -(void)getInfo
 {
     //拿到借书的信息
@@ -87,8 +85,13 @@
     [alert show];
     
 }
+
+- (IBAction)logout:(id)sender {
+    [self Login];
+}
 - (void)viewDidUnload
 {
+     [self.navigationController popToRootViewControllerAnimated:YES];
     [self setMybooklist:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.

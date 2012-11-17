@@ -51,6 +51,8 @@
     if ([lib update]) {
         //登陆成功，发送广播
         NSLog(@"post did update");
+        self.personalInfo = [lib getInfo];
+        self.mybookInfo = [lib getMyBookInfo];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"DidUpdate" object:self];
     } else {
         //登录失败，发送广播

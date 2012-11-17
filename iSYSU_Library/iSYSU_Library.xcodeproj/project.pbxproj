@@ -26,6 +26,7 @@
 		A884FC85164F5A5A0035E296 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC84164F5A5A0035E296 /* SystemConfiguration.framework */; };
 		A884FC87164F5A640035E296 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC86164F5A640035E296 /* libz.1.2.5.dylib */; };
 		A884FC89164F5A6E0035E296 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC88164F5A6E0035E296 /* MobileCoreServices.framework */; };
+		A88D424A16572B3D00D507D1 /* DDAlertPrompt.m in Sources */ = {isa = PBXBuildFile; fileRef = A88D424916572B3D00D507D1 /* DDAlertPrompt.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A8C168141650C47D0037C497 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168111650C47D0037C497 /* Book.m */; };
 		A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168131650C47D0037C497 /* BorrowBooks.m */; };
 		A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168171650F8B20037C497 /* LIBBookViewController.m */; };
@@ -85,6 +86,8 @@
 		A884FC84164F5A5A0035E296 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A884FC86164F5A640035E296 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		A884FC88164F5A6E0035E296 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A88D424816572B3D00D507D1 /* DDAlertPrompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAlertPrompt.h; sourceTree = "<group>"; };
+		A88D424916572B3D00D507D1 /* DDAlertPrompt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAlertPrompt.m; sourceTree = "<group>"; };
 		A8C168101650C47D0037C497 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		A8C168111650C47D0037C497 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		A8C168121650C47D0037C497 /* BorrowBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowBooks.h; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 		B0863115164B848C00451893 = {
 			isa = PBXGroup;
 			children = (
+				A88D424816572B3D00D507D1 /* DDAlertPrompt.h */,
+				A88D424916572B3D00D507D1 /* DDAlertPrompt.m */,
 				A884FC48164F57850035E296 /* LIBClient */,
 				B086312A164B848C00451893 /* iSYSU_Library */,
 				B0863123164B848C00451893 /* Frameworks */,
@@ -396,6 +401,7 @@
 				A8C168141650C47D0037C497 /* Book.m in Sources */,
 				A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */,
 				A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */,
+				A88D424A16572B3D00D507D1 /* DDAlertPrompt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
