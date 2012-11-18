@@ -7,62 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A871699416578EC800782778 /* LIBSetPSWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A871699316578EC800782778 /* LIBSetPSWViewController.m */; };
-		A884FC6B164F584D0035E296 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC4C164F584D0035E296 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC6C164F584D0035E296 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC4F164F584D0035E296 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC6D164F584D0035E296 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC51164F584D0035E296 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC6E164F584D0035E296 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC53164F584D0035E296 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC6F164F584D0035E296 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC55164F584D0035E296 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC70164F584D0035E296 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC57164F584D0035E296 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC71164F584D0035E296 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC5B164F584D0035E296 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC72164F584D0035E296 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC5D164F584D0035E296 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC73164F584D0035E296 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC64164F584D0035E296 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC74164F584D0035E296 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC66164F584D0035E296 /* TFHpple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC75164F584D0035E296 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC68164F584D0035E296 /* TFHppleElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC76164F584D0035E296 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC6A164F584D0035E296 /* XPathQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC79164F58DE0035E296 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC78164F58DE0035E296 /* User.m */; };
+		A8224D1316588C6300459149 /* LIBSetPSWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224D1216588C6300459149 /* LIBSetPSWViewController.m */; };
+		A8224D8416588EE300459149 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D5F16588EE300459149 /* login.jpg */; };
+		A8224D8516588EE300459149 /* myLib.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6016588EE300459149 /* myLib.jpg */; };
+		A8224D8616588EE300459149 /* setting1-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6116588EE300459149 /* setting1-1.jpg */; };
+		A8224D8716588EE300459149 /* setting1-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6216588EE300459149 /* setting1-2.jpg */; };
+		A8224D8816588EE300459149 /* setting1-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6316588EE300459149 /* setting1-3.jpg */; };
+		A8224D8916588EE300459149 /* setting1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6416588EE300459149 /* setting1.jpg */; };
+		A8224D8A16588EE300459149 /* setting2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6516588EE300459149 /* setting2.jpg */; };
+		A8224D8B16588EE300459149 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6616588EE300459149 /* Thumbs.db */; };
+		A8224D8C16588EE300459149 /* BookInfo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6816588EE300459149 /* BookInfo.jpg */; };
+		A8224D8D16588EE300459149 /* BookInfo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6916588EE300459149 /* BookInfo2.jpg */; };
+		A8224D8E16588EE300459149 /* result_s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6A16588EE300459149 /* result_s.jpg */; };
+		A8224D8F16588EE300459149 /* search.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6B16588EE300459149 /* search.jpg */; };
+		A8224D9016588EE300459149 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6C16588EE300459149 /* Thumbs.db */; };
+		A8224D9116588EE300459149 /* 馆藏信息.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6D16588EE300459149 /* 馆藏信息.jpg */; };
+		A8224D9216588EE300459149 /* backBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D6F16588EE300459149 /* backBtn.png */; };
+		A8224D9316588EE300459149 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7016588EE300459149 /* background.png */; };
+		A8224D9416588EE300459149 /* BookInfo_11.gif in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7216588EE300459149 /* BookInfo_11.gif */; };
+		A8224D9516588EE300459149 /* halfStar.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7316588EE300459149 /* halfStar.png */; };
+		A8224D9616588EE300459149 /* moreDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7416588EE300459149 /* moreDetail.png */; };
+		A8224D9716588EE300459149 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7516588EE300459149 /* Star.png */; };
+		A8224D9816588EE300459149 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7616588EE300459149 /* Thumbs.db */; };
+		A8224D9916588EE300459149 /* homeBtn_Off.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7716588EE300459149 /* homeBtn_Off.png */; };
+		A8224D9A16588EE300459149 /* homeBtn_On.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7816588EE300459149 /* homeBtn_On.png */; };
+		A8224D9B16588EE300459149 /* Library1.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7916588EE300459149 /* Library1.png */; };
+		A8224D9C16588EE300459149 /* logOutBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7A16588EE300459149 /* logOutBtn.png */; };
+		A8224D9D16588EE300459149 /* nav.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7B16588EE300459149 /* nav.png */; };
+		A8224D9E16588EE300459149 /* saveBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7C16588EE300459149 /* saveBtn.png */; };
+		A8224D9F16588EE300459149 /* searchBtn_Off.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7D16588EE300459149 /* searchBtn_Off.png */; };
+		A8224DA016588EE300459149 /* searchBtn_On.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7E16588EE300459149 /* searchBtn_On.png */; };
+		A8224DA116588EE300459149 /* switchKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D7F16588EE300459149 /* switchKnob.png */; };
+		A8224DA216588EE300459149 /* switchOff.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D8016588EE300459149 /* switchOff.png */; };
+		A8224DA316588EE300459149 /* switchOn.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D8116588EE300459149 /* switchOn.png */; };
+		A8224DA416588EE300459149 /* tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = A8224D8216588EE300459149 /* tabBar.png */; };
+		A8224DA516588EE300459149 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A8224D8316588EE300459149 /* Thumbs.db */; };
+		A8224DAE16588FA600459149 /* LIBEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DAB16588FA600459149 /* LIBEmailViewController.m */; };
+		A8224DAF16588FA600459149 /* LIBMyinfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DAD16588FA600459149 /* LIBMyinfoViewController.m */; };
+		A8224DBE16588FC800459149 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DB316588FC800459149 /* Book.m */; };
+		A8224DBF16588FC800459149 /* BorrowBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DB516588FC800459149 /* BorrowBooks.m */; };
+		A8224DC016588FC800459149 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DB716588FC800459149 /* TFHpple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8224DC116588FC800459149 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DB916588FC800459149 /* TFHppleElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8224DC216588FC800459149 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DBB16588FC800459149 /* User.m */; };
+		A8224DC316588FC800459149 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DBD16588FC800459149 /* XPathQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8224DDC16588FDE00459149 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DC616588FDE00459149 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8224DDD16588FDE00459149 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DC916588FDE00459149 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8224DDE16588FDE00459149 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DCB16588FDE00459149 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8224DDF16588FDE00459149 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DCD16588FDE00459149 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8224DE016588FDE00459149 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DCF16588FDE00459149 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8224DE116588FDE00459149 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DD116588FDE00459149 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8224DE216588FDE00459149 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DD516588FDE00459149 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8224DE316588FDE00459149 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DD716588FDE00459149 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8224DE416588FDE00459149 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A8224DDB16588FDE00459149 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A884FC7F164F5A420035E296 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC7E164F5A420035E296 /* libxml2.dylib */; };
 		A884FC81164F5A490035E296 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC80164F5A490035E296 /* CFNetwork.framework */; };
 		A884FC83164F5A520035E296 /* libc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC82164F5A520035E296 /* libc.dylib */; };
 		A884FC85164F5A5A0035E296 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC84164F5A5A0035E296 /* SystemConfiguration.framework */; };
 		A884FC87164F5A640035E296 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC86164F5A640035E296 /* libz.1.2.5.dylib */; };
 		A884FC89164F5A6E0035E296 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC88164F5A6E0035E296 /* MobileCoreServices.framework */; };
-		A88D427F165766C100D507D1 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425A165766C100D507D1 /* login.jpg */; };
-		A88D4280165766C100D507D1 /* myLib.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425B165766C100D507D1 /* myLib.jpg */; };
-		A88D4281165766C100D507D1 /* setting1-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425C165766C100D507D1 /* setting1-1.jpg */; };
-		A88D4282165766C100D507D1 /* setting1-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425D165766C100D507D1 /* setting1-2.jpg */; };
-		A88D4283165766C100D507D1 /* setting1-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425E165766C100D507D1 /* setting1-3.jpg */; };
-		A88D4284165766C100D507D1 /* setting1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425F165766C100D507D1 /* setting1.jpg */; };
-		A88D4285165766C100D507D1 /* setting2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4260165766C100D507D1 /* setting2.jpg */; };
-		A88D4286165766C100D507D1 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A88D4261165766C100D507D1 /* Thumbs.db */; };
-		A88D4287165766C100D507D1 /* BookInfo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4263165766C100D507D1 /* BookInfo.jpg */; };
-		A88D4288165766C100D507D1 /* BookInfo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4264165766C100D507D1 /* BookInfo2.jpg */; };
-		A88D4289165766C100D507D1 /* result_s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4265165766C100D507D1 /* result_s.jpg */; };
-		A88D428A165766C100D507D1 /* search.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4266165766C100D507D1 /* search.jpg */; };
-		A88D428B165766C100D507D1 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A88D4267165766C100D507D1 /* Thumbs.db */; };
-		A88D428C165766C100D507D1 /* 馆藏信息.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4268165766C100D507D1 /* 馆藏信息.jpg */; };
-		A88D428D165766C100D507D1 /* backBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D426A165766C100D507D1 /* backBtn.png */; };
-		A88D428E165766C100D507D1 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D426B165766C100D507D1 /* background.png */; };
-		A88D428F165766C100D507D1 /* BookInfo_11.gif in Resources */ = {isa = PBXBuildFile; fileRef = A88D426D165766C100D507D1 /* BookInfo_11.gif */; };
-		A88D4290165766C100D507D1 /* halfStar.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D426E165766C100D507D1 /* halfStar.png */; };
-		A88D4291165766C100D507D1 /* moreDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D426F165766C100D507D1 /* moreDetail.png */; };
-		A88D4292165766C100D507D1 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4270165766C100D507D1 /* Star.png */; };
-		A88D4293165766C100D507D1 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A88D4271165766C100D507D1 /* Thumbs.db */; };
-		A88D4294165766C100D507D1 /* homeBtn_Off.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4272165766C100D507D1 /* homeBtn_Off.png */; };
-		A88D4295165766C100D507D1 /* homeBtn_On.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4273165766C100D507D1 /* homeBtn_On.png */; };
-		A88D4296165766C100D507D1 /* Library1.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4274165766C100D507D1 /* Library1.png */; };
-		A88D4297165766C100D507D1 /* logOutBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4275165766C100D507D1 /* logOutBtn.png */; };
-		A88D4298165766C100D507D1 /* nav.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4276165766C100D507D1 /* nav.png */; };
-		A88D4299165766C100D507D1 /* saveBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4277165766C100D507D1 /* saveBtn.png */; };
-		A88D429A165766C100D507D1 /* searchBtn_Off.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4278165766C100D507D1 /* searchBtn_Off.png */; };
-		A88D429B165766C100D507D1 /* searchBtn_On.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4279165766C100D507D1 /* searchBtn_On.png */; };
-		A88D429C165766C100D507D1 /* switchKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D427A165766C100D507D1 /* switchKnob.png */; };
-		A88D429D165766C100D507D1 /* switchOff.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D427B165766C100D507D1 /* switchOff.png */; };
-		A88D429E165766C100D507D1 /* switchOn.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D427C165766C100D507D1 /* switchOn.png */; };
-		A88D429F165766C100D507D1 /* tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D427D165766C100D507D1 /* tabBar.png */; };
-		A88D42A0165766C100D507D1 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A88D427E165766C100D507D1 /* Thumbs.db */; };
-		A8C168141650C47D0037C497 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168111650C47D0037C497 /* Book.m */; };
-		A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168131650C47D0037C497 /* BorrowBooks.m */; };
 		A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168171650F8B20037C497 /* LIBBookViewController.m */; };
 		B0863125164B848C00451893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863124164B848C00451893 /* UIKit.framework */; };
 		B0863127164B848C00451893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863126164B848C00451893 /* Foundation.framework */; };
@@ -76,90 +78,92 @@
 		B086314B164B9BD200451893 /* LIBLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0863149164B9BD200451893 /* LIBLogInViewController.m */; };
 		B086314F164BA58B00451893 /* LIBClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B086314E164BA58B00451893 /* LIBClient.m */; };
 		B0863153164BC2D400451893 /* LIBSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0863151164BC2D300451893 /* LIBSearchResultViewController.m */; };
-		B0E82F46164DFEB2005E31AD /* LIBMyinfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E82F45164DFEB2005E31AD /* LIBMyinfoViewController.m */; };
 		B0E82F4C164DFF21005E31AD /* LIBConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E82F4B164DFF21005E31AD /* LIBConfigureViewController.m */; };
-		B0E82F4F164DFF40005E31AD /* LIBEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E82F4E164DFF40005E31AD /* LIBEmailViewController.m */; };
 		B0E82F52164DFF64005E31AD /* LIBPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E82F51164DFF64005E31AD /* LIBPhoneViewController.m */; };
 		B0E82F55164E006F005E31AD /* LIBRemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E82F54164E006F005E31AD /* LIBRemindViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A871699216578EC800782778 /* LIBSetPSWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBSetPSWViewController.h; sourceTree = "<group>"; };
-		A871699316578EC800782778 /* LIBSetPSWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBSetPSWViewController.m; sourceTree = "<group>"; };
-		A884FC4B164F584D0035E296 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
-		A884FC4C164F584D0035E296 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
-		A884FC4D164F584D0035E296 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
-		A884FC4E164F584D0035E296 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
-		A884FC4F164F584D0035E296 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
-		A884FC50164F584D0035E296 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
-		A884FC51164F584D0035E296 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
-		A884FC52164F584D0035E296 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
-		A884FC53164F584D0035E296 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
-		A884FC54164F584D0035E296 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
-		A884FC55164F584D0035E296 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
-		A884FC56164F584D0035E296 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
-		A884FC57164F584D0035E296 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
-		A884FC58164F584D0035E296 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
-		A884FC59164F584D0035E296 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
-		A884FC5A164F584D0035E296 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
-		A884FC5B164F584D0035E296 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
-		A884FC5C164F584D0035E296 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
-		A884FC5D164F584D0035E296 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
-		A884FC5E164F584D0035E296 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
-		A884FC63164F584D0035E296 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		A884FC64164F584D0035E296 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		A884FC65164F584D0035E296 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
-		A884FC66164F584D0035E296 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
-		A884FC67164F584D0035E296 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
-		A884FC68164F584D0035E296 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
-		A884FC69164F584D0035E296 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
-		A884FC6A164F584D0035E296 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
-		A884FC77164F58DE0035E296 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		A884FC78164F58DE0035E296 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A8224D1116588C6300459149 /* LIBSetPSWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBSetPSWViewController.h; sourceTree = "<group>"; };
+		A8224D1216588C6300459149 /* LIBSetPSWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBSetPSWViewController.m; sourceTree = "<group>"; };
+		A8224D5F16588EE300459149 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
+		A8224D6016588EE300459149 /* myLib.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = myLib.jpg; sourceTree = "<group>"; };
+		A8224D6116588EE300459149 /* setting1-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "setting1-1.jpg"; sourceTree = "<group>"; };
+		A8224D6216588EE300459149 /* setting1-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "setting1-2.jpg"; sourceTree = "<group>"; };
+		A8224D6316588EE300459149 /* setting1-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "setting1-3.jpg"; sourceTree = "<group>"; };
+		A8224D6416588EE300459149 /* setting1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = setting1.jpg; sourceTree = "<group>"; };
+		A8224D6516588EE300459149 /* setting2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = setting2.jpg; sourceTree = "<group>"; };
+		A8224D6616588EE300459149 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		A8224D6816588EE300459149 /* BookInfo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BookInfo.jpg; sourceTree = "<group>"; };
+		A8224D6916588EE300459149 /* BookInfo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BookInfo2.jpg; sourceTree = "<group>"; };
+		A8224D6A16588EE300459149 /* result_s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = result_s.jpg; sourceTree = "<group>"; };
+		A8224D6B16588EE300459149 /* search.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = search.jpg; sourceTree = "<group>"; };
+		A8224D6C16588EE300459149 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		A8224D6D16588EE300459149 /* 馆藏信息.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "馆藏信息.jpg"; sourceTree = "<group>"; };
+		A8224D6F16588EE300459149 /* backBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backBtn.png; sourceTree = "<group>"; };
+		A8224D7016588EE300459149 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		A8224D7216588EE300459149 /* BookInfo_11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BookInfo_11.gif; sourceTree = "<group>"; };
+		A8224D7316588EE300459149 /* halfStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfStar.png; sourceTree = "<group>"; };
+		A8224D7416588EE300459149 /* moreDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moreDetail.png; sourceTree = "<group>"; };
+		A8224D7516588EE300459149 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		A8224D7616588EE300459149 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		A8224D7716588EE300459149 /* homeBtn_Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBtn_Off.png; sourceTree = "<group>"; };
+		A8224D7816588EE300459149 /* homeBtn_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBtn_On.png; sourceTree = "<group>"; };
+		A8224D7916588EE300459149 /* Library1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Library1.png; sourceTree = "<group>"; };
+		A8224D7A16588EE300459149 /* logOutBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logOutBtn.png; sourceTree = "<group>"; };
+		A8224D7B16588EE300459149 /* nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav.png; sourceTree = "<group>"; };
+		A8224D7C16588EE300459149 /* saveBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saveBtn.png; sourceTree = "<group>"; };
+		A8224D7D16588EE300459149 /* searchBtn_Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchBtn_Off.png; sourceTree = "<group>"; };
+		A8224D7E16588EE300459149 /* searchBtn_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchBtn_On.png; sourceTree = "<group>"; };
+		A8224D7F16588EE300459149 /* switchKnob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchKnob.png; sourceTree = "<group>"; };
+		A8224D8016588EE300459149 /* switchOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOff.png; sourceTree = "<group>"; };
+		A8224D8116588EE300459149 /* switchOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOn.png; sourceTree = "<group>"; };
+		A8224D8216588EE300459149 /* tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar.png; sourceTree = "<group>"; };
+		A8224D8316588EE300459149 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		A8224DAA16588FA600459149 /* LIBEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBEmailViewController.h; sourceTree = "<group>"; };
+		A8224DAB16588FA600459149 /* LIBEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBEmailViewController.m; sourceTree = "<group>"; };
+		A8224DAC16588FA600459149 /* LIBMyinfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBMyinfoViewController.h; sourceTree = "<group>"; };
+		A8224DAD16588FA600459149 /* LIBMyinfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBMyinfoViewController.m; sourceTree = "<group>"; };
+		A8224DB216588FC800459149 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		A8224DB316588FC800459149 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		A8224DB416588FC800459149 /* BorrowBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowBooks.h; sourceTree = "<group>"; };
+		A8224DB516588FC800459149 /* BorrowBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowBooks.m; sourceTree = "<group>"; };
+		A8224DB616588FC800459149 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		A8224DB716588FC800459149 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		A8224DB816588FC800459149 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		A8224DB916588FC800459149 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		A8224DBA16588FC800459149 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A8224DBB16588FC800459149 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A8224DBC16588FC800459149 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		A8224DBD16588FC800459149 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		A8224DC516588FDE00459149 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		A8224DC616588FDE00459149 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		A8224DC716588FDE00459149 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		A8224DC816588FDE00459149 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		A8224DC916588FDE00459149 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		A8224DCA16588FDE00459149 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		A8224DCB16588FDE00459149 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		A8224DCC16588FDE00459149 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		A8224DCD16588FDE00459149 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		A8224DCE16588FDE00459149 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		A8224DCF16588FDE00459149 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		A8224DD016588FDE00459149 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		A8224DD116588FDE00459149 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		A8224DD216588FDE00459149 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		A8224DD316588FDE00459149 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		A8224DD416588FDE00459149 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		A8224DD516588FDE00459149 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		A8224DD616588FDE00459149 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		A8224DD716588FDE00459149 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		A8224DD816588FDE00459149 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		A8224DDA16588FDE00459149 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A8224DDB16588FDE00459149 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		A884FC7E164F5A420035E296 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		A884FC80164F5A490035E296 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A884FC82164F5A520035E296 /* libc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libc.dylib; path = usr/lib/libc.dylib; sourceTree = SDKROOT; };
 		A884FC84164F5A5A0035E296 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A884FC86164F5A640035E296 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		A884FC88164F5A6E0035E296 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		A88D425A165766C100D507D1 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
-		A88D425B165766C100D507D1 /* myLib.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = myLib.jpg; sourceTree = "<group>"; };
-		A88D425C165766C100D507D1 /* setting1-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "setting1-1.jpg"; sourceTree = "<group>"; };
-		A88D425D165766C100D507D1 /* setting1-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "setting1-2.jpg"; sourceTree = "<group>"; };
-		A88D425E165766C100D507D1 /* setting1-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "setting1-3.jpg"; sourceTree = "<group>"; };
-		A88D425F165766C100D507D1 /* setting1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = setting1.jpg; sourceTree = "<group>"; };
-		A88D4260165766C100D507D1 /* setting2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = setting2.jpg; sourceTree = "<group>"; };
-		A88D4261165766C100D507D1 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
-		A88D4263165766C100D507D1 /* BookInfo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BookInfo.jpg; sourceTree = "<group>"; };
-		A88D4264165766C100D507D1 /* BookInfo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BookInfo2.jpg; sourceTree = "<group>"; };
-		A88D4265165766C100D507D1 /* result_s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = result_s.jpg; sourceTree = "<group>"; };
-		A88D4266165766C100D507D1 /* search.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = search.jpg; sourceTree = "<group>"; };
-		A88D4267165766C100D507D1 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
-		A88D4268165766C100D507D1 /* 馆藏信息.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "馆藏信息.jpg"; sourceTree = "<group>"; };
-		A88D426A165766C100D507D1 /* backBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backBtn.png; sourceTree = "<group>"; };
-		A88D426B165766C100D507D1 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
-		A88D426D165766C100D507D1 /* BookInfo_11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BookInfo_11.gif; sourceTree = "<group>"; };
-		A88D426E165766C100D507D1 /* halfStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfStar.png; sourceTree = "<group>"; };
-		A88D426F165766C100D507D1 /* moreDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moreDetail.png; sourceTree = "<group>"; };
-		A88D4270165766C100D507D1 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
-		A88D4271165766C100D507D1 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
-		A88D4272165766C100D507D1 /* homeBtn_Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBtn_Off.png; sourceTree = "<group>"; };
-		A88D4273165766C100D507D1 /* homeBtn_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBtn_On.png; sourceTree = "<group>"; };
-		A88D4274165766C100D507D1 /* Library1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Library1.png; sourceTree = "<group>"; };
-		A88D4275165766C100D507D1 /* logOutBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logOutBtn.png; sourceTree = "<group>"; };
-		A88D4276165766C100D507D1 /* nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav.png; sourceTree = "<group>"; };
-		A88D4277165766C100D507D1 /* saveBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saveBtn.png; sourceTree = "<group>"; };
-		A88D4278165766C100D507D1 /* searchBtn_Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchBtn_Off.png; sourceTree = "<group>"; };
-		A88D4279165766C100D507D1 /* searchBtn_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchBtn_On.png; sourceTree = "<group>"; };
-		A88D427A165766C100D507D1 /* switchKnob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchKnob.png; sourceTree = "<group>"; };
-		A88D427B165766C100D507D1 /* switchOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOff.png; sourceTree = "<group>"; };
-		A88D427C165766C100D507D1 /* switchOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOn.png; sourceTree = "<group>"; };
-		A88D427D165766C100D507D1 /* tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar.png; sourceTree = "<group>"; };
-		A88D427E165766C100D507D1 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
-		A8C168101650C47D0037C497 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
-		A8C168111650C47D0037C497 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
-		A8C168121650C47D0037C497 /* BorrowBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowBooks.h; sourceTree = "<group>"; };
-		A8C168131650C47D0037C497 /* BorrowBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowBooks.m; sourceTree = "<group>"; };
 		A8C168161650F8B20037C497 /* LIBBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBBookViewController.h; sourceTree = "<group>"; };
 		A8C168171650F8B20037C497 /* LIBBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBBookViewController.m; sourceTree = "<group>"; };
 		B0863120164B848C00451893 /* iSYSU_Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSYSU_Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,12 +188,8 @@
 		B0863150164BC2D300451893 /* LIBSearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBSearchResultViewController.h; sourceTree = "<group>"; };
 		B0863151164BC2D300451893 /* LIBSearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBSearchResultViewController.m; sourceTree = "<group>"; };
 		B0E82F43164DFB86005E31AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/MainStoryboard.storyboard"; sourceTree = "<group>"; };
-		B0E82F44164DFEB2005E31AD /* LIBMyinfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LIBMyinfoViewController.h; path = ../LIBMyinfoViewController.h; sourceTree = "<group>"; };
-		B0E82F45164DFEB2005E31AD /* LIBMyinfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LIBMyinfoViewController.m; path = ../LIBMyinfoViewController.m; sourceTree = "<group>"; };
 		B0E82F4A164DFF21005E31AD /* LIBConfigureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBConfigureViewController.h; sourceTree = "<group>"; };
 		B0E82F4B164DFF21005E31AD /* LIBConfigureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBConfigureViewController.m; sourceTree = "<group>"; };
-		B0E82F4D164DFF40005E31AD /* LIBEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LIBEmailViewController.h; path = ../LIBEmailViewController.h; sourceTree = "<group>"; };
-		B0E82F4E164DFF40005E31AD /* LIBEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LIBEmailViewController.m; path = ../LIBEmailViewController.m; sourceTree = "<group>"; };
 		B0E82F50164DFF64005E31AD /* LIBPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBPhoneViewController.h; sourceTree = "<group>"; };
 		B0E82F51164DFF64005E31AD /* LIBPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBPhoneViewController.m; sourceTree = "<group>"; };
 		B0E82F53164E006F005E31AD /* LIBRemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBRemindViewController.h; sourceTree = "<group>"; };
@@ -216,164 +216,150 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A884FC48164F57850035E296 /* LIBClient */ = {
+		A8224D5D16588EE300459149 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A8C168101650C47D0037C497 /* Book.h */,
-				A8C168111650C47D0037C497 /* Book.m */,
-				A8C168121650C47D0037C497 /* BorrowBooks.h */,
-				A8C168131650C47D0037C497 /* BorrowBooks.m */,
-				A884FC77164F58DE0035E296 /* User.h */,
-				A884FC78164F58DE0035E296 /* User.m */,
-				A884FC4A164F584D0035E296 /* ASIHttpRequest */,
-				A884FC65164F584D0035E296 /* TFHpple.h */,
-				A884FC66164F584D0035E296 /* TFHpple.m */,
-				A884FC67164F584D0035E296 /* TFHppleElement.h */,
-				A884FC68164F584D0035E296 /* TFHppleElement.m */,
-				A884FC69164F584D0035E296 /* XPathQuery.h */,
-				A884FC6A164F584D0035E296 /* XPathQuery.m */,
-			);
-			name = LIBClient;
-			sourceTree = "<group>";
-		};
-		A884FC4A164F584D0035E296 /* ASIHttpRequest */ = {
-			isa = PBXGroup;
-			children = (
-				A884FC4B164F584D0035E296 /* ASIAuthenticationDialog.h */,
-				A884FC4C164F584D0035E296 /* ASIAuthenticationDialog.m */,
-				A884FC4D164F584D0035E296 /* ASICacheDelegate.h */,
-				A884FC4E164F584D0035E296 /* ASIDataCompressor.h */,
-				A884FC4F164F584D0035E296 /* ASIDataCompressor.m */,
-				A884FC50164F584D0035E296 /* ASIDataDecompressor.h */,
-				A884FC51164F584D0035E296 /* ASIDataDecompressor.m */,
-				A884FC52164F584D0035E296 /* ASIDownloadCache.h */,
-				A884FC53164F584D0035E296 /* ASIDownloadCache.m */,
-				A884FC54164F584D0035E296 /* ASIFormDataRequest.h */,
-				A884FC55164F584D0035E296 /* ASIFormDataRequest.m */,
-				A884FC56164F584D0035E296 /* ASIHTTPRequest.h */,
-				A884FC57164F584D0035E296 /* ASIHTTPRequest.m */,
-				A884FC58164F584D0035E296 /* ASIHTTPRequestConfig.h */,
-				A884FC59164F584D0035E296 /* ASIHTTPRequestDelegate.h */,
-				A884FC5A164F584D0035E296 /* ASIInputStream.h */,
-				A884FC5B164F584D0035E296 /* ASIInputStream.m */,
-				A884FC5C164F584D0035E296 /* ASINetworkQueue.h */,
-				A884FC5D164F584D0035E296 /* ASINetworkQueue.m */,
-				A884FC5E164F584D0035E296 /* ASIProgressDelegate.h */,
-				A884FC5F164F584D0035E296 /* ECPurchase */,
-				A884FC63164F584D0035E296 /* Reachability.h */,
-				A884FC64164F584D0035E296 /* Reachability.m */,
-			);
-			path = ASIHttpRequest;
-			sourceTree = "<group>";
-		};
-		A884FC5F164F584D0035E296 /* ECPurchase */ = {
-			isa = PBXGroup;
-			children = (
-				A884FC60164F584D0035E296 /* asi-http-request */,
-				A884FC61164F584D0035E296 /* based64 */,
-				A884FC62164F584D0035E296 /* json-framework */,
-			);
-			path = ECPurchase;
-			sourceTree = "<group>";
-		};
-		A884FC60164F584D0035E296 /* asi-http-request */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "asi-http-request";
-			sourceTree = "<group>";
-		};
-		A884FC61164F584D0035E296 /* based64 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = based64;
-			sourceTree = "<group>";
-		};
-		A884FC62164F584D0035E296 /* json-framework */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "json-framework";
-			sourceTree = "<group>";
-		};
-		A88D4258165766C100D507D1 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A88D4259165766C100D507D1 /* mylibrary */,
-				A88D4262165766C100D507D1 /* search */,
-				A88D4269165766C100D507D1 /* uiElement */,
+				A8224D5E16588EE300459149 /* mylibrary */,
+				A8224D6716588EE300459149 /* search */,
+				A8224D6E16588EE300459149 /* uiElement */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		A88D4259165766C100D507D1 /* mylibrary */ = {
+		A8224D5E16588EE300459149 /* mylibrary */ = {
 			isa = PBXGroup;
 			children = (
-				A88D425A165766C100D507D1 /* login.jpg */,
-				A88D425B165766C100D507D1 /* myLib.jpg */,
-				A88D425C165766C100D507D1 /* setting1-1.jpg */,
-				A88D425D165766C100D507D1 /* setting1-2.jpg */,
-				A88D425E165766C100D507D1 /* setting1-3.jpg */,
-				A88D425F165766C100D507D1 /* setting1.jpg */,
-				A88D4260165766C100D507D1 /* setting2.jpg */,
-				A88D4261165766C100D507D1 /* Thumbs.db */,
+				A8224D5F16588EE300459149 /* login.jpg */,
+				A8224D6016588EE300459149 /* myLib.jpg */,
+				A8224D6116588EE300459149 /* setting1-1.jpg */,
+				A8224D6216588EE300459149 /* setting1-2.jpg */,
+				A8224D6316588EE300459149 /* setting1-3.jpg */,
+				A8224D6416588EE300459149 /* setting1.jpg */,
+				A8224D6516588EE300459149 /* setting2.jpg */,
+				A8224D6616588EE300459149 /* Thumbs.db */,
 			);
 			path = mylibrary;
 			sourceTree = "<group>";
 		};
-		A88D4262165766C100D507D1 /* search */ = {
+		A8224D6716588EE300459149 /* search */ = {
 			isa = PBXGroup;
 			children = (
-				A88D4263165766C100D507D1 /* BookInfo.jpg */,
-				A88D4264165766C100D507D1 /* BookInfo2.jpg */,
-				A88D4265165766C100D507D1 /* result_s.jpg */,
-				A88D4266165766C100D507D1 /* search.jpg */,
-				A88D4267165766C100D507D1 /* Thumbs.db */,
-				A88D4268165766C100D507D1 /* 馆藏信息.jpg */,
+				A8224D6816588EE300459149 /* BookInfo.jpg */,
+				A8224D6916588EE300459149 /* BookInfo2.jpg */,
+				A8224D6A16588EE300459149 /* result_s.jpg */,
+				A8224D6B16588EE300459149 /* search.jpg */,
+				A8224D6C16588EE300459149 /* Thumbs.db */,
+				A8224D6D16588EE300459149 /* 馆藏信息.jpg */,
 			);
 			path = search;
 			sourceTree = "<group>";
 		};
-		A88D4269165766C100D507D1 /* uiElement */ = {
+		A8224D6E16588EE300459149 /* uiElement */ = {
 			isa = PBXGroup;
 			children = (
-				A88D426A165766C100D507D1 /* backBtn.png */,
-				A88D426B165766C100D507D1 /* background.png */,
-				A88D426C165766C100D507D1 /* BookInfo */,
-				A88D4272165766C100D507D1 /* homeBtn_Off.png */,
-				A88D4273165766C100D507D1 /* homeBtn_On.png */,
-				A88D4274165766C100D507D1 /* Library1.png */,
-				A88D4275165766C100D507D1 /* logOutBtn.png */,
-				A88D4276165766C100D507D1 /* nav.png */,
-				A88D4277165766C100D507D1 /* saveBtn.png */,
-				A88D4278165766C100D507D1 /* searchBtn_Off.png */,
-				A88D4279165766C100D507D1 /* searchBtn_On.png */,
-				A88D427A165766C100D507D1 /* switchKnob.png */,
-				A88D427B165766C100D507D1 /* switchOff.png */,
-				A88D427C165766C100D507D1 /* switchOn.png */,
-				A88D427D165766C100D507D1 /* tabBar.png */,
-				A88D427E165766C100D507D1 /* Thumbs.db */,
+				A8224D6F16588EE300459149 /* backBtn.png */,
+				A8224D7016588EE300459149 /* background.png */,
+				A8224D7116588EE300459149 /* BookInfo */,
+				A8224D7716588EE300459149 /* homeBtn_Off.png */,
+				A8224D7816588EE300459149 /* homeBtn_On.png */,
+				A8224D7916588EE300459149 /* Library1.png */,
+				A8224D7A16588EE300459149 /* logOutBtn.png */,
+				A8224D7B16588EE300459149 /* nav.png */,
+				A8224D7C16588EE300459149 /* saveBtn.png */,
+				A8224D7D16588EE300459149 /* searchBtn_Off.png */,
+				A8224D7E16588EE300459149 /* searchBtn_On.png */,
+				A8224D7F16588EE300459149 /* switchKnob.png */,
+				A8224D8016588EE300459149 /* switchOff.png */,
+				A8224D8116588EE300459149 /* switchOn.png */,
+				A8224D8216588EE300459149 /* tabBar.png */,
+				A8224D8316588EE300459149 /* Thumbs.db */,
 			);
 			path = uiElement;
 			sourceTree = "<group>";
 		};
-		A88D426C165766C100D507D1 /* BookInfo */ = {
+		A8224D7116588EE300459149 /* BookInfo */ = {
 			isa = PBXGroup;
 			children = (
-				A88D426D165766C100D507D1 /* BookInfo_11.gif */,
-				A88D426E165766C100D507D1 /* halfStar.png */,
-				A88D426F165766C100D507D1 /* moreDetail.png */,
-				A88D4270165766C100D507D1 /* Star.png */,
-				A88D4271165766C100D507D1 /* Thumbs.db */,
+				A8224D7216588EE300459149 /* BookInfo_11.gif */,
+				A8224D7316588EE300459149 /* halfStar.png */,
+				A8224D7416588EE300459149 /* moreDetail.png */,
+				A8224D7516588EE300459149 /* Star.png */,
+				A8224D7616588EE300459149 /* Thumbs.db */,
 			);
 			path = BookInfo;
+			sourceTree = "<group>";
+		};
+		A8224DB116588FC800459149 /* LIBClient */ = {
+			isa = PBXGroup;
+			children = (
+				A8224DB216588FC800459149 /* Book.h */,
+				A8224DB316588FC800459149 /* Book.m */,
+				A8224DB416588FC800459149 /* BorrowBooks.h */,
+				A8224DB516588FC800459149 /* BorrowBooks.m */,
+				A8224DB616588FC800459149 /* TFHpple.h */,
+				A8224DB716588FC800459149 /* TFHpple.m */,
+				A8224DB816588FC800459149 /* TFHppleElement.h */,
+				A8224DB916588FC800459149 /* TFHppleElement.m */,
+				A8224DBA16588FC800459149 /* User.h */,
+				A8224DBB16588FC800459149 /* User.m */,
+				A8224DBC16588FC800459149 /* XPathQuery.h */,
+				A8224DBD16588FC800459149 /* XPathQuery.m */,
+			);
+			name = LIBClient;
+			path = iSYSU_Library/LIBClient;
+			sourceTree = "<group>";
+		};
+		A8224DC416588FDE00459149 /* ASIHttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				A8224DC516588FDE00459149 /* ASIAuthenticationDialog.h */,
+				A8224DC616588FDE00459149 /* ASIAuthenticationDialog.m */,
+				A8224DC716588FDE00459149 /* ASICacheDelegate.h */,
+				A8224DC816588FDE00459149 /* ASIDataCompressor.h */,
+				A8224DC916588FDE00459149 /* ASIDataCompressor.m */,
+				A8224DCA16588FDE00459149 /* ASIDataDecompressor.h */,
+				A8224DCB16588FDE00459149 /* ASIDataDecompressor.m */,
+				A8224DCC16588FDE00459149 /* ASIDownloadCache.h */,
+				A8224DCD16588FDE00459149 /* ASIDownloadCache.m */,
+				A8224DCE16588FDE00459149 /* ASIFormDataRequest.h */,
+				A8224DCF16588FDE00459149 /* ASIFormDataRequest.m */,
+				A8224DD016588FDE00459149 /* ASIHTTPRequest.h */,
+				A8224DD116588FDE00459149 /* ASIHTTPRequest.m */,
+				A8224DD216588FDE00459149 /* ASIHTTPRequestConfig.h */,
+				A8224DD316588FDE00459149 /* ASIHTTPRequestDelegate.h */,
+				A8224DD416588FDE00459149 /* ASIInputStream.h */,
+				A8224DD516588FDE00459149 /* ASIInputStream.m */,
+				A8224DD616588FDE00459149 /* ASINetworkQueue.h */,
+				A8224DD716588FDE00459149 /* ASINetworkQueue.m */,
+				A8224DD816588FDE00459149 /* ASIProgressDelegate.h */,
+				A8224DD916588FDE00459149 /* ECPurchase */,
+				A8224DDA16588FDE00459149 /* Reachability.h */,
+				A8224DDB16588FDE00459149 /* Reachability.m */,
+			);
+			name = ASIHttpRequest;
+			path = iSYSU_Library/ASIHttpRequest;
+			sourceTree = "<group>";
+		};
+		A8224DD916588FDE00459149 /* ECPurchase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ECPurchase;
+			sourceTree = "<group>";
+		};
+		A884FC48164F57850035E296 /* LIBClient */ = {
+			isa = PBXGroup;
+			children = (
+				A8224DC416588FDE00459149 /* ASIHttpRequest */,
+				A8224DB116588FC800459149 /* LIBClient */,
+			);
+			name = LIBClient;
 			sourceTree = "<group>";
 		};
 		B0863115164B848C00451893 = {
 			isa = PBXGroup;
 			children = (
-				A88D4258165766C100D507D1 /* Resources */,
+				A8224D5D16588EE300459149 /* Resources */,
 				A884FC48164F57850035E296 /* LIBClient */,
 				B086312A164B848C00451893 /* iSYSU_Library */,
 				B0863123164B848C00451893 /* Frameworks */,
@@ -408,10 +394,10 @@
 		B086312A164B848C00451893 /* iSYSU_Library */ = {
 			isa = PBXGroup;
 			children = (
-				B0E82F4D164DFF40005E31AD /* LIBEmailViewController.h */,
-				B0E82F4E164DFF40005E31AD /* LIBEmailViewController.m */,
-				B0E82F44164DFEB2005E31AD /* LIBMyinfoViewController.h */,
-				B0E82F45164DFEB2005E31AD /* LIBMyinfoViewController.m */,
+				A8224DAA16588FA600459149 /* LIBEmailViewController.h */,
+				A8224DAB16588FA600459149 /* LIBEmailViewController.m */,
+				A8224DAC16588FA600459149 /* LIBMyinfoViewController.h */,
+				A8224DAD16588FA600459149 /* LIBMyinfoViewController.m */,
 				B0863133164B848C00451893 /* LIBAppDelegate.h */,
 				B0863134164B848C00451893 /* LIBAppDelegate.m */,
 				B0863136164B848C00451893 /* MainStoryboard.storyboard */,
@@ -434,8 +420,8 @@
 				B0E82F54164E006F005E31AD /* LIBRemindViewController.m */,
 				A8C168161650F8B20037C497 /* LIBBookViewController.h */,
 				A8C168171650F8B20037C497 /* LIBBookViewController.m */,
-				A871699216578EC800782778 /* LIBSetPSWViewController.h */,
-				A871699316578EC800782778 /* LIBSetPSWViewController.m */,
+				A8224D1116588C6300459149 /* LIBSetPSWViewController.h */,
+				A8224D1216588C6300459149 /* LIBSetPSWViewController.m */,
 			);
 			path = iSYSU_Library;
 			sourceTree = "<group>";
@@ -505,40 +491,40 @@
 			files = (
 				B086312F164B848C00451893 /* InfoPlist.strings in Resources */,
 				B0863138164B848C00451893 /* MainStoryboard.storyboard in Resources */,
-				A88D427F165766C100D507D1 /* login.jpg in Resources */,
-				A88D4280165766C100D507D1 /* myLib.jpg in Resources */,
-				A88D4281165766C100D507D1 /* setting1-1.jpg in Resources */,
-				A88D4282165766C100D507D1 /* setting1-2.jpg in Resources */,
-				A88D4283165766C100D507D1 /* setting1-3.jpg in Resources */,
-				A88D4284165766C100D507D1 /* setting1.jpg in Resources */,
-				A88D4285165766C100D507D1 /* setting2.jpg in Resources */,
-				A88D4286165766C100D507D1 /* Thumbs.db in Resources */,
-				A88D4287165766C100D507D1 /* BookInfo.jpg in Resources */,
-				A88D4288165766C100D507D1 /* BookInfo2.jpg in Resources */,
-				A88D4289165766C100D507D1 /* result_s.jpg in Resources */,
-				A88D428A165766C100D507D1 /* search.jpg in Resources */,
-				A88D428B165766C100D507D1 /* Thumbs.db in Resources */,
-				A88D428C165766C100D507D1 /* 馆藏信息.jpg in Resources */,
-				A88D428D165766C100D507D1 /* backBtn.png in Resources */,
-				A88D428E165766C100D507D1 /* background.png in Resources */,
-				A88D428F165766C100D507D1 /* BookInfo_11.gif in Resources */,
-				A88D4290165766C100D507D1 /* halfStar.png in Resources */,
-				A88D4291165766C100D507D1 /* moreDetail.png in Resources */,
-				A88D4292165766C100D507D1 /* Star.png in Resources */,
-				A88D4293165766C100D507D1 /* Thumbs.db in Resources */,
-				A88D4294165766C100D507D1 /* homeBtn_Off.png in Resources */,
-				A88D4295165766C100D507D1 /* homeBtn_On.png in Resources */,
-				A88D4296165766C100D507D1 /* Library1.png in Resources */,
-				A88D4297165766C100D507D1 /* logOutBtn.png in Resources */,
-				A88D4298165766C100D507D1 /* nav.png in Resources */,
-				A88D4299165766C100D507D1 /* saveBtn.png in Resources */,
-				A88D429A165766C100D507D1 /* searchBtn_Off.png in Resources */,
-				A88D429B165766C100D507D1 /* searchBtn_On.png in Resources */,
-				A88D429C165766C100D507D1 /* switchKnob.png in Resources */,
-				A88D429D165766C100D507D1 /* switchOff.png in Resources */,
-				A88D429E165766C100D507D1 /* switchOn.png in Resources */,
-				A88D429F165766C100D507D1 /* tabBar.png in Resources */,
-				A88D42A0165766C100D507D1 /* Thumbs.db in Resources */,
+				A8224D8416588EE300459149 /* login.jpg in Resources */,
+				A8224D8516588EE300459149 /* myLib.jpg in Resources */,
+				A8224D8616588EE300459149 /* setting1-1.jpg in Resources */,
+				A8224D8716588EE300459149 /* setting1-2.jpg in Resources */,
+				A8224D8816588EE300459149 /* setting1-3.jpg in Resources */,
+				A8224D8916588EE300459149 /* setting1.jpg in Resources */,
+				A8224D8A16588EE300459149 /* setting2.jpg in Resources */,
+				A8224D8B16588EE300459149 /* Thumbs.db in Resources */,
+				A8224D8C16588EE300459149 /* BookInfo.jpg in Resources */,
+				A8224D8D16588EE300459149 /* BookInfo2.jpg in Resources */,
+				A8224D8E16588EE300459149 /* result_s.jpg in Resources */,
+				A8224D8F16588EE300459149 /* search.jpg in Resources */,
+				A8224D9016588EE300459149 /* Thumbs.db in Resources */,
+				A8224D9116588EE300459149 /* 馆藏信息.jpg in Resources */,
+				A8224D9216588EE300459149 /* backBtn.png in Resources */,
+				A8224D9316588EE300459149 /* background.png in Resources */,
+				A8224D9416588EE300459149 /* BookInfo_11.gif in Resources */,
+				A8224D9516588EE300459149 /* halfStar.png in Resources */,
+				A8224D9616588EE300459149 /* moreDetail.png in Resources */,
+				A8224D9716588EE300459149 /* Star.png in Resources */,
+				A8224D9816588EE300459149 /* Thumbs.db in Resources */,
+				A8224D9916588EE300459149 /* homeBtn_Off.png in Resources */,
+				A8224D9A16588EE300459149 /* homeBtn_On.png in Resources */,
+				A8224D9B16588EE300459149 /* Library1.png in Resources */,
+				A8224D9C16588EE300459149 /* logOutBtn.png in Resources */,
+				A8224D9D16588EE300459149 /* nav.png in Resources */,
+				A8224D9E16588EE300459149 /* saveBtn.png in Resources */,
+				A8224D9F16588EE300459149 /* searchBtn_Off.png in Resources */,
+				A8224DA016588EE300459149 /* searchBtn_On.png in Resources */,
+				A8224DA116588EE300459149 /* switchKnob.png in Resources */,
+				A8224DA216588EE300459149 /* switchOff.png in Resources */,
+				A8224DA316588EE300459149 /* switchOn.png in Resources */,
+				A8224DA416588EE300459149 /* tabBar.png in Resources */,
+				A8224DA516588EE300459149 /* Thumbs.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,28 +542,28 @@
 				B086314B164B9BD200451893 /* LIBLogInViewController.m in Sources */,
 				B086314F164BA58B00451893 /* LIBClient.m in Sources */,
 				B0863153164BC2D400451893 /* LIBSearchResultViewController.m in Sources */,
-				B0E82F46164DFEB2005E31AD /* LIBMyinfoViewController.m in Sources */,
 				B0E82F4C164DFF21005E31AD /* LIBConfigureViewController.m in Sources */,
-				B0E82F4F164DFF40005E31AD /* LIBEmailViewController.m in Sources */,
 				B0E82F52164DFF64005E31AD /* LIBPhoneViewController.m in Sources */,
 				B0E82F55164E006F005E31AD /* LIBRemindViewController.m in Sources */,
-				A884FC6B164F584D0035E296 /* ASIAuthenticationDialog.m in Sources */,
-				A884FC6C164F584D0035E296 /* ASIDataCompressor.m in Sources */,
-				A884FC6D164F584D0035E296 /* ASIDataDecompressor.m in Sources */,
-				A884FC6E164F584D0035E296 /* ASIDownloadCache.m in Sources */,
-				A884FC6F164F584D0035E296 /* ASIFormDataRequest.m in Sources */,
-				A884FC70164F584D0035E296 /* ASIHTTPRequest.m in Sources */,
-				A884FC71164F584D0035E296 /* ASIInputStream.m in Sources */,
-				A884FC72164F584D0035E296 /* ASINetworkQueue.m in Sources */,
-				A884FC73164F584D0035E296 /* Reachability.m in Sources */,
-				A884FC74164F584D0035E296 /* TFHpple.m in Sources */,
-				A884FC75164F584D0035E296 /* TFHppleElement.m in Sources */,
-				A884FC76164F584D0035E296 /* XPathQuery.m in Sources */,
-				A884FC79164F58DE0035E296 /* User.m in Sources */,
-				A8C168141650C47D0037C497 /* Book.m in Sources */,
-				A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */,
 				A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */,
-				A871699416578EC800782778 /* LIBSetPSWViewController.m in Sources */,
+				A8224D1316588C6300459149 /* LIBSetPSWViewController.m in Sources */,
+				A8224DAE16588FA600459149 /* LIBEmailViewController.m in Sources */,
+				A8224DAF16588FA600459149 /* LIBMyinfoViewController.m in Sources */,
+				A8224DBE16588FC800459149 /* Book.m in Sources */,
+				A8224DBF16588FC800459149 /* BorrowBooks.m in Sources */,
+				A8224DC016588FC800459149 /* TFHpple.m in Sources */,
+				A8224DC116588FC800459149 /* TFHppleElement.m in Sources */,
+				A8224DC216588FC800459149 /* User.m in Sources */,
+				A8224DC316588FC800459149 /* XPathQuery.m in Sources */,
+				A8224DDC16588FDE00459149 /* ASIAuthenticationDialog.m in Sources */,
+				A8224DDD16588FDE00459149 /* ASIDataCompressor.m in Sources */,
+				A8224DDE16588FDE00459149 /* ASIDataDecompressor.m in Sources */,
+				A8224DDF16588FDE00459149 /* ASIDownloadCache.m in Sources */,
+				A8224DE016588FDE00459149 /* ASIFormDataRequest.m in Sources */,
+				A8224DE116588FDE00459149 /* ASIHTTPRequest.m in Sources */,
+				A8224DE216588FDE00459149 /* ASIInputStream.m in Sources */,
+				A8224DE316588FDE00459149 /* ASINetworkQueue.m in Sources */,
+				A8224DE416588FDE00459149 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
