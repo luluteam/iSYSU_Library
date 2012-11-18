@@ -19,5 +19,6 @@
 -(NSString *)changeEmail:(NSString*)email;
 -(NSString *)changePhone:(NSString *)phone;
 -(Book *)getBookByIndex:(NSInteger)index;
+-(BOOL)changePSW:(NSString *)opsw npsw:(NSString *)npsw;
 @property(strong,nonatomic)NSArray* bookList;
 @end

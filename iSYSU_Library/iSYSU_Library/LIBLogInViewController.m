@@ -53,6 +53,7 @@
 {
     self->flag = true;
     NSLog(@"login");
+    [self dismissViewControllerAnimated:YES completion:nil];  
 }
 //登录失败，弹出提示
 -(void)DidNotLogIn
@@ -82,7 +83,7 @@
     [self LogInWithParrtern:name password:psw];
     if (self->flag) {
         NSLog(@"success log in");
-        [self performSegueWithIdentifier:@"login" sender:self];
+        //[self performSegueWithIdentifier:@"login" sender:self];
     } else {
         NSLog(@"Invalid Login!");
     }

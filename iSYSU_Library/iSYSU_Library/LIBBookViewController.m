@@ -40,6 +40,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setSytle];
     // Do any additional setup after loading the view from its nib.
     //从前一个页面传值给index；
     self->index = 0;
@@ -72,4 +73,13 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(void)setSytle
+{
+    CGRect rect = CGRectMake(0, 0, 100, 74);
+    UILabel *title= [[UILabel alloc] initWithFrame:rect];
+    title.backgroundColor = [UIColor clearColor];
+    title.text = @" 书籍信息";
+    title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
+    self.navigationItem.titleView = title;
+}
 @end

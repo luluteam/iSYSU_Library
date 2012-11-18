@@ -45,6 +45,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setSytle];
     //取出个人信息，并显示
     self.personalinfo = [[LIBDataManager shareManager] personalInfo];
     NSLog(@"个人信息：%@",personalinfo);
@@ -78,5 +79,13 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
+-(void)setSytle
+{
+    CGRect rect = CGRectMake(0, 0, 100, 74);
+    UILabel *title= [[UILabel alloc] initWithFrame:rect];
+    title.backgroundColor = [UIColor clearColor];
+    title.text = @" 帐号设置";
+    title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
+    self.navigationItem.titleView = title;
+}
 @end

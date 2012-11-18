@@ -5,6 +5,7 @@
 //  Created by 04 developer on 12-11-8.
 //  Copyright (c) 2012年 Sun Yat-sen University. All rights reserved.
 //
+//lulu
 
 #import "LIBSearchViewController.h"
 
@@ -30,12 +31,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //自动登录
-    NSLog(@"update");
-    //添加observer
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdate) name:@"DidUpdate" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didnotUpdate) name:@"DidNotUpdate" object:nil];
-    [[LIBDataManager shareManager] requestUpdate];
+    if ([self.tabBarController.tabBar respondsToSelector:@selector(setTintColor:)])
+    self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"tabBar.png"];
+    self.tabBarController.tabBar.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    [[UIDevice currentDevice] systemVersion];
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] > 4.9) {
+        
+        //iOS 5
+        UIImage *toolBarIMG = [UIImage imageNamed: @"nav.png"];  
+        
+        if ([self.navigationController.toolbar respondsToSelector:@selector(setBackgroundImage:forToolbarPosition:barMetrics:)]) { 
+            [self.navigationController.toolbar  setBackgroundImage:toolBarIMG forToolbarPosition:0 barMetrics:0]; 
+        }
+        
+    } 
+    //[[self.navigationController.navigationBar] setBackgroundImage:[UIImage imageNamed:@"navbar.png"]];
+//    [self.tabBarController.tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"searchBtn_On"]];
+    
 }
 
 

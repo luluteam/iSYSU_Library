@@ -51,6 +51,8 @@
     if ([lib update]) {
         //登陆成功，发送广播
         NSLog(@"post did update");
+        self.personalInfo = [lib getInfo];
+        self.mybookInfo = [lib getMyBookInfo];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"DidUpdate" object:self];
     } else {
         //登录失败，发送广播
@@ -112,5 +114,16 @@
     author = [book author];
     //发送广播
     [[NSNotificationCenter defaultCenter] postNotificationName:@"get book info" object:nil];
+}
+-(void)requestChangePSWWithPSW:(NSString *)opsw npsw:(NSString *)npsw
+{
+    LIBClient *lib = [LIBClient new];
+    if ([lib changePSW:opsw npsw:npsw]) {
+        //更改密码成功发送广播
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"did change password" object:nil];
+    } else {
+        //未能更改成功
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"did not change password" object:nil];
+    }
 }
 @end

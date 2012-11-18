@@ -22,4 +22,5 @@
 @property(weak,nonatomic)NSArray* commint;
 @property(weak,nonatomic)NSString* author;
 -(void)getBookInfo;
+-(void)setSytle;
 @end

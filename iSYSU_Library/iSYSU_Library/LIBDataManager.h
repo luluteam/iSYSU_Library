@@ -34,4 +34,5 @@
 -(void)requestChangeEmailwithParrtern:(NSString*)email;
 -(void)requestChangePhonewithParrtern:(NSString *)phone ;
 -(void)requestBookWithIndex:(NSInteger)index;
+-(void)requestChangePSWWithPSW:(NSString *)opsw npsw:(NSString *)npsw;
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A871699416578EC800782778 /* LIBSetPSWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A871699316578EC800782778 /* LIBSetPSWViewController.m */; };
 		A884FC6B164F584D0035E296 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC4C164F584D0035E296 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A884FC6C164F584D0035E296 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC4F164F584D0035E296 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A884FC6D164F584D0035E296 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC51164F584D0035E296 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -26,6 +27,40 @@
 		A884FC85164F5A5A0035E296 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC84164F5A5A0035E296 /* SystemConfiguration.framework */; };
 		A884FC87164F5A640035E296 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC86164F5A640035E296 /* libz.1.2.5.dylib */; };
 		A884FC89164F5A6E0035E296 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC88164F5A6E0035E296 /* MobileCoreServices.framework */; };
+		A88D427F165766C100D507D1 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425A165766C100D507D1 /* login.jpg */; };
+		A88D4280165766C100D507D1 /* myLib.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425B165766C100D507D1 /* myLib.jpg */; };
+		A88D4281165766C100D507D1 /* setting1-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425C165766C100D507D1 /* setting1-1.jpg */; };
+		A88D4282165766C100D507D1 /* setting1-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425D165766C100D507D1 /* setting1-2.jpg */; };
+		A88D4283165766C100D507D1 /* setting1-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425E165766C100D507D1 /* setting1-3.jpg */; };
+		A88D4284165766C100D507D1 /* setting1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D425F165766C100D507D1 /* setting1.jpg */; };
+		A88D4285165766C100D507D1 /* setting2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4260165766C100D507D1 /* setting2.jpg */; };
+		A88D4286165766C100D507D1 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A88D4261165766C100D507D1 /* Thumbs.db */; };
+		A88D4287165766C100D507D1 /* BookInfo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4263165766C100D507D1 /* BookInfo.jpg */; };
+		A88D4288165766C100D507D1 /* BookInfo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4264165766C100D507D1 /* BookInfo2.jpg */; };
+		A88D4289165766C100D507D1 /* result_s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4265165766C100D507D1 /* result_s.jpg */; };
+		A88D428A165766C100D507D1 /* search.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4266165766C100D507D1 /* search.jpg */; };
+		A88D428B165766C100D507D1 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A88D4267165766C100D507D1 /* Thumbs.db */; };
+		A88D428C165766C100D507D1 /* 馆藏信息.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A88D4268165766C100D507D1 /* 馆藏信息.jpg */; };
+		A88D428D165766C100D507D1 /* backBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D426A165766C100D507D1 /* backBtn.png */; };
+		A88D428E165766C100D507D1 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D426B165766C100D507D1 /* background.png */; };
+		A88D428F165766C100D507D1 /* BookInfo_11.gif in Resources */ = {isa = PBXBuildFile; fileRef = A88D426D165766C100D507D1 /* BookInfo_11.gif */; };
+		A88D4290165766C100D507D1 /* halfStar.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D426E165766C100D507D1 /* halfStar.png */; };
+		A88D4291165766C100D507D1 /* moreDetail.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D426F165766C100D507D1 /* moreDetail.png */; };
+		A88D4292165766C100D507D1 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4270165766C100D507D1 /* Star.png */; };
+		A88D4293165766C100D507D1 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A88D4271165766C100D507D1 /* Thumbs.db */; };
+		A88D4294165766C100D507D1 /* homeBtn_Off.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4272165766C100D507D1 /* homeBtn_Off.png */; };
+		A88D4295165766C100D507D1 /* homeBtn_On.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4273165766C100D507D1 /* homeBtn_On.png */; };
+		A88D4296165766C100D507D1 /* Library1.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4274165766C100D507D1 /* Library1.png */; };
+		A88D4297165766C100D507D1 /* logOutBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4275165766C100D507D1 /* logOutBtn.png */; };
+		A88D4298165766C100D507D1 /* nav.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4276165766C100D507D1 /* nav.png */; };
+		A88D4299165766C100D507D1 /* saveBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4277165766C100D507D1 /* saveBtn.png */; };
+		A88D429A165766C100D507D1 /* searchBtn_Off.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4278165766C100D507D1 /* searchBtn_Off.png */; };
+		A88D429B165766C100D507D1 /* searchBtn_On.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D4279165766C100D507D1 /* searchBtn_On.png */; };
+		A88D429C165766C100D507D1 /* switchKnob.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D427A165766C100D507D1 /* switchKnob.png */; };
+		A88D429D165766C100D507D1 /* switchOff.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D427B165766C100D507D1 /* switchOff.png */; };
+		A88D429E165766C100D507D1 /* switchOn.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D427C165766C100D507D1 /* switchOn.png */; };
+		A88D429F165766C100D507D1 /* tabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = A88D427D165766C100D507D1 /* tabBar.png */; };
+		A88D42A0165766C100D507D1 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A88D427E165766C100D507D1 /* Thumbs.db */; };
 		A8C168141650C47D0037C497 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168111650C47D0037C497 /* Book.m */; };
 		A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168131650C47D0037C497 /* BorrowBooks.m */; };
 		A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168171650F8B20037C497 /* LIBBookViewController.m */; };
@@ -51,6 +86,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A871699216578EC800782778 /* LIBSetPSWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBSetPSWViewController.h; sourceTree = "<group>"; };
+		A871699316578EC800782778 /* LIBSetPSWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBSetPSWViewController.m; sourceTree = "<group>"; };
 		A884FC4B164F584D0035E296 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		A884FC4C164F584D0035E296 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		A884FC4D164F584D0035E296 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +124,40 @@
 		A884FC84164F5A5A0035E296 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A884FC86164F5A640035E296 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		A884FC88164F5A6E0035E296 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A88D425A165766C100D507D1 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = login.jpg; sourceTree = "<group>"; };
+		A88D425B165766C100D507D1 /* myLib.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = myLib.jpg; sourceTree = "<group>"; };
+		A88D425C165766C100D507D1 /* setting1-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "setting1-1.jpg"; sourceTree = "<group>"; };
+		A88D425D165766C100D507D1 /* setting1-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "setting1-2.jpg"; sourceTree = "<group>"; };
+		A88D425E165766C100D507D1 /* setting1-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "setting1-3.jpg"; sourceTree = "<group>"; };
+		A88D425F165766C100D507D1 /* setting1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = setting1.jpg; sourceTree = "<group>"; };
+		A88D4260165766C100D507D1 /* setting2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = setting2.jpg; sourceTree = "<group>"; };
+		A88D4261165766C100D507D1 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		A88D4263165766C100D507D1 /* BookInfo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BookInfo.jpg; sourceTree = "<group>"; };
+		A88D4264165766C100D507D1 /* BookInfo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BookInfo2.jpg; sourceTree = "<group>"; };
+		A88D4265165766C100D507D1 /* result_s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = result_s.jpg; sourceTree = "<group>"; };
+		A88D4266165766C100D507D1 /* search.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = search.jpg; sourceTree = "<group>"; };
+		A88D4267165766C100D507D1 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		A88D4268165766C100D507D1 /* 馆藏信息.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "馆藏信息.jpg"; sourceTree = "<group>"; };
+		A88D426A165766C100D507D1 /* backBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backBtn.png; sourceTree = "<group>"; };
+		A88D426B165766C100D507D1 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		A88D426D165766C100D507D1 /* BookInfo_11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BookInfo_11.gif; sourceTree = "<group>"; };
+		A88D426E165766C100D507D1 /* halfStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfStar.png; sourceTree = "<group>"; };
+		A88D426F165766C100D507D1 /* moreDetail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moreDetail.png; sourceTree = "<group>"; };
+		A88D4270165766C100D507D1 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		A88D4271165766C100D507D1 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		A88D4272165766C100D507D1 /* homeBtn_Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBtn_Off.png; sourceTree = "<group>"; };
+		A88D4273165766C100D507D1 /* homeBtn_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeBtn_On.png; sourceTree = "<group>"; };
+		A88D4274165766C100D507D1 /* Library1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Library1.png; sourceTree = "<group>"; };
+		A88D4275165766C100D507D1 /* logOutBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logOutBtn.png; sourceTree = "<group>"; };
+		A88D4276165766C100D507D1 /* nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav.png; sourceTree = "<group>"; };
+		A88D4277165766C100D507D1 /* saveBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saveBtn.png; sourceTree = "<group>"; };
+		A88D4278165766C100D507D1 /* searchBtn_Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchBtn_Off.png; sourceTree = "<group>"; };
+		A88D4279165766C100D507D1 /* searchBtn_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchBtn_On.png; sourceTree = "<group>"; };
+		A88D427A165766C100D507D1 /* switchKnob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchKnob.png; sourceTree = "<group>"; };
+		A88D427B165766C100D507D1 /* switchOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOff.png; sourceTree = "<group>"; };
+		A88D427C165766C100D507D1 /* switchOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOn.png; sourceTree = "<group>"; };
+		A88D427D165766C100D507D1 /* tabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar.png; sourceTree = "<group>"; };
+		A88D427E165766C100D507D1 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
 		A8C168101650C47D0037C497 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		A8C168111650C47D0037C497 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		A8C168121650C47D0037C497 /* BorrowBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowBooks.h; sourceTree = "<group>"; };
@@ -232,9 +303,83 @@
 			path = "json-framework";
 			sourceTree = "<group>";
 		};
+		A88D4258165766C100D507D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A88D4259165766C100D507D1 /* mylibrary */,
+				A88D4262165766C100D507D1 /* search */,
+				A88D4269165766C100D507D1 /* uiElement */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A88D4259165766C100D507D1 /* mylibrary */ = {
+			isa = PBXGroup;
+			children = (
+				A88D425A165766C100D507D1 /* login.jpg */,
+				A88D425B165766C100D507D1 /* myLib.jpg */,
+				A88D425C165766C100D507D1 /* setting1-1.jpg */,
+				A88D425D165766C100D507D1 /* setting1-2.jpg */,
+				A88D425E165766C100D507D1 /* setting1-3.jpg */,
+				A88D425F165766C100D507D1 /* setting1.jpg */,
+				A88D4260165766C100D507D1 /* setting2.jpg */,
+				A88D4261165766C100D507D1 /* Thumbs.db */,
+			);
+			path = mylibrary;
+			sourceTree = "<group>";
+		};
+		A88D4262165766C100D507D1 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				A88D4263165766C100D507D1 /* BookInfo.jpg */,
+				A88D4264165766C100D507D1 /* BookInfo2.jpg */,
+				A88D4265165766C100D507D1 /* result_s.jpg */,
+				A88D4266165766C100D507D1 /* search.jpg */,
+				A88D4267165766C100D507D1 /* Thumbs.db */,
+				A88D4268165766C100D507D1 /* 馆藏信息.jpg */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		A88D4269165766C100D507D1 /* uiElement */ = {
+			isa = PBXGroup;
+			children = (
+				A88D426A165766C100D507D1 /* backBtn.png */,
+				A88D426B165766C100D507D1 /* background.png */,
+				A88D426C165766C100D507D1 /* BookInfo */,
+				A88D4272165766C100D507D1 /* homeBtn_Off.png */,
+				A88D4273165766C100D507D1 /* homeBtn_On.png */,
+				A88D4274165766C100D507D1 /* Library1.png */,
+				A88D4275165766C100D507D1 /* logOutBtn.png */,
+				A88D4276165766C100D507D1 /* nav.png */,
+				A88D4277165766C100D507D1 /* saveBtn.png */,
+				A88D4278165766C100D507D1 /* searchBtn_Off.png */,
+				A88D4279165766C100D507D1 /* searchBtn_On.png */,
+				A88D427A165766C100D507D1 /* switchKnob.png */,
+				A88D427B165766C100D507D1 /* switchOff.png */,
+				A88D427C165766C100D507D1 /* switchOn.png */,
+				A88D427D165766C100D507D1 /* tabBar.png */,
+				A88D427E165766C100D507D1 /* Thumbs.db */,
+			);
+			path = uiElement;
+			sourceTree = "<group>";
+		};
+		A88D426C165766C100D507D1 /* BookInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A88D426D165766C100D507D1 /* BookInfo_11.gif */,
+				A88D426E165766C100D507D1 /* halfStar.png */,
+				A88D426F165766C100D507D1 /* moreDetail.png */,
+				A88D4270165766C100D507D1 /* Star.png */,
+				A88D4271165766C100D507D1 /* Thumbs.db */,
+			);
+			path = BookInfo;
+			sourceTree = "<group>";
+		};
 		B0863115164B848C00451893 = {
 			isa = PBXGroup;
 			children = (
+				A88D4258165766C100D507D1 /* Resources */,
 				A884FC48164F57850035E296 /* LIBClient */,
 				B086312A164B848C00451893 /* iSYSU_Library */,
 				B0863123164B848C00451893 /* Frameworks */,
@@ -289,6 +434,7 @@
 				B0E82F51164DFF64005E31AD /* LIBPhoneViewController.m */,
 				B0E82F53164E006F005E31AD /* LIBRemindViewController.h */,
 				B0E82F54164E006F005E31AD /* LIBRemindViewController.m */,
+<<<<<<< HEAD
 				B0863150164BC2D300451893 /* LIBSearchResultViewController.h */,
 				B0863151164BC2D300451893 /* LIBSearchResultViewController.m */,
 				B0863139164B848C00451893 /* LIBSearchViewController.h */,
@@ -299,6 +445,12 @@
 				B086312B164B848C00451893 /* Supporting Files */,
 				CB242CBC1657A26600FC711E /* ViewController.h */,
 				CB242CBD1657A26600FC711E /* ViewController.m */,
+=======
+				A8C168161650F8B20037C497 /* LIBBookViewController.h */,
+				A8C168171650F8B20037C497 /* LIBBookViewController.m */,
+				A871699216578EC800782778 /* LIBSetPSWViewController.h */,
+				A871699316578EC800782778 /* LIBSetPSWViewController.m */,
+>>>>>>> lulu
 			);
 			path = iSYSU_Library;
 			sourceTree = "<group>";
@@ -368,6 +520,40 @@
 			files = (
 				B086312F164B848C00451893 /* InfoPlist.strings in Resources */,
 				B0863138164B848C00451893 /* MainStoryboard.storyboard in Resources */,
+				A88D427F165766C100D507D1 /* login.jpg in Resources */,
+				A88D4280165766C100D507D1 /* myLib.jpg in Resources */,
+				A88D4281165766C100D507D1 /* setting1-1.jpg in Resources */,
+				A88D4282165766C100D507D1 /* setting1-2.jpg in Resources */,
+				A88D4283165766C100D507D1 /* setting1-3.jpg in Resources */,
+				A88D4284165766C100D507D1 /* setting1.jpg in Resources */,
+				A88D4285165766C100D507D1 /* setting2.jpg in Resources */,
+				A88D4286165766C100D507D1 /* Thumbs.db in Resources */,
+				A88D4287165766C100D507D1 /* BookInfo.jpg in Resources */,
+				A88D4288165766C100D507D1 /* BookInfo2.jpg in Resources */,
+				A88D4289165766C100D507D1 /* result_s.jpg in Resources */,
+				A88D428A165766C100D507D1 /* search.jpg in Resources */,
+				A88D428B165766C100D507D1 /* Thumbs.db in Resources */,
+				A88D428C165766C100D507D1 /* 馆藏信息.jpg in Resources */,
+				A88D428D165766C100D507D1 /* backBtn.png in Resources */,
+				A88D428E165766C100D507D1 /* background.png in Resources */,
+				A88D428F165766C100D507D1 /* BookInfo_11.gif in Resources */,
+				A88D4290165766C100D507D1 /* halfStar.png in Resources */,
+				A88D4291165766C100D507D1 /* moreDetail.png in Resources */,
+				A88D4292165766C100D507D1 /* Star.png in Resources */,
+				A88D4293165766C100D507D1 /* Thumbs.db in Resources */,
+				A88D4294165766C100D507D1 /* homeBtn_Off.png in Resources */,
+				A88D4295165766C100D507D1 /* homeBtn_On.png in Resources */,
+				A88D4296165766C100D507D1 /* Library1.png in Resources */,
+				A88D4297165766C100D507D1 /* logOutBtn.png in Resources */,
+				A88D4298165766C100D507D1 /* nav.png in Resources */,
+				A88D4299165766C100D507D1 /* saveBtn.png in Resources */,
+				A88D429A165766C100D507D1 /* searchBtn_Off.png in Resources */,
+				A88D429B165766C100D507D1 /* searchBtn_On.png in Resources */,
+				A88D429C165766C100D507D1 /* switchKnob.png in Resources */,
+				A88D429D165766C100D507D1 /* switchOff.png in Resources */,
+				A88D429E165766C100D507D1 /* switchOn.png in Resources */,
+				A88D429F165766C100D507D1 /* tabBar.png in Resources */,
+				A88D42A0165766C100D507D1 /* Thumbs.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +592,12 @@
 				A8C168141650C47D0037C497 /* Book.m in Sources */,
 				A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */,
 				A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */,
+<<<<<<< HEAD
 				CB242CB81657A0AC00FC711E /* LIBTIMEViewController.m in Sources */,
 				CB242CBE1657A26600FC711E /* ViewController.m in Sources */,
+=======
+				A871699416578EC800782778 /* LIBSetPSWViewController.m in Sources */,
+>>>>>>> lulu
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
