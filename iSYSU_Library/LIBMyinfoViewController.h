@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "LIBDataManager.h"
 #import "LIBLogInViewController.h"
+#import "LIBRemindViewController.h"
+#import "LIBConfigureViewController.h"
 @interface LIBMyinfoViewController : UIViewController
 {
     @private NSInteger currentBookIndex;
@@ -21,4 +23,9 @@
 - (IBAction)logout:(id)sender;
 -(void)Login;
 -(void)getInfo;
+－
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath;
+- (void)btnClicked:(id)sender event:(id)event;
+@property (weak, nonatomic) IBOutlet UITableView *setTable;
+@property(strong,nonatomic)NSArray *setting;
 @end

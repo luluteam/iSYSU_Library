@@ -64,6 +64,14 @@
 		A8C168141650C47D0037C497 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168111650C47D0037C497 /* Book.m */; };
 		A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168131650C47D0037C497 /* BorrowBooks.m */; };
 		A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168171650F8B20037C497 /* LIBBookViewController.m */; };
+		A8D22C3B165A19A1007F45AF /* radio.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D22C35165A19A1007F45AF /* radio.png */; };
+		A8D22C3C165A19A1007F45AF /* radio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D22C36165A19A1007F45AF /* radio@2x.png */; };
+		A8D22C3D165A19A1007F45AF /* radioS.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D22C37165A19A1007F45AF /* radioS.png */; };
+		A8D22C3E165A19A1007F45AF /* radioS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D22C38165A19A1007F45AF /* radioS@2x.png */; };
+		A8D22C3F165A19A1007F45AF /* rArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D22C39165A19A1007F45AF /* rArrow.png */; };
+		A8D22C40165A19A1007F45AF /* rArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D22C3A165A19A1007F45AF /* rArrow@2x.png */; };
+		A8D22C43165A25A0007F45AF /* renewBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D22C41165A25A0007F45AF /* renewBtn.png */; };
+		A8D22C44165A25A0007F45AF /* renewBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D22C42165A25A0007F45AF /* renewBtn@2x.png */; };
 		B0863125164B848C00451893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863124164B848C00451893 /* UIKit.framework */; };
 		B0863127164B848C00451893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863126164B848C00451893 /* Foundation.framework */; };
 		B0863129164B848C00451893 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863128164B848C00451893 /* CoreGraphics.framework */; };
@@ -162,6 +170,14 @@
 		A8C168131650C47D0037C497 /* BorrowBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowBooks.m; sourceTree = "<group>"; };
 		A8C168161650F8B20037C497 /* LIBBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBBookViewController.h; sourceTree = "<group>"; };
 		A8C168171650F8B20037C497 /* LIBBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBBookViewController.m; sourceTree = "<group>"; };
+		A8D22C35165A19A1007F45AF /* radio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radio.png; sourceTree = "<group>"; };
+		A8D22C36165A19A1007F45AF /* radio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radio@2x.png"; sourceTree = "<group>"; };
+		A8D22C37165A19A1007F45AF /* radioS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radioS.png; sourceTree = "<group>"; };
+		A8D22C38165A19A1007F45AF /* radioS@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radioS@2x.png"; sourceTree = "<group>"; };
+		A8D22C39165A19A1007F45AF /* rArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rArrow.png; sourceTree = "<group>"; };
+		A8D22C3A165A19A1007F45AF /* rArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rArrow@2x.png"; sourceTree = "<group>"; };
+		A8D22C41165A25A0007F45AF /* renewBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = renewBtn.png; sourceTree = "<group>"; };
+		A8D22C42165A25A0007F45AF /* renewBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "renewBtn@2x.png"; sourceTree = "<group>"; };
 		B0863120164B848C00451893 /* iSYSU_Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSYSU_Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0863124164B848C00451893 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B0863126164B848C00451893 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -338,6 +354,14 @@
 		A88D4269165766C100D507D1 /* uiElement */ = {
 			isa = PBXGroup;
 			children = (
+				A8D22C41165A25A0007F45AF /* renewBtn.png */,
+				A8D22C42165A25A0007F45AF /* renewBtn@2x.png */,
+				A8D22C35165A19A1007F45AF /* radio.png */,
+				A8D22C36165A19A1007F45AF /* radio@2x.png */,
+				A8D22C37165A19A1007F45AF /* radioS.png */,
+				A8D22C38165A19A1007F45AF /* radioS@2x.png */,
+				A8D22C39165A19A1007F45AF /* rArrow.png */,
+				A8D22C3A165A19A1007F45AF /* rArrow@2x.png */,
 				A88D426A165766C100D507D1 /* backBtn.png */,
 				A88D426B165766C100D507D1 /* background.png */,
 				A88D426C165766C100D507D1 /* BookInfo */,
@@ -539,6 +563,14 @@
 				A88D429E165766C100D507D1 /* switchOn.png in Resources */,
 				A88D429F165766C100D507D1 /* tabBar.png in Resources */,
 				A88D42A0165766C100D507D1 /* Thumbs.db in Resources */,
+				A8D22C3B165A19A1007F45AF /* radio.png in Resources */,
+				A8D22C3C165A19A1007F45AF /* radio@2x.png in Resources */,
+				A8D22C3D165A19A1007F45AF /* radioS.png in Resources */,
+				A8D22C3E165A19A1007F45AF /* radioS@2x.png in Resources */,
+				A8D22C3F165A19A1007F45AF /* rArrow.png in Resources */,
+				A8D22C40165A19A1007F45AF /* rArrow@2x.png in Resources */,
+				A8D22C43165A25A0007F45AF /* renewBtn.png in Resources */,
+				A8D22C44165A25A0007F45AF /* renewBtn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
