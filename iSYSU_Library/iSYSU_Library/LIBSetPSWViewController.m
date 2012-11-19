@@ -33,19 +33,19 @@
 #pragma mark - View lifecycle
 
 /*
- // Implement loadView to create a view hierarchy programmatically, without using a nib.
- - (void)loadView
- {
- }
- */
+// Implement loadView to create a view hierarchy programmatically, without using a nib.
+- (void)loadView
+{
+}
+*/
 
 /*
- // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
- - (void)viewDidLoad
- {
- [super viewDidLoad];
- }
- */
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+}
+*/
 
 - (void)viewDidUnload
 {
@@ -81,12 +81,12 @@
     if ([npsw isEqualToString:cpsw]) {
         //添加obsever
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didChange) name:@"did change password" object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didNotChange) name:@"did not change password" object:nil];
+         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didNotChange) name:@"did not change password" object:nil];
         [[LIBDataManager shareManager] requestChangePSWWithPSW:opsw npsw:npsw];
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"更改失败" message:@"两次密码不相同" delegate:nil cancelButtonTitle:@"我知道了" otherButtonTitles:nil, nil];
         [alert show];
-        
+
     }
 }
 

@@ -31,7 +31,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setStyle];
+    if ([self.tabBarController.tabBar respondsToSelector:@selector(setTintColor:)])
+    self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"tabBar.png"];
+    self.tabBarController.tabBar.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
     [[UIDevice currentDevice] systemVersion];
@@ -50,12 +52,7 @@
     
 }
 
--(void)setStyle
-{
-    if ([self.tabBarController.tabBar respondsToSelector:@selector(setTintColor:)])
-        self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"tabBar.png"];
-    self.tabBarController.tabBar.backgroundColor = [UIColor whiteColor];
-}
+
 - (IBAction)stb:(id)sender {
     [self searchWithBookName:[self.BookName text]];
 }

@@ -16,7 +16,7 @@
 @property (weak,nonatomic) NSArray* searchResult;
 @property (strong, nonatomic) IBOutlet UITextField *BookName;
 - (IBAction)stb:(id)sender;
--(void)setStyle;
+
 -(void)didUpdate;
 -(void)didnotUpdate;
 -(BOOL)getUpdate;

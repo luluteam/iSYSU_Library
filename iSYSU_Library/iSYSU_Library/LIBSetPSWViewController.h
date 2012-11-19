@@ -2,7 +2,7 @@
 //  LIBSetPSWViewController.h
 //  iSYSU_Library
 //
-//  Created by lovaday on 12-11-18.
+//  Created by lovaday on 12-11-17.
 //  Copyright (c) 2012年 Sun Yat-sen University. All rights reserved.
 //
 
