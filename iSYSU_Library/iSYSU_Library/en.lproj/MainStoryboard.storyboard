@@ -302,7 +302,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="elU-9L-c3f" colorLabel="IBBuiltInLabel-Green">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="logOutBtn.png" id="gwQ-c3-Cqu">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="logOutBtn.png" style="done" id="gwQ-c3-Cqu">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="logout:" destination="JJq-nq-HcW" id="Dyy-c0-o9o"/>
