@@ -9,8 +9,10 @@
 #import "LIBMyinfoViewController.h"
 
 @implementation LIBMyinfoViewController
+@synthesize setTable;
 @synthesize mybooklist;
 @synthesize mybookinfo;
+@synthesize setting;
 //点击续借的书的index
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -44,7 +46,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSArray *arr = [NSArray arrayWithObjects:@"帐号设置",@"提醒设置",nil];  
+    self.setting = arr;
 //    [self.tabBarController.tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"homeBtn_On"]];
+    [self setStyle];    
+    //自动登录
+//    NSLog(@"update");
+    //添加observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getInfo) name:@"DidUpdate" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(Login) name:@"DidNotUpdate" object:nil];
+    [[LIBDataManager shareManager] requestUpdate];
+    
+}
+-(void)setStyle
+{
     self.tabBarItem.image = [UIImage imageNamed:@"homeBtn_On"];
     if ([self.tabBarController.tabBar respondsToSelector:@selector(setTintColor:)])
         self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"tabBar.png"];
@@ -67,13 +82,7 @@
     title.text = @" 我的图书馆";
     title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
     self.navigationItem.titleView = title;
-//    //自动登录
-//    NSLog(@"update");
-    //添加observer
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getInfo) name:@"DidUpdate" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(Login) name:@"DidNotUpdate" object:nil];
-    [[LIBDataManager shareManager] requestUpdate];
-    
+
 }
 -(void)Login
 {
@@ -116,7 +125,9 @@
 {
      [self.navigationController popToRootViewControllerAnimated:YES];
     [self setMybooklist:nil];
+    [self setSetTable:nil];
     [super viewDidUnload];
+    self.setting = nil;
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -127,4 +138,56 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString* TableIdentifier = @"setTable";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableIdentifier];
+    }
+    NSUInteger row = [indexPath row];
+    cell.textLabel.text = [self.setting objectAtIndex:row];
+    cell.textLabel.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
+    UIImage *image = [UIImage imageNamed:@"rArrow.png"];    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];  
+    CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);  
+    button.frame = frame;  
+    
+    [button setBackgroundImage:image forState:UIControlStateNormal];  
+    
+    [button addTarget:self action:@selector(btnClicked:event:) forControlEvents:UIControlEventTouchUpInside];  
+    button.backgroundColor = [UIColor clearColor];  
+    cell.accessoryView = button;  
+    return cell;
+}
+-(NSInteger)numberOfSectionInTableView:(UITableView *)tableView{
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 2;
+}
+// 检查用户点击按钮时的位置，并转发事件到对应的accessory tapped事件
+- (void)btnClicked:(id)sender event:(id)event
+{
+    NSSet *touches = [event allTouches];
+    UITouch *touch = [touches anyObject];
+    CGPoint currentTouchPosition = [touch locationInView:self.setTable];
+    NSIndexPath *indexPath = [self.setTable indexPathForRowAtPoint:currentTouchPosition];
+    if(indexPath != nil)
+    {
+        [self tableView:self.setTable accessoryButtonTappedForRowWithIndexPath:indexPath];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    NSInteger idx = indexPath.row;
+    if (idx == 0) {
+        LIBConfigureViewController *confg = [[LIBConfigureViewController alloc] init];
+        [[self navigationController] pushViewController:confg animated:YES]; 
+    } else {
+        LIBRemindViewController *remind = [[LIBRemindViewController alloc] init];
+        [[self navigationController]pushViewController:remind animated:YES];
+    }
+}
 @end
