@@ -30,17 +30,12 @@
 -(NSArray *)getMyBookInfo
 {
     NSArray *arr = [BorrowBooks getMyBorrowedBooks];
-    
+    NSLog(@"arr:%@",arr);
     return arr;
 }
 
 -(BOOL)search:(NSString *)bookname
 {
-//    if (bookname == @"book") {
-//        return true;
-//    } else {
-//        return false;
-//    }
     return true;
 }
 

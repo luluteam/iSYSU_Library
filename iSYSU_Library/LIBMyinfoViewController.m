@@ -13,6 +13,7 @@
 @synthesize mybooklist;
 @synthesize mybookinfo;
 @synthesize setting;
+@synthesize tableViewCell;
 //点击续借的书的index
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -40,7 +41,11 @@
 {
 }
 */
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    [self getInfo];
+    [self.mybooklist reloadData];
+}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -48,10 +53,7 @@
     [super viewDidLoad];
     NSArray *arr = [NSArray arrayWithObjects:@"帐号设置",@"提醒设置",nil];  
     self.setting = arr;
-//    [self.tabBarController.tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"homeBtn_On"]];
     [self setStyle];    
-    //自动登录
-//    NSLog(@"update");
     //添加observer
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getInfo) name:@"DidUpdate" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(Login) name:@"DidNotUpdate" object:nil];
@@ -140,31 +142,61 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* TableIdentifier = @"setTable";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableIdentifier];
+    if (tableView.tag == 1) {
+        static NSString* TableIdentifier = @"setTable";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableIdentifier];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableIdentifier];
+        }
+        NSUInteger row = [indexPath row];
+        cell.textLabel.text = [self.setting objectAtIndex:row];
+        cell.textLabel.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
+        UIImage *image = [UIImage imageNamed:@"rArrow.png"];    
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];  
+        CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);  
+        button.frame = frame;  
+        
+        [button setBackgroundImage:image forState:UIControlStateNormal];  
+        
+        [button addTarget:self action:@selector(btnClicked:event:) forControlEvents:UIControlEventTouchUpInside];  
+        button.backgroundColor = [UIColor clearColor];  
+        cell.accessoryView = button; 
+        return cell;
+    } else {
+        static NSString *CustomCellIdentifier =@"CellIdentifier";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CustomCellIdentifier];
+        if (cell ==nil) {
+            NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"LIBMyBookCellView" owner:self options:nil];
+            cell = [nib objectAtIndex:0];
+        }
+        NSUInteger row = [indexPath row];
+        Book *book = [Book new];
+        book = [mybookinfo objectAtIndex:row];
+        UILabel *nameLabel = (UILabel *)[cell viewWithTag:2];
+        nameLabel.text = [NSString stringWithString:[book bookName]];
+        
+        UILabel *deadlineLabel = (UILabel *)[cell viewWithTag:3];
+        deadlineLabel.text = [NSString stringWithString:[book returnDate]]; 
+        UILabel *backdataLabel = (UILabel *)[cell viewWithTag:4];
+        backdataLabel.text = @"2";  
+        RadioButton *cellBtn = [[RadioButton alloc] initWithGroupId:@"book" index:row];
+        cellBtn.frame = CGRectMake(30,20+row*46,22,22);
+        [self.mybooklist addSubview:cellBtn];
+        
+        return cell;
     }
-    NSUInteger row = [indexPath row];
-    cell.textLabel.text = [self.setting objectAtIndex:row];
-    cell.textLabel.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
-    UIImage *image = [UIImage imageNamed:@"rArrow.png"];    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];  
-    CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);  
-    button.frame = frame;  
     
-    [button setBackgroundImage:image forState:UIControlStateNormal];  
     
-    [button addTarget:self action:@selector(btnClicked:event:) forControlEvents:UIControlEventTouchUpInside];  
-    button.backgroundColor = [UIColor clearColor];  
-    cell.accessoryView = button;  
-    return cell;
 }
 -(NSInteger)numberOfSectionInTableView:(UITableView *)tableView{
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    if (tableView.tag == 1) {
+        return 2;
+    } else {
+        return mybookinfo.count;
+    }
 }
 // 检查用户点击按钮时的位置，并转发事件到对应的accessory tapped事件
 - (void)btnClicked:(id)sender event:(id)event
@@ -182,12 +214,24 @@
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
     NSInteger idx = indexPath.row;
-    if (idx == 0) {
-        LIBConfigureViewController *confg = [[LIBConfigureViewController alloc] init];
-        [[self navigationController] pushViewController:confg animated:YES]; 
+    if (tableView.tag == 1) {
+        if (idx == 0) {
+            LIBConfigureViewController *confg = [[LIBConfigureViewController alloc] init];
+            [[self navigationController] pushViewController:confg animated:YES]; 
+        } else {
+            LIBRemindViewController *remind = [[LIBRemindViewController alloc] init];
+            [[self navigationController]pushViewController:remind animated:YES];
+        }
     } else {
-        LIBRemindViewController *remind = [[LIBRemindViewController alloc] init];
-        [[self navigationController]pushViewController:remind animated:YES];
+        currentBookIndex = idx;
+        NSLog(@"%@",currentBookIndex);
+    }
+    
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath   
+{
+    if (tableView.tag == 2) {
+        NSLog(@"index:%@",indexPath);
     }
 }
 @end

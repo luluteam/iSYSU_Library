@@ -81,6 +81,7 @@
 }
 -(void)setSytle
 {
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     CGRect rect = CGRectMake(0, 0, 100, 74);
     UILabel *title= [[UILabel alloc] initWithFrame:rect];
     title.backgroundColor = [UIColor clearColor];
