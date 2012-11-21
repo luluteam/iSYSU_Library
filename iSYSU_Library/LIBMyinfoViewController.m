@@ -45,6 +45,13 @@
     [super viewWillAppear:YES];
     [self getInfo];
     [self.mybooklist reloadData];
+    NSLog(@"view appear");
+}
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:YES];
+    
+    NSLog(@"view unlode");
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -125,10 +132,16 @@
 }
 - (void)viewDidUnload
 {
+    [super viewDidUnload];
      [self.navigationController popToRootViewControllerAnimated:YES];
     [self setMybooklist:nil];
     [self setSetTable:nil];
-    [super viewDidUnload];
+    NSArray *subviews = [[NSArray alloc] initWithArray:mybooklist.subviews];
+    for (UIView *oneview in subviews) {
+        if ([oneview isKindOfClass:[RadioButton class]]) {
+            [oneview removeFromSuperview];
+        }
+    }
     self.setting = nil;
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -142,6 +155,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     if (tableView.tag == 1) {
         static NSString* TableIdentifier = @"setTable";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableIdentifier];
@@ -162,7 +176,8 @@
         button.backgroundColor = [UIColor clearColor];  
         cell.accessoryView = button; 
         return cell;
-    } else {
+    } 
+    else {
         static NSString *CustomCellIdentifier =@"CellIdentifier";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CustomCellIdentifier];
         if (cell ==nil) {
@@ -182,7 +197,6 @@
         RadioButton *cellBtn = [[RadioButton alloc] initWithGroupId:@"book" index:row];
         cellBtn.frame = CGRectMake(30,20+row*46,22,22);
         [self.mybooklist addSubview:cellBtn];
-        
         return cell;
     }
     

@@ -246,7 +246,6 @@
 		B086314E164BA58B00451893 /* LIBClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBClient.m; sourceTree = "<group>"; };
 		B0863150164BC2D300451893 /* LIBSearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBSearchResultViewController.h; sourceTree = "<group>"; };
 		B0863151164BC2D300451893 /* LIBSearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBSearchResultViewController.m; sourceTree = "<group>"; };
-		B0E82F43164DFB86005E31AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/MainStoryboard.storyboard"; sourceTree = "<group>"; };
 		B0E82F44164DFEB2005E31AD /* LIBMyinfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LIBMyinfoViewController.h; path = ../LIBMyinfoViewController.h; sourceTree = "<group>"; };
 		B0E82F45164DFEB2005E31AD /* LIBMyinfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LIBMyinfoViewController.m; path = ../LIBMyinfoViewController.m; sourceTree = "<group>"; };
 		B0E82F4A164DFF21005E31AD /* LIBConfigureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBConfigureViewController.h; sourceTree = "<group>"; };
@@ -746,7 +745,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				B0863137164B848C00451893 /* en */,
-				B0E82F43164DFB86005E31AD /* zh-Hans */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
