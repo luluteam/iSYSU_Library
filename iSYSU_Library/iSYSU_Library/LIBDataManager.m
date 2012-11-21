@@ -37,7 +37,7 @@
         //发送登陆成功的广播，并获取个人信息
         self.personalInfo = [lib getInfo];
         self.mybookInfo = [lib getMyBookInfo];
-        NSLog(@"post login");
+        NSLog(@"post login:%@",mybookInfo);
         [[NSNotificationCenter defaultCenter] postNotificationName:@"DidLogIn" object:self];
     } else {
         //发送登陆失败的广播
@@ -53,6 +53,7 @@
         NSLog(@"post did update");
         self.personalInfo = [lib getInfo];
         self.mybookInfo = [lib getMyBookInfo];
+        NSLog(@"mybook:%@",mybookInfo);
         [[NSNotificationCenter defaultCenter] postNotificationName:@"DidUpdate" object:self];
     } else {
         //登录失败，发送广播
