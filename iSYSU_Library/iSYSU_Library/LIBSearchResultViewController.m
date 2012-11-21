@@ -66,4 +66,28 @@
     self.navigationItem.titleView = title;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"CELL"; 
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if(cell == nil){
+        
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    
+    Book *book = [Book new];
+    book = [bookList objectAtIndex:[indexPath row]];
+    cell.textLabel.text = [book bookName];
+    cell.detailTextLabel.text = [book author];
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [bookList count];
+}
+
 @end

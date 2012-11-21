@@ -8,6 +8,8 @@
 
 #import "LIBClient.h"
 #import "BorrowBooks.h"
+#import "BookManage.h"
+#import "SVProgressHUD.h"
 
 @implementation LIBClient
 @synthesize bookList;
@@ -36,13 +38,18 @@
 
 -(BOOL)search:(NSString *)bookname
 {
-    return true;
+    bookList = [BookManage searchBooksByName:bookname];
+    
+    if([bookList count] > 0){
+        
+        return true;
+    }
+    
+    return false;
 }
 
 -(NSArray *)getSearchResult
 {
-    NSArray *arr = [NSArray arrayWithObjects:@"e",@"f",@"g",@"h",nil];
-    self.bookList = arr;
     return self.bookList;
 }
 

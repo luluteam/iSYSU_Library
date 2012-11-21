@@ -22,4 +22,6 @@
 -(BOOL)getUpdate;
 -(void)searchWithBookName:(NSString *)name;
 -(void)showSearchResult:(NSArray *)searchResult;
+- (IBAction)backgroundTap:(id)sender;
+
 @end

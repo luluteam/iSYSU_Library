@@ -16,6 +16,10 @@
 
 @property (strong, nonatomic) NSString *bookIdentifier;             //索书号
 
+@property (strong, nonatomic) NSString *bookStateCopyNumber;        //馆藏复本
+
+@property (strong, nonatomic) NSString *bookStateBorrowedNumber;    //已借出复本
+
 @property (strong, nonatomic) NSURL *imageUrl;                      //图书图片的链接
 
 @property (strong, nonatomic) NSString *returnDate;                 //归还日期

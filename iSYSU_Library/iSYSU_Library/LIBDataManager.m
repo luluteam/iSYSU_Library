@@ -8,6 +8,7 @@
 
 #import "LIBDataManager.h"
 
+
 @implementation LIBDataManager
 @synthesize personalInfo;
 @synthesize mybookInfo;
@@ -65,6 +66,7 @@
 }
 -(void)requestSearchWithParrtern:(NSString *)parrtern
 {
+    
     LIBClient *lib = [LIBClient new];
     if ([lib search:parrtern]) {
         //搜索成功，发送广播，并存储搜索结果

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F55EBDB165CB55200649184 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55EBD4165CB55200649184 /* Book.m */; };
+		4F55EBDC165CB55200649184 /* BookManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55EBD6165CB55200649184 /* BookManage.m */; };
+		4F55EBDD165CB55200649184 /* BorrowBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55EBD8165CB55200649184 /* BorrowBooks.m */; };
+		4F55EBDE165CB55200649184 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F55EBDA165CB55200649184 /* User.m */; };
+		4F9BA28D165CC05F00035A17 /* LIBSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9BA28C165CC05F00035A17 /* LIBSearchViewController.m */; };
+		4F9BA29A165CC1E700035A17 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4F9BA297165CC1E700035A17 /* SVProgressHUD.bundle */; };
+		4F9BA29B165CC1E700035A17 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9BA299165CC1E700035A17 /* SVProgressHUD.m */; };
+		4F9BA29D165CC20000035A17 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9BA29C165CC20000035A17 /* QuartzCore.framework */; };
 		A871699416578EC800782778 /* LIBSetPSWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A871699316578EC800782778 /* LIBSetPSWViewController.m */; };
 		A884FC6B164F584D0035E296 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC4C164F584D0035E296 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A884FC6C164F584D0035E296 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC4F164F584D0035E296 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -20,7 +28,6 @@
 		A884FC74164F584D0035E296 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC66164F584D0035E296 /* TFHpple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A884FC75164F584D0035E296 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC68164F584D0035E296 /* TFHppleElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A884FC76164F584D0035E296 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC6A164F584D0035E296 /* XPathQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A884FC79164F58DE0035E296 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A884FC78164F58DE0035E296 /* User.m */; };
 		A884FC7F164F5A420035E296 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC7E164F5A420035E296 /* libxml2.dylib */; };
 		A884FC81164F5A490035E296 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC80164F5A490035E296 /* CFNetwork.framework */; };
 		A884FC83164F5A520035E296 /* libc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A884FC82164F5A520035E296 /* libc.dylib */; };
@@ -92,8 +99,6 @@
 		A89BF91A165B63AE00514347 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = A89BF8E9165B63AE00514347 /* Thumbs.db */; };
 		A89BF921165B67EC00514347 /* LIBMyBookCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A89BF920165B67EC00514347 /* LIBMyBookCellView.xib */; };
 		A89BF929165B819100514347 /* RadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A89BF928165B819100514347 /* RadioButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A8C168141650C47D0037C497 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168111650C47D0037C497 /* Book.m */; };
-		A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168131650C47D0037C497 /* BorrowBooks.m */; };
 		A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168171650F8B20037C497 /* LIBBookViewController.m */; };
 		B0863125164B848C00451893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863124164B848C00451893 /* UIKit.framework */; };
 		B0863127164B848C00451893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863126164B848C00451893 /* Foundation.framework */; };
@@ -102,7 +107,6 @@
 		B0863131164B848C00451893 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0863130164B848C00451893 /* main.m */; };
 		B0863135164B848C00451893 /* LIBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0863134164B848C00451893 /* LIBAppDelegate.m */; };
 		B0863138164B848C00451893 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0863136164B848C00451893 /* MainStoryboard.storyboard */; };
-		B086313B164B848C00451893 /* LIBSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B086313A164B848C00451893 /* LIBSearchViewController.m */; };
 		B0863143164B85E600451893 /* LIBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0863142164B85E600451893 /* LIBDataManager.m */; };
 		B086314B164B9BD200451893 /* LIBLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0863149164B9BD200451893 /* LIBLogInViewController.m */; };
 		B086314F164BA58B00451893 /* LIBClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B086314E164BA58B00451893 /* LIBClient.m */; };
@@ -115,6 +119,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F55EBD3165CB55200649184 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		4F55EBD4165CB55200649184 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		4F55EBD5165CB55200649184 /* BookManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManage.h; sourceTree = "<group>"; };
+		4F55EBD6165CB55200649184 /* BookManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookManage.m; sourceTree = "<group>"; };
+		4F55EBD7165CB55200649184 /* BorrowBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowBooks.h; sourceTree = "<group>"; };
+		4F55EBD8165CB55200649184 /* BorrowBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowBooks.m; sourceTree = "<group>"; };
+		4F55EBD9165CB55200649184 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		4F55EBDA165CB55200649184 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		4F9BA28C165CC05F00035A17 /* LIBSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBSearchViewController.m; sourceTree = "<group>"; };
+		4F9BA297165CC1E700035A17 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		4F9BA298165CC1E700035A17 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		4F9BA299165CC1E700035A17 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		4F9BA29C165CC20000035A17 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A871699216578EC800782778 /* LIBSetPSWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBSetPSWViewController.h; sourceTree = "<group>"; };
 		A871699316578EC800782778 /* LIBSetPSWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBSetPSWViewController.m; sourceTree = "<group>"; };
 		A884FC4B164F584D0035E296 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
@@ -145,8 +162,6 @@
 		A884FC68164F584D0035E296 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
 		A884FC69164F584D0035E296 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
 		A884FC6A164F584D0035E296 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
-		A884FC77164F58DE0035E296 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		A884FC78164F58DE0035E296 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		A884FC7E164F5A420035E296 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		A884FC80164F5A490035E296 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A884FC82164F5A520035E296 /* libc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libc.dylib; path = usr/lib/libc.dylib; sourceTree = SDKROOT; };
@@ -219,10 +234,6 @@
 		A89BF920165B67EC00514347 /* LIBMyBookCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LIBMyBookCellView.xib; sourceTree = "<group>"; };
 		A89BF927165B819100514347 /* RadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioButton.h; sourceTree = "<group>"; };
 		A89BF928165B819100514347 /* RadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioButton.m; sourceTree = "<group>"; };
-		A8C168101650C47D0037C497 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
-		A8C168111650C47D0037C497 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
-		A8C168121650C47D0037C497 /* BorrowBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowBooks.h; sourceTree = "<group>"; };
-		A8C168131650C47D0037C497 /* BorrowBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowBooks.m; sourceTree = "<group>"; };
 		A8C168161650F8B20037C497 /* LIBBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBBookViewController.h; sourceTree = "<group>"; };
 		A8C168171650F8B20037C497 /* LIBBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBBookViewController.m; sourceTree = "<group>"; };
 		B0863120164B848C00451893 /* iSYSU_Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSYSU_Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,7 +248,6 @@
 		B0863134164B848C00451893 /* LIBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIBAppDelegate.m; sourceTree = "<group>"; };
 		B0863137164B848C00451893 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B0863139164B848C00451893 /* LIBSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LIBSearchViewController.h; sourceTree = "<group>"; };
-		B086313A164B848C00451893 /* LIBSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIBSearchViewController.m; sourceTree = "<group>"; };
 		B0863141164B85E600451893 /* LIBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBDataManager.h; sourceTree = "<group>"; };
 		B0863142164B85E600451893 /* LIBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBDataManager.m; sourceTree = "<group>"; };
 		B0863148164B9BD200451893 /* LIBLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBLogInViewController.h; sourceTree = "<group>"; };
@@ -263,6 +273,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9BA29D165CC20000035A17 /* QuartzCore.framework in Frameworks */,
 				A884FC89164F5A6E0035E296 /* MobileCoreServices.framework in Frameworks */,
 				A884FC87164F5A640035E296 /* libz.1.2.5.dylib in Frameworks */,
 				A884FC85164F5A5A0035E296 /* SystemConfiguration.framework in Frameworks */,
@@ -278,15 +289,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F9BA296165CC1E700035A17 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4F9BA297165CC1E700035A17 /* SVProgressHUD.bundle */,
+				4F9BA298165CC1E700035A17 /* SVProgressHUD.h */,
+				4F9BA299165CC1E700035A17 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		A884FC48164F57850035E296 /* LIBClient */ = {
 			isa = PBXGroup;
 			children = (
-				A8C168101650C47D0037C497 /* Book.h */,
-				A8C168111650C47D0037C497 /* Book.m */,
-				A8C168121650C47D0037C497 /* BorrowBooks.h */,
-				A8C168131650C47D0037C497 /* BorrowBooks.m */,
-				A884FC77164F58DE0035E296 /* User.h */,
-				A884FC78164F58DE0035E296 /* User.m */,
+				4F55EBD3165CB55200649184 /* Book.h */,
+				4F55EBD4165CB55200649184 /* Book.m */,
+				4F55EBD5165CB55200649184 /* BookManage.h */,
+				4F55EBD6165CB55200649184 /* BookManage.m */,
+				4F55EBD7165CB55200649184 /* BorrowBooks.h */,
+				4F55EBD8165CB55200649184 /* BorrowBooks.m */,
+				4F55EBD9165CB55200649184 /* User.h */,
+				4F55EBDA165CB55200649184 /* User.m */,
 				A884FC4A164F584D0035E296 /* ASIHttpRequest */,
 				A884FC65164F584D0035E296 /* TFHpple.h */,
 				A884FC66164F584D0035E296 /* TFHpple.m */,
@@ -480,6 +503,7 @@
 		A89BF926165B816700514347 /* UIClasses */ = {
 			isa = PBXGroup;
 			children = (
+				4F9BA296165CC1E700035A17 /* SVProgressHUD */,
 				A89BF927165B819100514347 /* RadioButton.h */,
 				A89BF928165B819100514347 /* RadioButton.m */,
 			);
@@ -509,6 +533,7 @@
 		B0863123164B848C00451893 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F9BA29C165CC20000035A17 /* QuartzCore.framework */,
 				A884FC84164F5A5A0035E296 /* SystemConfiguration.framework */,
 				A884FC82164F5A520035E296 /* libc.dylib */,
 				A884FC80164F5A490035E296 /* CFNetwork.framework */,
@@ -532,8 +557,8 @@
 				B0863133164B848C00451893 /* LIBAppDelegate.h */,
 				B0863134164B848C00451893 /* LIBAppDelegate.m */,
 				B0863136164B848C00451893 /* MainStoryboard.storyboard */,
+				4F9BA28C165CC05F00035A17 /* LIBSearchViewController.m */,
 				B0863139164B848C00451893 /* LIBSearchViewController.h */,
-				B086313A164B848C00451893 /* LIBSearchViewController.m */,
 				B086314D164BA58B00451893 /* LIBClient.h */,
 				B086314E164BA58B00451893 /* LIBClient.m */,
 				B0863142164B85E600451893 /* LIBDataManager.m */,
@@ -687,6 +712,7 @@
 				A89BF919165B63AE00514347 /* tabBar.png in Resources */,
 				A89BF91A165B63AE00514347 /* Thumbs.db in Resources */,
 				A89BF921165B67EC00514347 /* LIBMyBookCellView.xib in Resources */,
+				4F9BA29A165CC1E700035A17 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,7 +725,6 @@
 			files = (
 				B0863131164B848C00451893 /* main.m in Sources */,
 				B0863135164B848C00451893 /* LIBAppDelegate.m in Sources */,
-				B086313B164B848C00451893 /* LIBSearchViewController.m in Sources */,
 				B0863143164B85E600451893 /* LIBDataManager.m in Sources */,
 				B086314B164B9BD200451893 /* LIBLogInViewController.m in Sources */,
 				B086314F164BA58B00451893 /* LIBClient.m in Sources */,
@@ -721,12 +746,15 @@
 				A884FC74164F584D0035E296 /* TFHpple.m in Sources */,
 				A884FC75164F584D0035E296 /* TFHppleElement.m in Sources */,
 				A884FC76164F584D0035E296 /* XPathQuery.m in Sources */,
-				A884FC79164F58DE0035E296 /* User.m in Sources */,
-				A8C168141650C47D0037C497 /* Book.m in Sources */,
-				A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */,
 				A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */,
 				A871699416578EC800782778 /* LIBSetPSWViewController.m in Sources */,
 				A89BF929165B819100514347 /* RadioButton.m in Sources */,
+				4F55EBDB165CB55200649184 /* Book.m in Sources */,
+				4F55EBDC165CB55200649184 /* BookManage.m in Sources */,
+				4F55EBDD165CB55200649184 /* BorrowBooks.m in Sources */,
+				4F55EBDE165CB55200649184 /* User.m in Sources */,
+				4F9BA28D165CC05F00035A17 /* LIBSearchViewController.m in Sources */,
+				4F9BA29B165CC1E700035A17 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

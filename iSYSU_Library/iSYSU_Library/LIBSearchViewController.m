@@ -8,6 +8,7 @@
 //lulu
 
 #import "LIBSearchViewController.h"
+#import "SVProgressHUD.h"
 
 @implementation LIBSearchViewController
 @synthesize BookName;
@@ -54,7 +55,12 @@
 
 
 - (IBAction)stb:(id)sender {
+
+    [SVProgressHUD showWithStatus:@"loading"];
     [self searchWithBookName:[self.BookName text]];
+    
+    [self performSegueWithIdentifier:@"search" sender:self];
+    [SVProgressHUD dismiss];
 }
 
 -(void)didUpdate
@@ -75,6 +81,11 @@
 {
     //添加observer
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showSearchResult:) name:@"finishSearch" object:nil];
+    NSLog(@"hisdbaoidh");
+    CGRect cg = CGRectMake(10, 10, 100, 100);
+    UIView *view = [[UIView alloc] initWithFrame:cg];
+    view.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:view];
     [[LIBDataManager shareManager] requestSearchWithParrtern:name];
 }
 
@@ -82,7 +93,13 @@
 {
     NSLog(@"search result");
     self.searchResult = [[LIBDataManager shareManager] searchResult];
+    [self.view removeFromSuperview];
     NSLog(@"%@",self.searchResult);
+}
+
+- (IBAction)backgroundTap:(id)sender {
+    
+    [BookName resignFirstResponder];
 }
 
 - (void)viewDidUnload
