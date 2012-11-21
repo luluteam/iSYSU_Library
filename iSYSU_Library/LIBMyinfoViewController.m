@@ -198,16 +198,16 @@
         deadlineLabel.text = [NSString stringWithString:[book returnDate]]; 
         UILabel *backdataLabel = (UILabel *)[cell viewWithTag:4];
         backdataLabel.text = @"2";  
-        RadioButton *cellBtn = [[RadioButton alloc] initWithGroupId:@"book" index:row];
-        [RadioButton addObserverForGroupId:@"book" observer:self];
-        cellBtn.frame = CGRectMake(30,10,22,22);
-        [self.tableViewCell addSubview:cellBtn];
+//        RadioButton *cellBtn = [[RadioButton alloc] initWithGroupId:@"book" index:row];
+//        [RadioButton addObserverForGroupId:@"book" observer:self];
+//        cellBtn.frame = CGRectMake(30,10,22,22);
+//        [self.tableViewCell addSubview:cellBtn];
         return cell;
     }
     
     
 }
--(NSInteger)numberOfSectionInTableView:(UITableView *)tableView{
+-(NSInteger)numberOfSectionInTableView:(UITableView *)tableView{ 
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
