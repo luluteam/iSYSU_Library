@@ -21,9 +21,9 @@
 @property (weak,nonatomic)NSArray* mybookinfo;
 -(NSString *)RenewWithIndex:(NSInteger)bookindex;
 -(NSString *)getRewMsg;
-- (IBAction)DidRenew:(id)sender;
 - (IBAction)logout:(id)sender;
 -(void)Login;
+- (IBAction)DidRenew:(id)sender;
 -(void)getInfo;
 -(void)setStyle;
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath;

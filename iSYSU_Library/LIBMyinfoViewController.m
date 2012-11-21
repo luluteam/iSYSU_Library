@@ -47,12 +47,16 @@
     [self.mybooklist reloadData];
     NSLog(@"view appear");
 }
--(void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:YES];
-    
-    NSLog(@"view unlode");
-}
+//-(void)viewDidDisappear:(BOOL)animated
+//{
+//    [super viewDidDisappear:YES];
+//    NSArray *subviews = [[NSArray alloc] initWithArray:tableViewCell.subviews];
+//    for (UIView *subview in subviews) {
+//        if([subview isKindOfClass:[RadioButton class]])
+//            [subview removeFromSuperview];
+//    }
+//    NSLog(@"view unlode");
+//}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -133,7 +137,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-     [self.navigationController popToRootViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
     [self setMybooklist:nil];
     [self setSetTable:nil];
     NSArray *subviews = [[NSArray alloc] initWithArray:mybooklist.subviews];
@@ -195,8 +199,9 @@
         UILabel *backdataLabel = (UILabel *)[cell viewWithTag:4];
         backdataLabel.text = @"2";  
         RadioButton *cellBtn = [[RadioButton alloc] initWithGroupId:@"book" index:row];
-        cellBtn.frame = CGRectMake(30,20+row*46,22,22);
-        [self.mybooklist addSubview:cellBtn];
+        [RadioButton addObserverForGroupId:@"book" observer:self];
+        cellBtn.frame = CGRectMake(30,10,22,22);
+        [self.tableViewCell addSubview:cellBtn];
         return cell;
     }
     
@@ -225,6 +230,11 @@
     }
 }
 
+-(void)radioButtonSelectedAtIndex:(NSUInteger)index inGroup:(NSString *)groupId{
+    NSLog(@"changed to %d in %@",index,groupId);
+    self->currentBookIndex = index;
+}
+
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
     NSInteger idx = indexPath.row;
@@ -236,10 +246,7 @@
             LIBRemindViewController *remind = [[LIBRemindViewController alloc] init];
             [[self navigationController]pushViewController:remind animated:YES];
         }
-    } else {
-        currentBookIndex = idx;
-        NSLog(@"%@",currentBookIndex);
-    }
+    } 
     
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath   
