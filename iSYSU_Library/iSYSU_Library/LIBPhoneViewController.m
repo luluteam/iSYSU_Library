@@ -77,6 +77,9 @@
     title.text = @" 手机号码";
     title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
     self.navigationItem.titleView = title;
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] init];
+    barButtonItem.image = [UIImage imageNamed:@"backBtn.png"];
+    self.navigationItem.backBarButtonItem = barButtonItem; 
 }
 
 //更改是否成功
@@ -87,4 +90,5 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"更改结果结果" message:feedback delegate:nil cancelButtonTitle:@"我知道了" otherButtonTitles:nil, nil];
     [alert show];
 }
+
 @end
