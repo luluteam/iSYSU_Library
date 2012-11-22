@@ -9,7 +9,8 @@
 #import "LIBMyinfoViewController.h"
 
 @implementation LIBMyinfoViewController
-@synthesize setTable;
+@synthesize renewBook;
+//@synthesize setTable;
 @synthesize mybooklist;
 @synthesize mybookinfo;
 @synthesize setting;
@@ -47,16 +48,7 @@
     [self.mybooklist reloadData];
     NSLog(@"view appear");
 }
-//-(void)viewDidDisappear:(BOOL)animated
-//{
-//    [super viewDidDisappear:YES];
-//    NSArray *subviews = [[NSArray alloc] initWithArray:tableViewCell.subviews];
-//    for (UIView *subview in subviews) {
-//        if([subview isKindOfClass:[RadioButton class]])
-//            [subview removeFromSuperview];
-//    }
-//    NSLog(@"view unlode");
-//}
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -73,6 +65,7 @@
 }
 -(void)setStyle
 {
+    [self setBtn];
     self.tabBarItem.image = [UIImage imageNamed:@"homeBtn_On"];
     if ([self.tabBarController.tabBar respondsToSelector:@selector(setTintColor:)])
         self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"tabBar.png"];
@@ -122,7 +115,7 @@
 }
 
 - (IBAction)DidRenew:(id)sender {
-    self->currentBookIndex = 0;
+    NSLog(@"%d",currentBookIndex);
     [self RenewWithIndex:self->currentBookIndex];
     NSString * msg = [self getRewMsg];
     NSLog(@"%@",msg);
@@ -136,17 +129,12 @@
 }
 - (void)viewDidUnload
 {
+    [self setRenewBook:nil];
     [super viewDidUnload];
     [self.navigationController popToRootViewControllerAnimated:YES];
     [self setMybooklist:nil];
-    [self setSetTable:nil];
-    NSArray *subviews = [[NSArray alloc] initWithArray:mybooklist.subviews];
-    for (UIView *oneview in subviews) {
-        if ([oneview isKindOfClass:[RadioButton class]]) {
-            [oneview removeFromSuperview];
-        }
-    }
-    self.setting = nil;
+//    [self setSetTable:nil];
+        self.setting = nil;
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -198,10 +186,15 @@
         deadlineLabel.text = [NSString stringWithString:[book returnDate]]; 
         UILabel *backdataLabel = (UILabel *)[cell viewWithTag:4];
         backdataLabel.text = @"2";  
-//        RadioButton *cellBtn = [[RadioButton alloc] initWithGroupId:@"book" index:row];
-//        [RadioButton addObserverForGroupId:@"book" observer:self];
-//        cellBtn.frame = CGRectMake(30,10,22,22);
-//        [self.tableViewCell addSubview:cellBtn];
+        UIImage *image = [UIImage imageNamed:@"radio.png"];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];  
+        CGRect frame = CGRectMake(30, 10, 22, 22);  
+        button.frame = frame;  
+        [button setImage:image forState:UIControlStateNormal];  
+        [button addTarget:self action:@selector(rbtnClicked:event:) forControlEvents:UIControlEventTouchUpInside];  
+        button.backgroundColor = [UIColor clearColor]; 
+        button.tag = 6;
+        [cell addSubview: button]; 
         return cell;
     }
     
@@ -218,18 +211,54 @@
     }
 }
 // 检查用户点击按钮时的位置，并转发事件到对应的accessory tapped事件
-- (void)btnClicked:(id)sender event:(id)event
+//- (void)btnClicked:(id)sender event:(id)event
+//{
+//    NSSet *touches = [event allTouches];
+//    UITouch *touch = [touches anyObject];
+//    CGPoint currentTouchPosition = [touch locationInView:self.setTable];
+//    NSIndexPath *indexPath = [self.setTable indexPathForRowAtPoint:currentTouchPosition];
+//    if(indexPath != nil)
+//    {
+//        [self tableView:self.setTable accessoryButtonTappedForRowWithIndexPath:indexPath];
+//    }
+//}
+-(void)rbtnClicked:(id)sender event:(id)event
 {
     NSSet *touches = [event allTouches];
     UITouch *touch = [touches anyObject];
-    CGPoint currentTouchPosition = [touch locationInView:self.setTable];
-    NSIndexPath *indexPath = [self.setTable indexPathForRowAtPoint:currentTouchPosition];
+    CGPoint currentTouchPosition = [touch locationInView:self.mybooklist];
+    NSIndexPath *indexPath = [self.mybooklist indexPathForRowAtPoint:currentTouchPosition];
+//    UIImage *image = [UIImage imageNamed:@"radioS.png"];
+//    UIButton *button = (UIButton *)sender;
+//    button.tag =1;
+//    [button setImage:image forState:UIControlStateNormal];
+////    [self setBtn];
+//    button.tag =6;
     if(indexPath != nil)
     {
-        [self tableView:self.setTable accessoryButtonTappedForRowWithIndexPath:indexPath];
+        [self tableView:self.mybooklist accessoryButtonTappedForRowWithIndexPath:indexPath];
     }
 }
-
+-(void)setBtn
+{
+//    NSArray *subviews = [[NSArray alloc] initWithArray:mybooklist.subviews];
+//    NSLog(@"%@",subviews);
+//    for (UIView *oneview in subviews) {
+//        if(oneview.tag == 0){
+//             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom]; 
+//            UIImage *image = [UIImage imageNamed:@"radio.png"];
+//            [btn setImage:image forState:UIControlStateNormal];
+//            CGRect frame = CGRectMake(30, 10, 22, 22);  
+//            btn.frame = frame; 
+//            [btn addTarget:self action:@selector(rbtnClicked:event:) forControlEvents:UIControlEventTouchUpInside];
+//            [oneview addSubview:btn];
+//        }
+//    }
+//    NSLog(@"%@",mybooklist.subviews);
+//    UIButton *button = [[UIButton alloc] viewWithTag:0];
+//    [button setImage:[UIImage imageNamed:@"radio.png"] forState:UIControlStateNormal];
+    UIButton *btn1 = (UIButton *)[self.view viewWithTag:7];
+}
 -(void)radioButtonSelectedAtIndex:(NSUInteger)index inGroup:(NSString *)groupId{
     NSLog(@"changed to %d in %@",index,groupId);
     self->currentBookIndex = index;
@@ -247,6 +276,14 @@
             [[self navigationController]pushViewController:remind animated:YES];
         }
     } 
+    else{
+        Book *book = [Book new];
+        book = [mybookinfo objectAtIndex:idx];
+        NSString *name = [[NSString alloc]initWithFormat:@"你选择了《%@》，单击续接按钮续借",book.bookName]; 
+        NSLog(@"idx:%@",name);
+        self->currentBookIndex = idx;
+        renewBook.text = name;
+    }
     
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath   
@@ -255,4 +292,5 @@
         NSLog(@"index:%@",indexPath);
     }
 }
+
 @end

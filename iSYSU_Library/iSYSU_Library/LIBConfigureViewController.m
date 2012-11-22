@@ -9,12 +9,14 @@
 #import "LIBConfigureViewController.h"
 
 @implementation LIBConfigureViewController
-@synthesize myinfolist;
+
 @synthesize name;
 @synthesize school;
 @synthesize college;
 @synthesize personalinfo;
 @synthesize configTable;
+@synthesize setting;
+@synthesize gotoPsw;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -46,6 +48,10 @@
 {
     [super viewDidLoad];
     [self setSytle];
+    NSArray *arr = [NSArray arrayWithObjects:@"Email",@"手机号码",nil];  
+    self.setting = arr;
+    arr = [NSArray arrayWithObjects:@"更改密码", nil];
+    self.gotoPsw = arr;
     //取出个人信息，并显示
     self.personalinfo = [[LIBDataManager shareManager] personalInfo];
     NSLog(@"个人信息：%@",personalinfo);
@@ -64,7 +70,6 @@
 
 - (void)viewDidUnload
 {
-    [self setMyinfolist:nil];
     [self setName:nil];
     [self setSchool:nil];
     [self setCollege:nil];
@@ -85,8 +90,63 @@
     CGRect rect = CGRectMake(0, 0, 100, 74);
     UILabel *title= [[UILabel alloc] initWithFrame:rect];
     title.backgroundColor = [UIColor clearColor];
-    title.text = @" 帐号设置";
+    title.text = @"  帐号设置";
     title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
     self.navigationItem.titleView = title;
 }
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+        static NSString* TableIdentifier = @"configTable";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableIdentifier];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableIdentifier];
+        }
+        NSUInteger row = [indexPath row];
+        cell.textLabel.text = [self.setting objectAtIndex:row];
+        cell.textLabel.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
+        UIImage *image = [UIImage imageNamed:@"rArrow.png"];    
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];  
+        CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);  
+        button.frame = frame;  
+        
+        [button setBackgroundImage:image forState:UIControlStateNormal];  
+        
+        [button addTarget:self action:@selector(btnClicked:event:) forControlEvents:UIControlEventTouchUpInside];  
+        button.backgroundColor = [UIColor clearColor];  
+        cell.accessoryView = button; 
+        return cell;
+}
+-(NSInteger)numberOfSectionInTableView:(UITableView *)tableView{ 
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+        return 2;
+    
+}
+// 检查用户点击按钮时的位置，并转发事件到对应的accessory tapped事件
+- (void)btnClicked:(id)sender event:(id)event
+{
+    NSSet *touches = [event allTouches];
+    UITouch *touch = [touches anyObject];
+    CGPoint currentTouchPosition = [touch locationInView:self.configTable];
+    NSIndexPath *indexPath = [self.configTable indexPathForRowAtPoint:currentTouchPosition];
+    if(indexPath != nil)
+    {
+        [self tableView:self.configTable accessoryButtonTappedForRowWithIndexPath:indexPath];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+    NSInteger idx = indexPath.row;
+        if (idx == 0) {
+            LIBEmailViewController *email = [[LIBEmailViewController alloc] init];
+            [[self navigationController] pushViewController:email animated:YES]; 
+        } else {
+            LIBPhoneViewController *phone = [[LIBPhoneViewController alloc] init];
+            [[self navigationController]pushViewController:phone animated:YES];
+        }    
+}
+
 @end
