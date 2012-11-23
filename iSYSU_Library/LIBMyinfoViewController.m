@@ -49,6 +49,7 @@
     NSLog(@"view appear");
 }
 
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
@@ -134,8 +135,6 @@
     [self setMybooklist:nil];
 //    [self setSetTable:nil];
         self.setting = nil;
-     [self.navigationController popToRootViewControllerAnimated:YES];
-    [self setMybooklist:nil];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -148,29 +147,29 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    
-//    if (tableView.tag == 1) {
-//        static NSString* TableIdentifier = @"setTable";
-//        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableIdentifier];
-//        if (cell == nil) {
-//            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableIdentifier];
-//        }
-//        NSUInteger row = [indexPath row];
-//        cell.textLabel.text = [self.setting objectAtIndex:row];
-//        cell.textLabel.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
-//        UIImage *image = [UIImage imageNamed:@"rArrow.png"];    
-//        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];  
-//        CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);  
-//        button.frame = frame;  
-//        
-//        [button setBackgroundImage:image forState:UIControlStateNormal];  
-//        
-//        [button addTarget:self action:@selector(btnClicked:event:) forControlEvents:UIControlEventTouchUpInside];  
-//        button.backgroundColor = [UIColor clearColor];  
-//        cell.accessoryView = button; 
-//        return cell;
-//    } 
-//    else {
+    
+    if (tableView.tag == 1) {
+        static NSString* TableIdentifier = @"setTable";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableIdentifier];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableIdentifier];
+        }
+        NSUInteger row = [indexPath row];
+        cell.textLabel.text = [self.setting objectAtIndex:row];
+        cell.textLabel.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
+        UIImage *image = [UIImage imageNamed:@"rArrow.png"];    
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];  
+        CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);  
+        button.frame = frame;  
+        
+        [button setBackgroundImage:image forState:UIControlStateNormal];  
+        
+        [button addTarget:self action:@selector(btnClicked:event:) forControlEvents:UIControlEventTouchUpInside];  
+        button.backgroundColor = [UIColor clearColor];  
+        cell.accessoryView = button; 
+        return cell;
+    } 
+    else {
         static NSString *CustomCellIdentifier =@"CellIdentifier";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CustomCellIdentifier];
         if (cell ==nil) {
@@ -197,7 +196,7 @@
         button.tag = 6;
         [cell addSubview: button]; 
         return cell;
-//    }
+    }
     
     
 }
@@ -285,10 +284,6 @@
         self->currentBookIndex = idx;
         renewBook.text = name;
     }
-//    } else {
-//        currentBookIndex = idx;
-//        NSLog(@"%@",currentBookIndex);
-//    }
     
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath   
@@ -296,13 +291,6 @@
     if (tableView.tag == 2) {
         NSLog(@"index:%@",indexPath);
     }
-    
 }
-//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath   
-//{
-//    if (tableView.tag == 2) {
-//        NSLog(@"index:%@",indexPath);
-//    }
-//}
 
 @end

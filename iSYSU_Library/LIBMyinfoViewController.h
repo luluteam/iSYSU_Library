@@ -31,6 +31,7 @@
 //- (void)btnClicked:(id)sender event:(id)event;
 - (void)rbtnClicked:(id)sender event:(id)event;
 @property (weak, nonatomic) IBOutlet UILabel *renewBook;
+//@property (weak, nonatomic) IBOutlet UITableView *setTable;
 @property(nonatomic,retain)IBOutlet UITableViewCell *tableViewCell;
 @property(strong,nonatomic)NSArray *setting;
 @end

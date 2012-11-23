@@ -211,46 +211,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
                             <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="xlC-77-HjY">
                                 <rect key="frame" x="7" y="169" width="306" height="198"/>
-=======
-                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="5" sectionFooterHeight="0.0" id="UjV-U7-fPt">
-                                <rect key="frame" x="7" y="20" width="306" height="149"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" red="0.56862747670000002" green="0.8980392814" blue="0.56862747670000002" alpha="1" colorSpace="deviceRGB"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="A2O-3g-MHZ">
-                                        <rect key="frame" x="0.0" y="46" width="306" height="45"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="266" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6dh-gJ-ikt">
-                                        <rect key="frame" x="0.0" y="91" width="306" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="266" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                                <connections>
-                                    <outlet property="dataSource" destination="JJq-nq-HcW" id="NES-CA-v53"/>
-                                    <outlet property="delegate" destination="JJq-nq-HcW" id="6xd-Q5-gZ1"/>
-                                </connections>
-                            </tableView>
-                            <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="xlC-77-HjY">
-                                <rect key="frame" x="7" y="171" width="306" height="216"/>
->>>>>>> ldd
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.56862747670000002" green="0.8980392814" blue="0.56862747670000002" alpha="1" colorSpace="deviceRGB"/>
@@ -271,13 +233,8 @@
                                     <outlet property="delegate" destination="JJq-nq-HcW" id="rkS-Yz-xPr"/>
                                 </connections>
                             </tableView>
-<<<<<<< HEAD
                             <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="bK8-GE-FL4">
                                 <rect key="frame" x="20" y="133" width="46" height="37"/>
-=======
-                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="bK8-GE-FL4">
-                                <rect key="frame" x="20" y="134" width="38" height="37"/>
->>>>>>> ldd
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
@@ -353,7 +310,6 @@
                                     <segue destination="9fj-CE-ClO" kind="push" id="cNK-gp-uyP"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="帐号设置" lineBreakMode="tailTruncation" minimumFontSize="10" id="KV1-Db-7AQ">
                                 <rect key="frame" x="38" y="13" width="70" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -365,26 +321,6 @@
                                 <rect key="frame" x="38" y="57" width="70" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-=======
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="书名" lineBreakMode="tailTruncation" minimumFontSize="10" id="lJr-lp-GvA">
-                                <rect key="frame" x="87" y="142" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.56862747670000002" green="0.8980392814" blue="0.56862747670000002" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="应还日期" lineBreakMode="tailTruncation" minimumFontSize="10" id="3h6-Iq-Rgd">
-                                <rect key="frame" x="162" y="142" width="68" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.56862747670000002" green="0.8980392814" blue="0.56862747670000002" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="倒数" lineBreakMode="tailTruncation" minimumFontSize="10" id="61u-Qa-4Mc">
-                                <rect key="frame" x="258" y="142" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
->>>>>>> ldd
                                 <color key="textColor" red="0.56862747670000002" green="0.8980392814" blue="0.56862747670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -401,11 +337,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mybooklist" destination="xlC-77-HjY" id="saR-LF-bOL"/>
-<<<<<<< HEAD
                         <outlet property="renewBook" destination="1rK-5R-nYM" id="bgw-b9-GKK"/>
-=======
-                        <outlet property="setTable" destination="UjV-U7-fPt" id="6k7-Bq-Wuv"/>
->>>>>>> ldd
                     </connections>
                 </viewController>
             </objects>
@@ -852,13 +784,9 @@
         <image name="Library1.png" width="219" height="104"/>
         <image name="homeBtn_Off.png" width="30" height="30"/>
         <image name="logOutBtn.png" width="20" height="19"/>
-<<<<<<< HEAD
         <image name="rArrow.png" width="20" height="20"/>
         <image name="renewBtn.png" width="41" height="37"/>
         <image name="saveBtn.png" width="43" height="27"/>
-=======
-        <image name="renewBtn.png" width="41" height="37"/>
->>>>>>> ldd
         <image name="searchBtn_Off.png" width="30" height="30"/>
     </resources>
     <classes>
@@ -897,11 +825,7 @@
                 <relationship kind="action" name="DidRenew:"/>
                 <relationship kind="action" name="logout:"/>
                 <relationship kind="outlet" name="mybooklist" candidateClass="UITableView"/>
-<<<<<<< HEAD
                 <relationship kind="outlet" name="renewBook" candidateClass="UILabel"/>
-=======
-                <relationship kind="outlet" name="setTable" candidateClass="UITableView"/>
->>>>>>> ldd
                 <relationship kind="outlet" name="tableViewCell" candidateClass="UITableViewCell"/>
             </relationships>
         </class>
