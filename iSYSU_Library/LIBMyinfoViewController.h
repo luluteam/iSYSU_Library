@@ -26,18 +26,11 @@
 - (IBAction)DidRenew:(id)sender;
 -(void)getInfo;
 -(void)setStyle;
-<<<<<<< HEAD
 -(void)setBtn;
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath;
 //- (void)btnClicked:(id)sender event:(id)event;
 - (void)rbtnClicked:(id)sender event:(id)event;
 @property (weak, nonatomic) IBOutlet UILabel *renewBook;
-//@property (weak, nonatomic) IBOutlet UITableView *setTable;
-=======
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath;
-- (void)btnClicked:(id)sender event:(id)event;
-@property (weak, nonatomic) IBOutlet UITableView *setTable;
->>>>>>> ldd
 @property(nonatomic,retain)IBOutlet UITableViewCell *tableViewCell;
 @property(strong,nonatomic)NSArray *setting;
 @end
