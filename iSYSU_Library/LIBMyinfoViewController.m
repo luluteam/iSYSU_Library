@@ -48,7 +48,16 @@
     [self.mybooklist reloadData];
     NSLog(@"view appear");
 }
+<<<<<<< HEAD
 
+=======
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:YES];
+    
+    NSLog(@"view unlode");
+}
+>>>>>>> ldd
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -129,12 +138,26 @@
 }
 - (void)viewDidUnload
 {
+<<<<<<< HEAD
     [self setRenewBook:nil];
     [super viewDidUnload];
     [self.navigationController popToRootViewControllerAnimated:YES];
     [self setMybooklist:nil];
 //    [self setSetTable:nil];
         self.setting = nil;
+=======
+    [super viewDidUnload];
+     [self.navigationController popToRootViewControllerAnimated:YES];
+    [self setMybooklist:nil];
+    [self setSetTable:nil];
+    NSArray *subviews = [[NSArray alloc] initWithArray:mybooklist.subviews];
+    for (UIView *oneview in subviews) {
+        if ([oneview isKindOfClass:[RadioButton class]]) {
+            [oneview removeFromSuperview];
+        }
+    }
+    self.setting = nil;
+>>>>>>> ldd
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -186,6 +209,7 @@
         deadlineLabel.text = [NSString stringWithString:[book returnDate]]; 
         UILabel *backdataLabel = (UILabel *)[cell viewWithTag:4];
         backdataLabel.text = @"2";  
+<<<<<<< HEAD
         UIImage *image = [UIImage imageNamed:@"radio.png"];
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];  
         CGRect frame = CGRectMake(30, 10, 22, 22);  
@@ -195,6 +219,11 @@
         button.backgroundColor = [UIColor clearColor]; 
         button.tag = 6;
         [cell addSubview: button]; 
+=======
+        RadioButton *cellBtn = [[RadioButton alloc] initWithGroupId:@"book" index:row];
+        cellBtn.frame = CGRectMake(30,20+row*46,22,22);
+        [self.mybooklist addSubview:cellBtn];
+>>>>>>> ldd
         return cell;
     }
     
@@ -275,6 +304,7 @@
             LIBRemindViewController *remind = [[LIBRemindViewController alloc] init];
             [[self navigationController]pushViewController:remind animated:YES];
         }
+<<<<<<< HEAD
     } 
     else{
         Book *book = [Book new];
@@ -283,6 +313,18 @@
         NSLog(@"idx:%@",name);
         self->currentBookIndex = idx;
         renewBook.text = name;
+=======
+    } else {
+        currentBookIndex = idx;
+        NSLog(@"%@",currentBookIndex);
+    }
+    
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath   
+{
+    if (tableView.tag == 2) {
+        NSLog(@"index:%@",indexPath);
+>>>>>>> ldd
     }
     
 }
