@@ -9,7 +9,15 @@
 #import "LIBBookViewController.h"
 
 @implementation LIBBookViewController
-@synthesize bookImg;
+
+@synthesize book;
+@synthesize bookImgIB;
+@synthesize bookNameIB;
+@synthesize authorIB;
+@synthesize identifierIB;
+@synthesize statusIB;
+@synthesize isbnIB;
+
 @synthesize bookname;
 @synthesize isbn;
 @synthesize number;
@@ -18,6 +26,7 @@
 @synthesize searchnumber;
 @synthesize commint;
 @synthesize author;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -39,14 +48,23 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"sdsdsdsdsd%@", book);
+    UIImage *bookImage = [[UIImage alloc] initWithData:[[NSData alloc] initWithContentsOfURL:[book imageUrl]]];
+    self.bookImgIB.image = bookImage;
+    
+    bookNameIB.text = [book bookName];
+    authorIB.text = [book author];
+    identifierIB.text = [book bookIdentifier];
+    isbnIB.text = [book isbn];
     [super viewDidLoad];
-    [self setSytle];
+    //[self setSytle];
     // Do any additional setup after loading the view from its nib.
     //从前一个页面传值给index；
-    self->index = 0;
+    //self->index = 0;
     //获得那本书的详细信息
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(getBookInfo) name:@"get book info" object:nil];
-    [[LIBDataManager shareManager] requestBookWithIndex:self->index];
+    //[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(getBookInfo) name:@"get book info" object:nil];
+    //[[LIBDataManager shareManager] requestBookWithIndex:self->index];
+    
 }
 -(void)getBookInfo
 {
@@ -61,7 +79,11 @@
 }
 - (void)viewDidUnload
 {
-    [self setBookImg:nil];
+    [self setBookNameIB:nil];
+    [self setAuthorIB:nil];
+    [self setIdentifierIB:nil];
+    [self setStatusIB:nil];
+    [self setIsbnIB:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

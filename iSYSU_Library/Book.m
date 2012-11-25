@@ -18,5 +18,7 @@
 @synthesize bookIdentifier;
 @synthesize isbn;
 @synthesize bookInfo;
+@synthesize bookStateCopyNumber;
+@synthesize bookStateBorrowedNumber;
 
 @end

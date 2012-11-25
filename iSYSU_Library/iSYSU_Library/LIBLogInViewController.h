@@ -16,6 +16,7 @@
 -(void)LogInWithParrtern:(NSString *)usname password:(NSString *)psw;
 -(void)DidLogIn;
 -(void)DidNotLogIn;
+- (IBAction)backBtn:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *username;
 @property (strong, nonatomic) IBOutlet UITextField *password;
 - (IBAction)login:(id)sender;

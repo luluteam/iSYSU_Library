@@ -8,6 +8,8 @@
 
 #import "LIBClient.h"
 #import "BorrowBooks.h"
+#import "BookManage.h"
+#import "User.h"
 
 @implementation LIBClient
 @synthesize bookList;
@@ -35,14 +37,19 @@
 }
 
 -(BOOL)search:(NSString *)bookname
-{
+{   
+    bookList = [BookManage searchBooksByName:bookname];
+    NSLog(@"%@", bookList);
+    if(bookList.count <= 0){
+        
+        return false;
+    }
+    
     return true;
 }
 
 -(NSArray *)getSearchResult
 {
-    NSArray *arr = [NSArray arrayWithObjects:@"e",@"f",@"g",@"h",nil];
-    self.bookList = arr;
     return self.bookList;
 }
 
@@ -63,11 +70,25 @@
 }
 -(NSString *)changeEmail:(NSString *)email
 {
-    return @"change email success";
+    Boolean isChangeEmailOk = [User isChangedEmailOk:email];
+    if(isChangeEmailOk){
+        
+        return @"你已经成功修改email";
+    } else {
+        
+        return @"修改email失败，请稍后再试";
+    }
 }
 -(NSString *)changePhone:(NSString *)phone 
 {
-    return @"change phone success";
+    Boolean isChangePhoneOk = [User isChangedPhoneNumberOk:phone];
+    if(isChangePhoneOk){
+        
+        return @"你已经成功修改手机号码";
+    } else {
+        
+        return @"修改手机号码失败，请稍后再试";
+    }
 }
 -(Book*)getBookByIndex:(NSInteger)index
 {
@@ -75,6 +96,7 @@
 }
 -(BOOL)changePSW:(NSString *)opsw npsw:(NSString *)npsw
 {
-    return true;
+    BOOL isChangePswOk = [User changePassword:opsw withNewPassword:npsw andConfirmPassword:npsw];
+    return isChangePswOk;
 }
 @end

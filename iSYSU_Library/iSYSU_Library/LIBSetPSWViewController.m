@@ -70,7 +70,8 @@
     UILabel *title= [[UILabel alloc] initWithFrame:rect];
     title.backgroundColor = [UIColor clearColor];
     title.text = @" 更改密码";
-    title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
+    title.textColor = [UIColor whiteColor];
+    //title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
     self.navigationItem.titleView = title;
 }
 

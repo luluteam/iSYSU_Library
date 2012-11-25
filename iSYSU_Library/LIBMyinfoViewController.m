@@ -65,12 +65,11 @@
 }
 -(void)setStyle
 {
-    [self setBtn];
     self.tabBarItem.image = [UIImage imageNamed:@"homeBtn_On"];
     if ([self.tabBarController.tabBar respondsToSelector:@selector(setTintColor:)])
         self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"tabBar.png"];
     self.tabBarController.tabBar.backgroundColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+//    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [[UIDevice currentDevice] systemVersion];
     if ([[[UIDevice currentDevice] systemVersion] floatValue] > 4.9) {
         
@@ -86,7 +85,8 @@
     UILabel *title= [[UILabel alloc] initWithFrame:rect];
     title.backgroundColor = [UIColor clearColor];
     title.text = @" 我的图书馆";
-    title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
+    title.textColor = [UIColor whiteColor];
+    //title.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
     self.navigationItem.titleView = title;
 
 }
@@ -115,13 +115,31 @@
 }
 
 - (IBAction)DidRenew:(id)sender {
+    
+    UIAlertView *first_alert = [[UIAlertView alloc] initWithTitle:nil message:@"是否续借" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [first_alert show];
+   
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 1){
+        
+        [self doRenew];
+    } else {
+        
+        return;
+    }
+}
+
+-(void)doRenew
+{
     NSLog(@"%d",currentBookIndex);
     [self RenewWithIndex:self->currentBookIndex];
     NSString * msg = [self getRewMsg];
     NSLog(@"%@",msg);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"续借结果" message:msg delegate:nil cancelButtonTitle:@"我知道了" otherButtonTitles:nil, nil];
     [alert show];
-    
 }
 
 - (IBAction)logout:(id)sender {
@@ -147,36 +165,20 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    if (tableView.tag == 1) {
-        static NSString* TableIdentifier = @"setTable";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableIdentifier];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableIdentifier];
-        }
-        NSUInteger row = [indexPath row];
-        cell.textLabel.text = [self.setting objectAtIndex:row];
-        cell.textLabel.textColor = [UIColor colorWithRed:145.0f/255.0f green:229.0f/255.0f blue:145.0f/255.0f alpha:1.0f];
-        UIImage *image = [UIImage imageNamed:@"rArrow.png"];    
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];  
-        CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);  
-        button.frame = frame;  
-        
-        [button setBackgroundImage:image forState:UIControlStateNormal];  
-        
-        [button addTarget:self action:@selector(btnClicked:event:) forControlEvents:UIControlEventTouchUpInside];  
-        button.backgroundColor = [UIColor clearColor];  
-        cell.accessoryView = button; 
-        return cell;
-    } 
-    else {
         static NSString *CustomCellIdentifier =@"CellIdentifier";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CustomCellIdentifier];
+        NSUInteger row = [indexPath row];
+        BOOL usrDark = (row % 2 == 0);
         if (cell ==nil) {
             NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"LIBMyBookCellView" owner:self options:nil];
             cell = [nib objectAtIndex:0];
         }
-        NSUInteger row = [indexPath row];
+        NSString *bgImgPath = [[NSBundle mainBundle] pathForResource:usrDark ? @"greenBox" : @"lightbg" ofType:@"png"];
+        UIImage *bgImg = [[UIImage imageWithContentsOfFile:bgImgPath] stretchableImageWithLeftCapWidth:0.0 topCapHeight:1.0];
+        cell.backgroundView = [[UIImageView alloc] initWithImage:bgImg];
+        cell.backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        cell.backgroundView.frame = cell.bounds;
+    
         Book *book = [Book new];
         book = [mybookinfo objectAtIndex:row];
         UILabel *nameLabel = (UILabel *)[cell viewWithTag:2];
@@ -185,7 +187,10 @@
         UILabel *deadlineLabel = (UILabel *)[cell viewWithTag:3];
         deadlineLabel.text = [NSString stringWithString:[book returnDate]]; 
         UILabel *backdataLabel = (UILabel *)[cell viewWithTag:4];
-        backdataLabel.text = @"2";  
+//    NSLog(@"%@",[NSString stringWithString:[book returnDate]]);
+        backdataLabel.text = [self DaysCalculator:[NSString stringWithString:[book returnDate]]]; 
+    
+    
         UIImage *image = [UIImage imageNamed:@"radio.png"];
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];  
         CGRect frame = CGRectMake(30, 10, 22, 22);  
@@ -196,9 +201,6 @@
         button.tag = 6;
         [cell addSubview: button]; 
         return cell;
-    }
-    
-    
 }
 -(NSInteger)numberOfSectionInTableView:(UITableView *)tableView{ 
     return 1;
@@ -210,54 +212,58 @@
         return mybookinfo.count;
     }
 }
-// 检查用户点击按钮时的位置，并转发事件到对应的accessory tapped事件
-//- (void)btnClicked:(id)sender event:(id)event
-//{
-//    NSSet *touches = [event allTouches];
-//    UITouch *touch = [touches anyObject];
-//    CGPoint currentTouchPosition = [touch locationInView:self.setTable];
-//    NSIndexPath *indexPath = [self.setTable indexPathForRowAtPoint:currentTouchPosition];
-//    if(indexPath != nil)
-//    {
-//        [self tableView:self.setTable accessoryButtonTappedForRowWithIndexPath:indexPath];
-//    }
-//}
+
 -(void)rbtnClicked:(id)sender event:(id)event
 {
     NSSet *touches = [event allTouches];
     UITouch *touch = [touches anyObject];
     CGPoint currentTouchPosition = [touch locationInView:self.mybooklist];
     NSIndexPath *indexPath = [self.mybooklist indexPathForRowAtPoint:currentTouchPosition];
-//    UIImage *image = [UIImage imageNamed:@"radioS.png"];
-//    UIButton *button = (UIButton *)sender;
-//    button.tag =1;
-//    [button setImage:image forState:UIControlStateNormal];
-////    [self setBtn];
-//    button.tag =6;
     if(indexPath != nil)
     {
         [self tableView:self.mybooklist accessoryButtonTappedForRowWithIndexPath:indexPath];
     }
 }
--(void)setBtn
+-(NSString *)DaysCalculator:(NSString *)deadline
 {
-//    NSArray *subviews = [[NSArray alloc] initWithArray:mybooklist.subviews];
-//    NSLog(@"%@",subviews);
-//    for (UIView *oneview in subviews) {
-//        if(oneview.tag == 0){
-//             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom]; 
-//            UIImage *image = [UIImage imageNamed:@"radio.png"];
-//            [btn setImage:image forState:UIControlStateNormal];
-//            CGRect frame = CGRectMake(30, 10, 22, 22);  
-//            btn.frame = frame; 
-//            [btn addTarget:self action:@selector(rbtnClicked:event:) forControlEvents:UIControlEventTouchUpInside];
-//            [oneview addSubview:btn];
-//        }
-//    }
-//    NSLog(@"%@",mybooklist.subviews);
-//    UIButton *button = [[UIButton alloc] viewWithTag:0];
-//    [button setImage:[UIImage imageNamed:@"radio.png"] forState:UIControlStateNormal];
-    UIButton *btn1 = (UIButton *)[self.view viewWithTag:7];
+    NSLog(@"%@",deadline);
+    NSDateFormatter *date=[[NSDateFormatter alloc] init];
+    [date setDateFormat:@"yyyyMMdd"];
+    NSDate *d=[date dateFromString:deadline];
+    NSLog(@"%@",d);
+    NSDateFormatter *inputFormatter = [[NSDateFormatter alloc] init];
+//    [inputFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+    [inputFormatter setDateFormat:@"yyyyMMdd"];
+    NSDate* inputDate = [inputFormatter dateFromString:deadline];
+    NSLog(@"date = %@", inputDate);
+    NSTimeInterval late=[d timeIntervalSince1970]*1;
+    
+    
+    NSDate* dat = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSTimeInterval now=[dat timeIntervalSince1970]*1;
+    NSString *timeString=@"";
+    
+    NSTimeInterval cha=late-now;
+//    NSLog(@"%@",cha);
+    if (cha/3600<1) {
+        timeString = [NSString stringWithFormat:@"%f", cha/60];
+        timeString = [timeString substringToIndex:timeString.length-7];
+        timeString=[NSString stringWithFormat:@"%@分钟", timeString];
+        
+    }
+    if (cha/3600>1&&cha/86400<1) {
+        timeString = [NSString stringWithFormat:@"%f", cha/3600];
+        timeString = [timeString substringToIndex:timeString.length-7];
+        timeString=[NSString stringWithFormat:@"%@小时", timeString];
+    }
+    if (cha/86400>1)
+    {
+        timeString = [NSString stringWithFormat:@"%f", cha/86400+1];
+        timeString = [timeString substringToIndex:timeString.length-7];
+        timeString=[NSString stringWithFormat:@"%@天", timeString];
+        
+    }
+    return timeString; 
 }
 -(void)radioButtonSelectedAtIndex:(NSUInteger)index inGroup:(NSString *)groupId{
     NSLog(@"changed to %d in %@",index,groupId);
@@ -272,7 +278,7 @@
             LIBConfigureViewController *confg = [[LIBConfigureViewController alloc] init];
             [[self navigationController] pushViewController:confg animated:YES]; 
         } else {
-            LIBRemindViewController *remind = [[LIBRemindViewController alloc] init];
+            LIBTIMEViewController *remind = [[LIBTIMEViewController alloc] init];
             [[self navigationController]pushViewController:remind animated:YES];
         }
     } 

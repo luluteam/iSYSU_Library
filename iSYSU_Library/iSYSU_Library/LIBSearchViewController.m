@@ -8,6 +8,7 @@
 //lulu
 
 #import "LIBSearchViewController.h"
+#import "LIBSearchResultViewController.h"
 
 @implementation LIBSearchViewController
 @synthesize BookName;
@@ -34,7 +35,7 @@
     if ([self.tabBarController.tabBar respondsToSelector:@selector(setTintColor:)])
     self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"tabBar.png"];
     self.tabBarController.tabBar.backgroundColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    //self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
     [[UIDevice currentDevice] systemVersion];
     if ([[[UIDevice currentDevice] systemVersion] floatValue] > 4.9) {
@@ -52,9 +53,22 @@
     
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    LIBSearchResultViewController *resultViewController = [[LIBSearchResultViewController alloc] init];
+    resultViewController.bookList = self.searchResult;
+}
 
 - (IBAction)stb:(id)sender {
     [self searchWithBookName:[self.BookName text]];
+    
+    NSLog(@"%@", searchResult);
+    [self performSegueWithIdentifier:@"search" sender:self];
+}
+
+- (IBAction)tapBackground:(id)sender {
+    
+    [self.BookName resignFirstResponder];
 }
 
 -(void)didUpdate

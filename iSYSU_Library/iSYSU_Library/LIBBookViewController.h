@@ -8,11 +8,24 @@
 
 #import <UIKit/UIKit.h>
 #import "LIBDataManager.h"
+#import "Book.h"
+
 @interface LIBBookViewController : UIViewController
 {
 @private NSInteger index;
 }
-@property (weak, nonatomic) IBOutlet UIImageView *bookImg;
+
+@property (retain, nonatomic) Book *book;
+
+@property (weak, nonatomic) IBOutlet UIImageView *bookImgIB;
+@property (weak, nonatomic) IBOutlet UILabel *bookNameIB;
+@property (weak, nonatomic) IBOutlet UILabel *authorIB;
+@property (weak, nonatomic) IBOutlet UILabel *identifierIB;
+@property (weak, nonatomic) IBOutlet UILabel *statusIB;
+@property (weak, nonatomic) IBOutlet UILabel *isbnIB;
+
+
+
 @property(weak,nonatomic)NSString* bookname;
 @property(weak,nonatomic)NSString* isbn;
 @property(weak,nonatomic)NSString* number;

@@ -25,7 +25,7 @@
 - (Boolean)isLoginSuccess: (NSString *)loginWithUserID andPassword: (NSString *)password;               //judge whether the user can log in the library
 - (void)logout;                                                                                         //log out
 
-+ (Boolean)changePassword: (NSString *)currPassword withNewPassword: (NSString *)newPassword andConfirmPassword: (NSString *)confirmPassword;       //change user's password
++ (BOOL)changePassword: (NSString *)currPassword withNewPassword: (NSString *)newPassword andConfirmPassword: (NSString *)confirmPassword;       //change user's password
 + (Boolean)hasUser;                                                                                     //judge whether there has user in the host
 + (User *)getAnUserInfo;                                                                                //to get an user's information
 + (Boolean)isChangedEmailOk: (NSString *)email;                                                         //change user's email

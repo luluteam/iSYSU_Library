@@ -62,6 +62,10 @@
     NSLog(@"can not log");
 }
 
+- (IBAction)backBtn:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];  
+}
+
 - (void)viewDidUnload
 {
     [self setUsername:nil];

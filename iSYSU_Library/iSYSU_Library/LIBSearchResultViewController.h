@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "LIBDataManager.h"
-@interface LIBSearchResultViewController : UIViewController
-@property(weak,nonatomic)NSArray* bookList;
+@interface LIBSearchResultViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+
+@property(retain, nonatomic)NSArray* bookList;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableview;
 -(void)getBook:(NSInteger *)index;
 -(void)setStyle;
+
 @end

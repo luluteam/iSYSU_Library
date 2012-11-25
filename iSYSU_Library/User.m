@@ -191,7 +191,7 @@
  *  @param currPassword -> 用户当前密码 newPassword -> 新密码 confirmPassword -> 确认密码
  *
  */
-+ (Boolean)changePassword:(NSString *)currPassword withNewPassword:(NSString *)newPassword andConfirmPassword:(NSString *)confirmPassword
++ (BOOL)changePassword:(NSString *)currPassword withNewPassword:(NSString *)newPassword andConfirmPassword:(NSString *)confirmPassword
 {
     if([User hasUser]){
         
@@ -199,10 +199,7 @@
         NSString *baseUrl = [defaults valueForKey:@"baseUrl"];
         NSString *password = [defaults valueForKey:@"password"];
         
-        if(password != currPassword){                                   //输入的当前用户密码和本地的用户密码不匹配
-            
-            return false;
-        } else if(newPassword != confirmPassword){                      //两次输入的密码不相同
+        if(![password isEqualToString:currPassword]){                                   //输入的当前用户密码和本地的用户密码不匹配
             
             return false;
         } else{
