@@ -198,7 +198,7 @@
         CGRect frame = CGRectMake(30, 10, 22, 22);  
         button.frame = frame;  
         [button setImage:image forState:UIControlStateNormal];  
-        [button addTarget:self action:@selector(rbtnClicked:event:) forControlEvents:UIControlEventTouchUpInside];  
+//        [button addTarget:self action:@selector(rbtnClicked:event:) forControlEvents:UIControlEventTouchUpInside];  
         button.backgroundColor = [UIColor clearColor]; 
         button.tag = 6;
         [cell addSubview: button]; 
@@ -267,10 +267,6 @@
     }
     return timeString; 
 }
--(void)radioButtonSelectedAtIndex:(NSUInteger)index inGroup:(NSString *)groupId{
-    NSLog(@"changed to %d in %@",index,groupId);
-    self->currentBookIndex = index;
-}
 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
@@ -297,8 +293,17 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath   
 {
     if (tableView.tag == 2) {
-        NSLog(@"index:%@",indexPath);
+        NSLog(@"index:%d",indexPath.row);
+        self->curbook = indexPath.row;
+//        LIBBookViewController *bookview = [[LIBBookViewController alloc] init];
+//        [self.navigationController pushViewController: bookview animated:YES];
     }
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    LIBBookViewController *bookViewController = segue.destinationViewController;    
+    bookViewController.book = [mybookinfo objectAtIndex:self->curbook];
+//    NSLog(@"%@", bookViewController.book);
+}
 @end

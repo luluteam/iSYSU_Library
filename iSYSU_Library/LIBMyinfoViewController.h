@@ -13,9 +13,11 @@
 #import "LIBConfigureViewController.h"
 #import "Book.h"
 #import "RadioButton.h"
+#import "LIBBookViewController.h"
 @interface LIBMyinfoViewController : UIViewController<UIAlertViewDelegate>
 {
     @private NSInteger currentBookIndex;
+    NSInteger curbook;
 }
 @property (strong, nonatomic) IBOutlet UITableView *mybooklist;
 @property (weak,nonatomic)NSArray* mybookinfo;

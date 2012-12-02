@@ -18,5 +18,5 @@
 @property (weak, nonatomic) UIDatePicker *time_picker;
 @property (weak, nonatomic) IBOutlet UISwitch *Switch_button;
 
-- (NSString *)filePath;
+-(NSString *)filePath;
 @end

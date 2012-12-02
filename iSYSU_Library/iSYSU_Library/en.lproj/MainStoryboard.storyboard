@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11B26" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="AxV-NM-ogW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="AxV-NM-ogW">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
         <scene sceneID="Rhy-By-7xm">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7j-cc-ZCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -20,6 +22,7 @@
             </objects>
             <point key="canvasLocation" x="-2191" y="-527"/>
         </scene>
+        <!--Search View Controller-->
         <scene sceneID="CfP-hb-DEW">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HrO-Wo-oMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -80,6 +83,7 @@
             </objects>
             <point key="canvasLocation" x="-1331" y="-566"/>
         </scene>
+        <!--Search Result View Controller-->
         <scene sceneID="cY4-tP-ZOv">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Bu-F9-gfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -160,6 +164,7 @@
             </objects>
             <point key="canvasLocation" x="-774" y="-548"/>
         </scene>
+        <!--Book View Controller-->
         <scene sceneID="D7J-HJ-ToL">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dr-uF-Ya8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,6 +260,7 @@
             </objects>
             <point key="canvasLocation" x="-204" y="-548"/>
         </scene>
+        <!--View Controller-->
         <scene sceneID="xTB-8v-0Pc">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vxz-aB-rua" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -268,6 +274,7 @@
             </objects>
             <point key="canvasLocation" x="385" y="-572"/>
         </scene>
+        <!--Myinfo View Controller-->
         <scene sceneID="7aG-B7-IRi">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOr-gF-6nd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -296,11 +303,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.56862747670000002" green="0.8980392814" blue="0.56862747670000002" alpha="1" colorSpace="deviceRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="aIY-7H-qq5">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="aIY-7H-qq5">
                                         <rect key="frame" x="0.0" y="46" width="306" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="286" height="43"/>
+                                            <rect key="frame" x="10" y="1" width="266" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -404,8 +411,9 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-1639" y="249"/>
+            <point key="canvasLocation" x="-757" y="141"/>
         </scene>
+        <!--View Controller-->
         <scene sceneID="PdF-SQ-rFo">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oge-iI-brm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -470,7 +478,7 @@
                                         <rect key="frame" x="0.0" y="183" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="   3天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gnI-XZ-W5J">
@@ -489,7 +497,7 @@
                                         <rect key="frame" x="0.0" y="227" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="   1天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yIc-VE-4a0">
@@ -531,7 +539,7 @@
                                         <rect key="frame" x="0.0" y="363" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="   1天/次" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="trE-aO-oid">
@@ -584,8 +592,9 @@
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="-1184" y="413"/>
+            <point key="canvasLocation" x="-970" y="809"/>
         </scene>
+        <!--Configure View Controller - 帐号管理-->
         <scene sceneID="yAp-rb-VQ7">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKj-OS-Zlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -692,8 +701,9 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-1151" y="1031"/>
+            <point key="canvasLocation" x="-981" y="1401"/>
         </scene>
+        <!--Email View Controller-->
         <scene sceneID="7D6-ve-6oI">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="16U-eA-AId" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -732,6 +742,7 @@
             </objects>
             <point key="canvasLocation" x="-419" y="836"/>
         </scene>
+        <!--Phone View Controller-->
         <scene sceneID="XI1-cz-Ja7">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEb-AF-whY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -770,6 +781,7 @@
             </objects>
             <point key="canvasLocation" x="-425" y="1414"/>
         </scene>
+        <!--SetPSW View Controller - 更改密码-->
         <scene sceneID="qo6-ld-9OZ">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9a-Wh-ciB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -836,6 +848,7 @@
             </objects>
             <point key="canvasLocation" x="-425" y="2049"/>
         </scene>
+        <!--Log In View Controller - 我的图书馆-->
         <scene sceneID="SyG-Bm-mdf">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XmR-Zc-VNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -913,6 +926,7 @@
             </objects>
             <point key="canvasLocation" x="-1633" y="865"/>
         </scene>
+        <!--Tab Bar Controller-->
         <scene sceneID="dc2-SJ-fMS">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8g-2N-YY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -931,6 +945,7 @@
             </objects>
             <point key="canvasLocation" x="-2902" y="42"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="jdo-GN-zSx">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byM-ib-cua" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -968,6 +983,90 @@
         <image name="renewBtn.png" width="41" height="37"/>
         <image name="searchBtn_On.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="LIBBookViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBBookViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="authorIB" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="bookImgIB" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bookNameIB" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="identifierIB" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="isbnIB" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="statusIB" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LIBConfigureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBConfigureViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="college" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="school" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LIBEmailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBEmailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changEmail:"/>
+                <relationship kind="outlet" name="emailText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LIBLogInViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBLogInViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backBtn:"/>
+                <relationship kind="action" name="login:"/>
+                <relationship kind="outlet" name="password" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="username" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LIBMyinfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBMyinfoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="DidRenew:"/>
+                <relationship kind="action" name="logout:"/>
+                <relationship kind="outlet" name="mybooklist" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="renewBook" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tableViewCell" candidateClass="UITableViewCell"/>
+            </relationships>
+        </class>
+        <class className="LIBPhoneViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBPhoneViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changPhone:"/>
+                <relationship kind="outlet" name="phoneText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LIBSearchResultViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBSearchResultViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableview" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="LIBSearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBSearchViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="stb:"/>
+                <relationship kind="action" name="tapBackground:"/>
+                <relationship kind="outlet" name="BookName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LIBSetPSWViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBSetPSWViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="savePSW:"/>
+                <relationship kind="outlet" name="confPSW" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nPSW" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="ordPSW" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="LIBTIMEViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LIBTIMEViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="Switch_button" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="Time_Show" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
