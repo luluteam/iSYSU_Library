@@ -12,7 +12,7 @@
 @implementation LIBSearchResultViewController
 @synthesize bookList;
 @synthesize tableview;
-
+@synthesize keyword;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -36,21 +36,40 @@
 {
     [super viewDidLoad];
     [self setStyle];
-    // Do any additional setup after loading the view from its nib.
-    //获取搜索结果
-    self.bookList = [[LIBDataManager shareManager] searchResult];
-    NSLog(@"ddd%@",self.bookList);
-}
-
-//获取单本书的信息
--(void)getBook:(NSInteger *)index
-{
+    NSLog(@"key:%@",self.keyword);
+    //添加observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getBook) name:@"finishSearch" object:nil];
+    [[LIBDataManager shareManager] requestSearchWithParrtern:self.keyword];
+    [self.tableview addPullToRefreshWithActionHandler:^{
+        [self refresh];
+        [tableview.pullToRefreshView performSelector:@selector(stopAnimating) withObject:nil afterDelay:1];
+    }];
     
+    // trigger the refresh manually at the end of viewDidLoad
+    [tableview.pullToRefreshView triggerRefresh];
+
+}
+//下拉刷新
+-(void)refresh
+{
+    //添加observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeBooklist) name:@"finish refresh" object:nil];
+}
+-(void)changeBooklist
+{
+    [tableview reloadData];
+}
+//获取书的信息
+-(void)getBook
+{
+    self.bookList = [[LIBDataManager shareManager] searchResult];
+    [tableview reloadData];
 }
 - (void)viewDidUnload
 {
     [self setTableview:nil];
     [super viewDidUnload];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }

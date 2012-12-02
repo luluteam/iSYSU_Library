@@ -52,6 +52,7 @@
     [self setOrdPSW:nil];
     [self setNPSW:nil];
     [self setConfPSW:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [super viewDidUnload];
     [self setStyle];
     // Release any retained subviews of the main view.

@@ -20,5 +20,6 @@
 -(NSString *)changePhone:(NSString *)phone;
 -(Book *)getBookByIndex:(NSInteger)index;
 -(BOOL)changePSW:(NSString *)opsw npsw:(NSString *)npsw;
-@property(strong,nonatomic)NSArray* bookList;
+-(BOOL)nextPage:(NSInteger )pageNum;
+@property(strong,nonatomic)NSMutableArray* bookList;
 @end

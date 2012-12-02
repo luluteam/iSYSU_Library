@@ -39,7 +39,7 @@
 -(BOOL)search:(NSString *)bookname
 {   
     bookList = [BookManage searchBooksByName:bookname];
-    NSLog(@"%@", bookList);
+//    NSLog(@"%@", bookList);
     if(bookList.count <= 0){
         
         return false;
@@ -98,5 +98,11 @@
 {
     BOOL isChangePswOk = [User changePassword:opsw withNewPassword:npsw andConfirmPassword:npsw];
     return isChangePswOk;
+}
+-(BOOL)nextPage:(NSInteger)pageNum
+{
+    //更新booklist，注意是要加进去～～
+//    [bookList addObject:@"1"];
+    return YES;
 }
 @end

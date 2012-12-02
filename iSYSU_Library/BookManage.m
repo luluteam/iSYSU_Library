@@ -64,7 +64,7 @@
         book = [BookManage getABookInfoBySystemId: href];
         [searchBookList addObject:book];
     }
-    NSLog(@"%@",currentHrefArr);
+//    NSLog(@"%@",currentHrefArr);
     
 //    //取得进入搜索后的一个url,并保存到searchBaseUrl里面
 //    NSArray *aArrayForSearchBaseUrl = [searchxPathParser searchWithXPathQuery:@"//a"];
@@ -114,7 +114,7 @@
         [returnSearchBookList addObject:book];
     }
 
-    NSLog(@"%@", returnSearchBookList);
+//    NSLog(@"%@", returnSearchBookList);
     return returnSearchBookList;
 }
 
@@ -153,7 +153,7 @@
         book = [BookManage getABookInfoBySystemId: href];
         [searchBookList addObject:book];
     }
-    NSLog(@"%@",currentHrefArr);
+//    NSLog(@"%@",currentHrefArr);
     
     //取得进入搜索后的一个url,并保存到searchBaseUrl里面
     NSArray *aArrayForSearchBaseUrl = [searchxPathParser searchWithXPathQuery:@"//a"];
@@ -215,7 +215,7 @@
     [viewABookInfoStr appendString:systemId];
     [viewABookInfoStr appendString:@"&format=002"];
     NSString *viewABookInfoUrlStr = [baseUrl stringByAppendingString:viewABookInfoStr];
-    NSLog(@"view %@",viewABookInfoUrlStr);
+//    NSLog(@"view %@",viewABookInfoUrlStr);
     NSURL *viewABookInfoUrl = [[NSURL alloc] initWithString:viewABookInfoUrlStr];
     ASIHTTPRequest *searchRequest = [ASIHTTPRequest requestWithURL:viewABookInfoUrl];
     [searchRequest startSynchronous];

@@ -21,6 +21,6 @@
 -(void)didUpdate;
 -(void)didnotUpdate;
 -(BOOL)getUpdate;
--(void)searchWithBookName:(NSString *)name;
--(void)showSearchResult:(NSArray *)searchResult;
+//-(void)searchWithBookName:(NSString *)name;
+//-(void)showSearchResult:(NSArray *)searchResult;
 @end

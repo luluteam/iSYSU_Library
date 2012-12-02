@@ -151,6 +151,7 @@
     [super viewDidUnload];
     [self.navigationController popToRootViewControllerAnimated:YES];
     [self setMybooklist:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 //    [self setSetTable:nil];
         self.setting = nil;
     // Release any retained subviews of the main view.

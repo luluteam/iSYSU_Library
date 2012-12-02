@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "LIBDataManager.h"
+#import "SVPullToRefresh.h"
 @interface LIBSearchResultViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 
 @property(retain, nonatomic)NSArray* bookList;
-
+@property(strong,nonatomic)NSString* keyword;
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
--(void)getBook:(NSInteger *)index;
+-(void)getBook;
 -(void)setStyle;
-
+-(void)refresh;
+-(void)changeBooklist;
 @end

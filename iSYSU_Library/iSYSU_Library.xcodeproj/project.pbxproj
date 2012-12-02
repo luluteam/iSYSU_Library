@@ -114,6 +114,9 @@
 		A89BF929165B819100514347 /* RadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A89BF928165B819100514347 /* RadioButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A8C168151650C47D0037C497 /* BorrowBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168131650C47D0037C497 /* BorrowBooks.m */; };
 		A8C168191650F8B30037C497 /* LIBBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C168171650F8B20037C497 /* LIBBookViewController.m */; };
+		A8D413EB1668A54A0040C2DA /* SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D413EA1668A54A0040C2DA /* SVPullToRefresh.m */; };
+		A8D413ED1668A5510040C2DA /* SVPullToRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A8D413EC1668A5510040C2DA /* SVPullToRefresh.bundle */; };
+		A8D413EF1668A76C0040C2DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D413EE1668A76C0040C2DA /* QuartzCore.framework */; };
 		B0863125164B848C00451893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863124164B848C00451893 /* UIKit.framework */; };
 		B0863127164B848C00451893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863126164B848C00451893 /* Foundation.framework */; };
 		B0863129164B848C00451893 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0863128164B848C00451893 /* CoreGraphics.framework */; };
@@ -264,6 +267,10 @@
 		A8C168131650C47D0037C497 /* BorrowBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowBooks.m; sourceTree = "<group>"; };
 		A8C168161650F8B20037C497 /* LIBBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIBBookViewController.h; sourceTree = "<group>"; };
 		A8C168171650F8B20037C497 /* LIBBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIBBookViewController.m; sourceTree = "<group>"; };
+		A8D413E81668A5390040C2DA /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
+		A8D413EA1668A54A0040C2DA /* SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPullToRefresh.m; sourceTree = "<group>"; };
+		A8D413EC1668A5510040C2DA /* SVPullToRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVPullToRefresh.bundle; sourceTree = "<group>"; };
+		A8D413EE1668A76C0040C2DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B0863120164B848C00451893 /* iSYSU_Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSYSU_Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0863124164B848C00451893 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B0863126164B848C00451893 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -300,9 +307,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D413EF1668A76C0040C2DA /* QuartzCore.framework in Frameworks */,
+				A884FC85164F5A5A0035E296 /* SystemConfiguration.framework in Frameworks */,
 				A884FC89164F5A6E0035E296 /* MobileCoreServices.framework in Frameworks */,
 				A884FC87164F5A640035E296 /* libz.1.2.5.dylib in Frameworks */,
-				A884FC85164F5A5A0035E296 /* SystemConfiguration.framework in Frameworks */,
 				A884FC83164F5A520035E296 /* libc.dylib in Frameworks */,
 				A884FC81164F5A490035E296 /* CFNetwork.framework in Frameworks */,
 				A884FC7F164F5A420035E296 /* libxml2.dylib in Frameworks */,
@@ -544,6 +552,9 @@
 		A89BF926165B816700514347 /* UIClasses */ = {
 			isa = PBXGroup;
 			children = (
+				A8D413EC1668A5510040C2DA /* SVPullToRefresh.bundle */,
+				A8D413EA1668A54A0040C2DA /* SVPullToRefresh.m */,
+				A8D413E81668A5390040C2DA /* SVPullToRefresh.h */,
 				A89BF927165B819100514347 /* RadioButton.h */,
 				A89BF928165B819100514347 /* RadioButton.m */,
 			);
@@ -573,6 +584,7 @@
 		B0863123164B848C00451893 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8D413EE1668A76C0040C2DA /* QuartzCore.framework */,
 				A884FC84164F5A5A0035E296 /* SystemConfiguration.framework */,
 				A884FC82164F5A520035E296 /* libc.dylib */,
 				A884FC80164F5A490035E296 /* CFNetwork.framework */,
@@ -768,6 +780,7 @@
 				A86A95041661BE7800D5B20A /* alarmSetLine@2x.png in Resources */,
 				A86A95071661CA4600D5B20A /* nav.png in Resources */,
 				A86A4E681661F54E00513FA8 /* greenBox.png in Resources */,
+				A8D413ED1668A5510040C2DA /* SVPullToRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,6 +822,7 @@
 				A86B164F1660E94800B86A3D /* LIBTIMEViewController.m in Sources */,
 				A86A953D1661D30700D5B20A /* Book.m in Sources */,
 				A86A953E1661D30700D5B20A /* BookManage.m in Sources */,
+				A8D413EB1668A54A0040C2DA /* SVPullToRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

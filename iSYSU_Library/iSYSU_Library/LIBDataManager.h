@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "LIBClient.h"
 @interface LIBDataManager : NSObject
+{
+    NSInteger pagenum;
+}
 @property(strong,nonatomic) NSArray* personalInfo;
 @property(strong,nonatomic) NSArray* mybookInfo;
 @property(strong,nonatomic) NSArray* searchResult;
@@ -35,4 +38,5 @@
 -(void)requestChangePhonewithParrtern:(NSString *)phone ;
 -(void)requestBookWithIndex:(NSInteger)index;
 -(void)requestChangePSWWithPSW:(NSString *)opsw npsw:(NSString *)npsw;
+-(void)requestNextPageOfBook;
 @end

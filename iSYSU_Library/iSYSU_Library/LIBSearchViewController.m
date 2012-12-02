@@ -55,14 +55,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    LIBSearchResultViewController *resultViewController = [[LIBSearchResultViewController alloc] init];
-    resultViewController.bookList = self.searchResult;
+//    LIBSearchResultViewController *resultViewController = [[LIBSearchResultViewController alloc] init];
+//    resultViewController.keyword = [self.BookName text];
+    id segue2 = segue.destinationViewController;
+    [segue2 setValue:[self.BookName text] forKey:@"keyword"];
 }
 
 - (IBAction)stb:(id)sender {
-    [self searchWithBookName:[self.BookName text]];
-    
-    NSLog(@"%@", searchResult);
+//    [self searchWithBookName:[self.BookName text]];
+//    NSLog(@"%@", searchResult);
     [self performSegueWithIdentifier:@"search" sender:self];
 }
 
@@ -84,26 +85,26 @@
     return self->update;
 }
 
-//搜索
--(void)searchWithBookName:(NSString *)name
-{
-    //添加observer
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showSearchResult:) name:@"finishSearch" object:nil];
-    [[LIBDataManager shareManager] requestSearchWithParrtern:name];
-}
-
--(void)showSearchResult:(NSArray *)searchResult
-{
-    NSLog(@"search result");
-    self.searchResult = [[LIBDataManager shareManager] searchResult];
-    NSLog(@"%@",self.searchResult);
-}
+////搜索
+//-(void)searchWithBookName:(NSString *)name
+//{
+//    //添加observer
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showSearchResult:) name:@"finishSearch" object:nil];
+//    [[LIBDataManager shareManager] requestSearchWithParrtern:name];
+//}
+//-(void)showSearchResult:(NSArray *)searchResult
+//{
+//    NSLog(@"search result");
+//    self.searchResult = [[LIBDataManager shareManager] searchResult];
+//    NSLog(@"%@",self.searchResult);
+//}
 
 - (void)viewDidUnload
 {
     [self setBookName:nil];
     //[self setsearchResult:nil];
     [super viewDidUnload];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }

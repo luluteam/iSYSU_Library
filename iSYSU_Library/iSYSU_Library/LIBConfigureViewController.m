@@ -74,6 +74,7 @@
     [self setName:nil];
     [self setSchool:nil];
     [self setCollege:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 //    [self setConfigTable:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
