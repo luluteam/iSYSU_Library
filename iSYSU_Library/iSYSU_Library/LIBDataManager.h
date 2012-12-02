@@ -11,6 +11,8 @@
 @interface LIBDataManager : NSObject
 {
     NSInteger pagenum;
+@public
+    BOOL isupdate;
 }
 @property(strong,nonatomic) NSArray* personalInfo;
 @property(strong,nonatomic) NSArray* mybookInfo;

@@ -48,6 +48,10 @@
         }
         
     } 
+    //添加observer
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didUpdate) name:@"DidUpdate" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didnotUpdate) name:@"DidNotUpdate" object:nil];
+    [[LIBDataManager shareManager] requestUpdate];
     //[[self.navigationController.navigationBar] setBackgroundImage:[UIImage imageNamed:@"navbar.png"]];
 //    [self.tabBarController.tabBar setSelectionIndicatorImage:[UIImage imageNamed:@"searchBtn_On"]];
     
@@ -74,11 +78,11 @@
 
 -(void)didUpdate
 {
-     self->update = true;
+    [LIBDataManager shareManager]->isupdate = YES;
 }
 -(void)didnotUpdate
 {
-    self->update = false;
+   [LIBDataManager shareManager]->isupdate = NO;
 }
 -(BOOL)getUpdate
 {

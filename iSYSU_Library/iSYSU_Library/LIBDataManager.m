@@ -54,10 +54,12 @@
         self.personalInfo = [lib getInfo];
         self.mybookInfo = [lib getMyBookInfo];
         NSLog(@"mybook:%@",mybookInfo);
+        self->isupdate = YES;
         [[NSNotificationCenter defaultCenter] postNotificationName:@"DidUpdate" object:self];
     } else {
         //登录失败，发送广播
         NSLog(@"post din not update");
+        self->isupdate = NO;
         [[NSNotificationCenter defaultCenter] postNotificationName:@"DidNotUpdate" object:self];
     }
     

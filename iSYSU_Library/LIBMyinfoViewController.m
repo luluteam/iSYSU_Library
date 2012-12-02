@@ -57,11 +57,12 @@
     NSArray *arr = [NSArray arrayWithObjects:@"帐号设置",@"提醒设置",nil];  
     self.setting = arr;
     [self setStyle];    
-    //添加observer
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getInfo) name:@"DidUpdate" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(Login) name:@"DidNotUpdate" object:nil];
-    [[LIBDataManager shareManager] requestUpdate];
-    
+
+    if ([LIBDataManager shareManager]->isupdate) {
+        [self getInfo];
+            } else {
+                [self Login];
+                    }
 }
 -(void)setStyle
 {
